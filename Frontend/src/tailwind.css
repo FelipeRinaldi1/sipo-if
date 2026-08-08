@@ -1,0 +1,10 @@
+/* Define standard layers */
+@layer theme, base, components, utilities;
+
+/* Import Tailwind's theme config (spacing, sizes, grid configs, etc.) */
+@import "tailwindcss/theme" layer(theme);
+
+/* Import Tailwind's utility classes (flex, grid, spacing, layout, etc.) */
+@import "tailwindcss/utilities" layer(utilities);
+
+/* Note: we omit "tailwindcss/preflight" to avoid overriding/resetting Angular Material styles */

@@ -1,0 +1,52 @@
+@host = http://localhost:5000
+
+# Role can be: "Admin", "Clerk", or "Technician"
+# @name registerCustom
+POST {{host}}/users/register
+Content-Type: application/json
+
+{
+    "name": "André Silva",
+    "email": "andre.silva@gmail.com",
+    "password": "Senha123!",
+    "role": "Admin"
+}
+
+###
+
+# @name loginForToken
+POST {{host}}/login
+Content-Type: application/json
+
+{
+    "email": "andre.silva@gmail.com",
+    "password": "Senha123!"
+}
+
+###
+
+@authToken = {{loginForToken.response.body.accessToken}}
+
+### Get Authenticated User Profile
+GET {{host}}/users/me
+Authorization: Bearer {{authToken}}
+
+### Update Authenticated User Profile
+PUT {{host}}/users/me
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+    "name": "André Silva Edited",
+    "email": "andre.silva@gmail.com"
+}
+
+### List All Users (Admin Only)
+GET {{host}}/users
+Authorization: Bearer {{authToken}}
+
+### Deactivate User by ID (Admin Only)
+# Replace the ID below with a real user ID from the list users route
+@userIdToDeactivate = 00000000-0000-0000-0000-000000000000
+POST {{host}}/users/{{userIdToDeactivate}}/deactivate
+Authorization: Bearer {{authToken}}

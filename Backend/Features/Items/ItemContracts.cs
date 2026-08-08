@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Template.Features.Items;
 
 public record ItemDto(
-    int Id,
+    Guid Id,
     string Name,
     string Description,
     decimal Price,
@@ -11,7 +11,7 @@ public record ItemDto(
 );
 
 public record ItemDetailsDto(
-    int Id,
+    Guid Id,
     string Name,
     string Description,
     decimal Price,

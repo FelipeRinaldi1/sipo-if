@@ -29,10 +29,10 @@ public static class ItemEndpoints
                 .ToListAsync();
 
             return TypedResults.Ok(items);
-        });
+        }).RequireAuthorization();
 
         // Get by ID
-        group.MapGet("/{id}", async Task<Results<Ok<ItemDetailsDto>, NotFound>> (int id, TemplateContext dbContext) =>
+        group.MapGet("/{id}", async Task<Results<Ok<ItemDetailsDto>, NotFound>> (Guid id, TemplateContext dbContext) =>
         {
             var item = await dbContext.Items.FindAsync(id);
 
@@ -78,7 +78,7 @@ public static class ItemEndpoints
         .WithParameterValidation<CreateItemDto>();
 
         // Put
-        group.MapPut("/{id}", async Task<Results<NoContent, NotFound>> (int id, UpdateItemDto newData, TemplateContext dbContext) =>
+        group.MapPut("/{id}", async Task<Results<NoContent, NotFound>> (Guid id, UpdateItemDto newData, TemplateContext dbContext) =>
         {
             var existingItem = await dbContext.Items.FindAsync(id);
 
@@ -98,7 +98,7 @@ public static class ItemEndpoints
         .WithParameterValidation<UpdateItemDto>();
 
         // Delete
-        group.MapDelete("/{id}", async (int id, TemplateContext dbContext) =>
+        group.MapDelete("/{id}", async (Guid id, TemplateContext dbContext) =>
         {
             await dbContext.Items.Where(item => item.Id == id).ExecuteDeleteAsync();
             return TypedResults.NoContent();
