@@ -1,0 +1,38 @@
+# @host = http://localhost:5153
+@host = http://localhost:5000
+
+GET {{host}}/health
+
+###
+
+GET {{host}}/items
+
+### 
+
+GET {{host}}/items/1
+
+###
+
+POST {{host}}/items
+Content-Type: application/json
+
+{
+    "Name":"Item Exemplo Novo",
+    "Description":"Descrição detalhada do novo item de exemplo",
+    "Price":"49.99"
+}
+
+###
+
+PUT {{host}}/items/1
+Content-Type: application/json
+
+{
+    "Name":"Item Exemplo A Modificado",
+    "Description":"Descrição modificada do item exemplo A",
+    "Price":"14.99"
+}
+
+###
+
+DELETE {{host}}/items/2
