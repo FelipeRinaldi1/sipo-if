@@ -1,0 +1,14 @@
+{
+  "testCommand": "cd Frontend && npm test",
+  "reporter": "tap",
+  "testGlobs": [
+    "Frontend/src/**/*.spec.ts",
+    "Frontend/src/**/*.test.ts"
+  ],
+  "srcGlobs": [
+    "Backend/**/*.cs",
+    "Frontend/src/**/*.ts",
+    "Frontend/src/**/*.html",
+    "Frontend/src/**/*.scss"
+  ]
+}
