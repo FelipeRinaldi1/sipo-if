@@ -18,7 +18,8 @@ public static class BuilderExtensions
         builder.Services.AddAuthentication();
         builder.Services.AddAuthorization();
         builder.Services.AddHttpClient<Template.Features.Transparencia.TransparenciaApiClient>();
-        builder.Services.AddHostedService<Template.Features.Transparencia.SincronizacaoJob>();
+        builder.Services.AddHttpClient<Template.Features.Transparencia.DadosAbertosIfspClient>();
+        // builder.Services.AddHostedService<Template.Features.Transparencia.SincronizacaoJob>();
         
         // Configure JSON options to serialize enums as strings in HTTP responses
         builder.Services.ConfigureHttpJsonOptions(options =>
@@ -33,13 +34,11 @@ public static class BuilderExtensions
 
     private static WebApplicationBuilder AddCors(this WebApplicationBuilder builder)
     {
-        var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
-            ?? new[] { "http://4200" };
         builder.Services.AddCors(options =>
         {
             options.AddDefaultPolicy(policy =>
             {
-                policy.WithOrigins("http://localhost:4200")
+                policy.AllowAnyOrigin()
                     .AllowAnyHeader()
                     .AllowAnyMethod();
             });

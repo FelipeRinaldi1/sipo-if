@@ -1,7 +1,9 @@
 {
-  "testCommand": "cd Frontend && npm test",
+  "testCommand": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "tap",
   "testGlobs": [
+    "test/**/*.test.js",
+    "Backend.Tests/**/*.cs",
     "Frontend/src/**/*.spec.ts",
     "Frontend/src/**/*.test.ts"
   ],

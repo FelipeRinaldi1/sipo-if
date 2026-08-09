@@ -4,4 +4,7 @@
 GET {{Backend_HostAddress}}/sincronizacao/status
 Accept: application/json
 
-###
+### Obter dados agregados do Dashboard Público
+GET {{Backend_HostAddress}}/transparencia/dashboard?ano=2024
+Accept: application/json
+

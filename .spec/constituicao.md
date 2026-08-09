@@ -183,32 +183,32 @@ Arquivos em `Backend/Data/Migrations/` são gerados exclusivamente pelo EF Core
 > Princípios adaptados do preset `lgpd-educacao` para o contexto sipo-if
 > (sistema que trata dados de alunos de Instituto Federal, incluindo menores de idade).
 
-### P-L01 [DEVE] Dados pessoais de alunos nunca expostos a outros alunos
+## P-011 [DEVE] Dados pessoais de alunos nunca expostos a outros alunos
 
 Nenhum endpoint pode retornar dados pessoais de um aluno (nome completo, CPF, e-mail,
 matrícula, notas) em uma resposta acessível por outro aluno autenticado.
 Rotas que retornam dados de um titular específico devem verificar se o usuário
 autenticado é o próprio titular ou um perfil autorizado (servidor/admin).
 
-- verificação(teste): @principle:P-L01
+- verificação(teste): @principle:P-011
 
-### P-L02 [DEVE] Acesso a dados sensíveis gera trilha de auditoria
+## P-012 [DEVE] Acesso a dados sensíveis gera trilha de auditoria
 
 Qualquer leitura ou alteração de dado pessoal sensível (notas, CPF, dados de matrícula)
 [DEVE] registrar quem acessou, quando e qual recurso — em tabela de auditoria
 dedicada, não em log de aplicação.
 
-- verificação(teste): @principle:P-L02
+- verificação(teste): @principle:P-012
 
-### P-L03 [DEVE] Dados de menores só com base legal explícita documentada
+## P-013 [DEVE] Dados de menores só com base legal explícita documentada
 
 O sistema lida com alunos que podem ser menores de idade. Toda coleta de dado pessoal
 de menor [DEVE] ter a base legal (ex: execução de contrato com a instituição, obrigação
 legal) documentada nos comentários da entidade ou nos DTOs correspondentes.
 
-- verificação(teste): @principle:P-L03
+- verificação(teste): @principle:P-013
 
-### P-L04 [DEVE] Dados pessoais nunca em log
+## P-014 [DEVE] Dados pessoais nunca em log
 
 CPF, e-mail, nome completo, matrícula e outros dados pessoais não podem aparecer
 em chamadas de log (Console.Write, ILogger, etc.).
@@ -216,23 +216,38 @@ em chamadas de log (Console.Write, ILogger, etc.).
 - verificação(proibido): `(ILogger|_logger|Console)\.[A-Za-z]+\(.*\b(cpf|email|matricula|senha|password)\b` em `Backend/**/*.cs`
 - verificação(proibido): `console\.(log|warn|error|info)\(.*\b(cpf|email|matricula|senha|password)\b` em `Frontend/src/**/*.ts`
 
-### P-L05 [RECOMENDADO] Minimização de coleta
+## P-015 [RECOMENDADO] Minimização de coleta
 
 Só devem ser coletados os dados estritamente necessários para a finalidade da feature.
 Campos opcionais nos DTOs devem ser justificados em comentário ou na spec.
 
-### P-L06 [DEVE] Exclusão lógica (soft delete) para dados de titulares
+## P-016 [DEVE] Exclusão lógica (soft delete) para dados de titulares
 
 Dados pessoais de titulares não devem ser apagados fisicamente de imediato mediante
 solicitação; deve existir um mecanismo de soft delete (campo `DeletedAt` ou `IsDeleted`)
 para atender o prazo legal e manter integridade referencial.
 
-- verificação(teste): @principle:P-L06
+- verificação(teste): @principle:P-016
 
-### P-L07 [PODE] Portabilidade dos dados do aluno
+## P-017 [PODE] Portabilidade dos dados do aluno
 
 O sistema pode (e idealmente deve) oferecer endpoint que permita ao aluno exportar
 seus próprios dados em formato estruturado (JSON/CSV), atendendo ao art. 18, V da LGPD.
+
+## P-018 [DEVE] Frontend: Tailwind apenas para Layout; Angular Material para Componentes e Estilo
+
+No Frontend Angular:
+1. **Tailwind CSS** deve ser utilizado EXCLUSIVAMENTE para controle de layout, posicionamento e espaçamento (`flex`, `grid`, `gap`, `p-`, `m-`, `w-`, `h-`).
+2. **Angular Material** deve ser utilizado para TODOS os componentes visuais, cartões, tabelas, botões, formulários, modais, tooltips e paleta de cores.
+3. É PROIBIDA a criação de regras CSS/SCSS customizadas a mão para estilizar componentes ou cores.
+
+- verificação(obrigatório): `import.*@angular/material` em `Frontend/src/app/**/*.ts`
+
+## P-019 [DEVE] Backend TDD com xUnit
+
+Todo comportamento de negócio do backend [DEVE] ser desenvolvido usando a prática de TDD (Test-Driven Development) com o framework **xUnit**, onde os testes nascem antes do código e são anotados com `@spec:AC-xxx`.
+
+- verificação(obrigatório): `\[Fact\]|\[Theory\]` em `Backend.Tests/**/*.cs`
 
 ---
 

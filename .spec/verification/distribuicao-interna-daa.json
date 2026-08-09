@@ -1,0 +1,44 @@
+{
+  "feature": "distribuicao-interna-daa",
+  "timestamp": "2026-08-09T20:14:43.351Z",
+  "gitRev": "35ddd94",
+  "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 23,
+  "results": {
+    "AC-015": {
+      "status": "pass",
+      "testName": "AC-015: Exibição mensal dos gastos com Água e Luz @spec:AC-015",
+      "method": "tap"
+    },
+    "AC-016": {
+      "status": "pass",
+      "testName": "AC-016: Gráfico de Alocação Orçamentária Interna DAA @spec:AC-016",
+      "method": "tap"
+    },
+    "AC-017": {
+      "status": "pass",
+      "testName": "AC-017: Tabela detalhada de alocação com % de repactuação @spec:AC-017",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-011": {
+      "status": "pass",
+      "testName": "P-011: Dados pessoais de alunos nunca expostos a outros alunos @principle:P-011"
+    },
+    "P-012": {
+      "status": "pass",
+      "testName": "P-012: Acesso a dados sensíveis gera trilha de auditoria @principle:P-012"
+    },
+    "P-013": {
+      "status": "pass",
+      "testName": "P-013: Dados de menores só com base legal explícita documentada @principle:P-013"
+    },
+    "P-016": {
+      "status": "pass",
+      "testName": "P-016: Exclusão lógica (soft delete) para dados de titulares @principle:P-016"
+    }
+  }
+}

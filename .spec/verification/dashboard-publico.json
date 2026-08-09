@@ -1,0 +1,74 @@
+{
+  "feature": "dashboard-publico",
+  "timestamp": "2026-08-09T20:05:48.938Z",
+  "gitRev": "35ddd94",
+  "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 18,
+  "results": {
+    "AC-006": {
+      "status": "pass",
+      "testName": "AC-006: Exibição dos totais acumulados de empenhado, liquidado e pago @spec:AC-006",
+      "method": "tap"
+    },
+    "AC-007": {
+      "status": "pass",
+      "testName": "AC-007: Gráfico de proporção Custeio vs Capital @spec:AC-007",
+      "method": "tap"
+    },
+    "AC-008": {
+      "status": "pass",
+      "testName": "AC-008: Filtro por Ano e Natureza de Despesa @spec:AC-008",
+      "method": "tap"
+    },
+    "AC-009": {
+      "status": "pass",
+      "testName": "AC-009: Tooltips informativos em termos técnicos via Angular Material @spec:AC-009",
+      "method": "tap"
+    },
+    "AC-010": {
+      "status": "pass",
+      "testName": "AC-010: Endpoint REST do Dashboard com agregação de dados @spec:AC-010",
+      "method": "tap"
+    },
+    "AC-011": {
+      "status": "pass",
+      "testName": "AC-011: Filtro por Mês do Exercício @spec:AC-011",
+      "method": "tap"
+    },
+    "AC-012": {
+      "status": "pass",
+      "testName": "AC-012: Indicador de Taxa de Execução Orçamentária @spec:AC-012",
+      "method": "tap"
+    },
+    "AC-013": {
+      "status": "pass",
+      "testName": "AC-013: Top 5 Maiores Favorecidos do ano @spec:AC-013",
+      "method": "tap"
+    },
+    "AC-014": {
+      "status": "pass",
+      "testName": "AC-014: Exportação de dados abertos em CSV @spec:AC-014",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-011": {
+      "status": "pass",
+      "testName": "P-011: Dados pessoais de alunos nunca expostos a outros alunos @principle:P-011"
+    },
+    "P-012": {
+      "status": "pass",
+      "testName": "P-012: Acesso a dados sensíveis gera trilha de auditoria @principle:P-012"
+    },
+    "P-013": {
+      "status": "pass",
+      "testName": "P-013: Dados de menores só com base legal explícita documentada @principle:P-013"
+    },
+    "P-016": {
+      "status": "pass",
+      "testName": "P-016: Exclusão lógica (soft delete) para dados de titulares @principle:P-016"
+    }
+  }
+}
