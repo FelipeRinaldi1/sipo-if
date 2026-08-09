@@ -1,11 +1,12 @@
 # SIPO-IF — Sistema Integrado de Planejamento e Orçamento
+
 ### Instituto Federal de São Paulo — Campus Jacareí
 
 ---
 
 ## O Problema
 
-O orçamento público do IFSP Campus Jacareí (UG 158716) é gerenciado por meio de
+O orçamento público do IFSP Campus Jacareí é gerenciado por meio de
 planilhas manuais, dados dispersos no Portal da Transparência e processos internos
 sem rastreabilidade consolidada. Isso gera três problemas centrais:
 
@@ -20,7 +21,7 @@ sem rastreabilidade consolidada. Isso gera três problemas centrais:
 
 ## A Solução
 
-O **SIPO-IF** é uma aplicação web fullstack que resolve os três problemas ao mesmo tempo:
+O **SIPO-IF** é uma aplicação web que resolve os três problemas ao mesmo tempo:
 
 - **Para a comunidade**: um portal público com dashboard visual e interativo sobre
   como o dinheiro do campus está sendo gasto — sem necessidade de login ou conhecimento
@@ -36,6 +37,7 @@ O **SIPO-IF** é uma aplicação web fullstack que resolve os três problemas ao
 ## Módulos
 
 ### 🌐 Módulo 1 — Painel Público (Transparência)
+
 > Acesso aberto, sem autenticação. Voltado a alunos, servidores e comunidade externa.
 
 - Dashboard com os totais anuais: **Orçamento Aprovado → Empenhado → Liquidado → Pago**
@@ -45,9 +47,11 @@ O **SIPO-IF** é uma aplicação web fullstack que resolve os três problemas ao
 - Interface 100% responsiva e acessível (eMAG / WCAG 2.1)
 
 ### 🔐 Módulo 2 — Painel Interno (Administrativo)
+
 > Acesso autenticado. Voltado à equipe DAA/CCF e Gestão do Campus.
 
 **Perfil Administrador (DAA/CCF)**
+
 - Cadastro e redistribuição da **Matriz de Alocação Interna** por setor/projeto
 - Registro mensal de consumo de **utilidades**: Água, Energia, Telefonia, Internet,
   Limpeza, Vigilância
@@ -55,10 +59,12 @@ O **SIPO-IF** é uma aplicação web fullstack que resolve os três problemas ao
 - Exportação de dados em Excel
 
 **Perfil Gestão do Campus**
+
 - Visualização de relatórios gerenciais e comparativos de metas
 - Exportação de relatórios em **PDF** e **Excel** formatados para o Conselho de Campus
 
 ### 🔄 Módulo 3 — Integração com Portal da Transparência
+
 > Transparência automatizada, sem dependência de atualização manual.
 
 - Sincronização agendada com a **API do Portal da Transparência do Governo Federal**,
@@ -70,14 +76,14 @@ O **SIPO-IF** é uma aplicação web fullstack que resolve os três problemas ao
 
 ## Stack Técnica
 
-| Camada | Tecnologia |
-|---|---|
-| **Backend** | C# / .NET 10 — Minimal APIs, Entity Framework Core |
-| **Banco de Dados** | PostgreSQL |
-| **Frontend** | Angular 22 + Angular Material + Tailwind CSS v4 |
-| **Autenticação** | ASP.NET Core Identity + JWT |
-| **Documentação da API** | Scalar (OpenAPI) |
-| **Infraestrutura** | Docker Compose |
+| Camada                  | Tecnologia                                         |
+| ----------------------- | -------------------------------------------------- |
+| **Backend**             | C# / .NET 10 — Minimal APIs, Entity Framework Core |
+| **Banco de Dados**      | PostgreSQL                                         |
+| **Frontend**            | Angular 22 + Angular Material + Tailwind CSS v4    |
+| **Autenticação**        | ASP.NET Core Identity + JWT                        |
+| **Documentação da API** | Scalar (OpenAPI)                                   |
+| **Infraestrutura**      | Docker Compose                                     |
 
 ### Decisões de Design
 
@@ -128,10 +134,10 @@ Fase 3 — Produtividade e Relatórios
 
 ## Impacto Esperado
 
-| Stakeholder | Ganho |
-|---|---|
+| Stakeholder         | Ganho                                                        |
+| ------------------- | ------------------------------------------------------------ |
 | Alunos e comunidade | Acesso simples e visual ao uso do dinheiro público do campus |
-| DAA / CCF | Fim do retrabalho manual; relatórios gerados em segundos |
-| Gestão do Campus | Visibilidade em tempo real para tomada de decisão |
-| Conselho de Campus | Relatórios padronizados e rastreáveis |
-| Sociedade | Transparência pública ativa, não apenas passiva |
+| DAA / CCF           | Fim do retrabalho manual; relatórios gerados em segundos     |
+| Gestão do Campus    | Visibilidade em tempo real para tomada de decisão            |
+| Conselho de Campus  | Relatórios padronizados e rastreáveis                        |
+| Sociedade           | Transparência pública ativa, não apenas passiva              |
