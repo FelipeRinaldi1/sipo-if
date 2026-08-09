@@ -1,6 +1,9 @@
 using Template.Data;
 using Template.Extensions;
 
+// Carrega o arquivo .env localizado na raiz do monorepo (se existir)
+DotNetEnv.Env.TraversePath().Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddArchitectures();
