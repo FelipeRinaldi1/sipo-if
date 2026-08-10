@@ -1,0 +1,140 @@
+<div class="flex flex-col gap-6">
+
+  <!-- Spinner de Carregamento Material -->
+  <div *ngIf="loading()" class="flex justify-center items-center p-12">
+    <mat-progress-spinner mode="indeterminate" diameter="48" color="primary"></mat-progress-spinner>
+  </div>
+
+  <!-- Alerta de Erro Material -->
+  <mat-card *ngIf="error()" class="p-4 bg-red-50 text-red-700 border border-red-200">
+    <mat-card-content class="flex items-center gap-2">
+      <mat-icon color="warn">error</mat-icon>
+      <span>{{ error() }}</span>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Conteúdo Principal de Destinação Orçamentária -->
+  <div *ngIf="!loading() && resumo()" class="flex flex-col gap-6">
+
+    <!-- Cards de Resumo Comparativo Material -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <!-- Card Ação 2994: Assistência Estudantil -->
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-emerald-600">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">school</mat-icon>
+          <mat-card-title class="text-base font-bold text-slate-900">Ação 2994 — Assistência aos Estudantes</mat-card-title>
+          <mat-card-subtitle>Recursos aplicados diretamente no apoio a estudantes</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-4 flex flex-col gap-3">
+          <div class="text-3xl font-extrabold text-slate-900">
+            {{ getAssistenciaTotal() | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+          <div class="flex items-center gap-2">
+            <mat-progress-bar mode="determinate" color="primary" [value]="getAssistenciaPorcentagem()" class="rounded"></mat-progress-bar>
+            <span class="text-xs font-bold text-slate-700">{{ getAssistenciaPorcentagem() }}% do orçamento</span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Card Ação 20RL: Funcionamento do Campus -->
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-blue-600">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="accent">domain</mat-icon>
+          <mat-card-title class="text-base font-bold text-slate-900">Ação 20RL — Funcionamento das Instituições</mat-card-title>
+          <mat-card-subtitle>Manutenção operacional e custeio geral do campus</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-4 flex flex-col gap-3">
+          <div class="text-3xl font-extrabold text-slate-900">
+            {{ getFuncionamentoTotal() | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+          <div class="flex items-center gap-2">
+            <mat-progress-bar mode="determinate" color="accent" [value]="100 - getAssistenciaPorcentagem()" class="rounded"></mat-progress-bar>
+            <span class="text-xs font-bold text-slate-700">{{ 100 - getAssistenciaPorcentagem() }}% do orçamento</span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
+    <!-- Tabela Material 1: Distribuição por Ação Orçamentária -->
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Distribuição Orçamentária por Ação</mat-card-title>
+        <mat-card-subtitle>Visão analítica dos valores pagos por finalidade orçamentária</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content class="pt-4">
+        <mat-table [dataSource]="resumo()?.acoes || []" class="w-full">
+
+          <!-- Código Ação Column -->
+          <ng-container matColumnDef="codigoAcao">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Código Ação </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-bold text-slate-900">
+              <mat-chip borderless color="primary">{{ element.codigoAcao }}</mat-chip>
+            </mat-cell>
+          </ng-container>
+
+          <!-- Nome Ação Column -->
+          <ng-container matColumnDef="nomeAcao">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Descrição da Ação </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="text-slate-700 font-medium"> {{ element.nomeAcao }} </mat-cell>
+          </ng-container>
+
+          <!-- Total Pago Column -->
+          <ng-container matColumnDef="totalPago">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Total Pago </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-bold text-slate-900"> {{ element.totalPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <!-- Proporção Column -->
+          <ng-container matColumnDef="porcentagemDoTotal">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Proporção (%) </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="flex items-center gap-2">
+              <mat-progress-bar mode="determinate" color="primary" [value]="element.porcentagemDoTotal" class="w-24 rounded"></mat-progress-bar>
+              <span class="text-xs font-semibold text-slate-600">{{ element.porcentagemDoTotal }}%</span>
+            </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumnsAcoes"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumnsAcoes;"></mat-row>
+        </mat-table>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Tabela Material 2: Evolução Mensal da Assistência Estudantil -->
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Evolução Mensal — Assistência Estudantil (Ação 2994)</mat-card-title>
+        <mat-card-subtitle>Acompanhamento mensal dos auxílios e bolsas destinados aos alunos</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content class="pt-4">
+        <mat-table [dataSource]="resumo()?.evolucaoAssistenciaMensal || []" class="w-full">
+
+          <!-- Mês/Ano Column -->
+          <ng-container matColumnDef="mesAno">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Mês / Ano </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-semibold text-slate-800"> {{ element.mesAno }} </mat-cell>
+          </ng-container>
+
+          <!-- Empenhado Column -->
+          <ng-container matColumnDef="valorEmpenhado">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Valor Empenhado </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{ element.valorEmpenhado | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <!-- Pago Column -->
+          <ng-container matColumnDef="valorPago">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Valor Efetivamente Pago </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-bold text-slate-900"> {{ element.valorPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumnsEvolucao"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumnsEvolucao;"></mat-row>
+        </mat-table>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

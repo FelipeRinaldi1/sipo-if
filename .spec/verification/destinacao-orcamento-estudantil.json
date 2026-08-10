@@ -1,0 +1,22 @@
+{
+  "feature": "destinacao-orcamento-estudantil",
+  "timestamp": "2026-08-10T20:58:55.117Z",
+  "gitRev": "5d88091",
+  "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
+  "reporter": "exitcode",
+  "exitCode": 0,
+  "testsParsed": 0,
+  "results": {
+    "AC-006": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-007": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    }
+  },
+  "principles": {}
+}

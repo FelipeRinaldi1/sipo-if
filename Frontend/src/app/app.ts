@@ -7,6 +7,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatTabsModule } from '@angular/material/tabs';
 
 import { PainelExecucaoComponent } from './features/painel-execucao/painel-execucao';
+import { DestinacaoEstudantilComponent } from './features/destinacao-estudantil/destinacao-estudantil';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { PainelExecucaoComponent } from './features/painel-execucao/painel-execu
     MatIconModule,
     MatChipsModule,
     MatTabsModule,
-    PainelExecucaoComponent
+    PainelExecucaoComponent,
+    DestinacaoEstudantilComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

@@ -1,7 +1,7 @@
 # Spec: Destinacao orcamento estudantil
 
 > feature: destinacao-orcamento-estudantil
-> status: rascunho
+> status: implementada
 
 ## Contexto
 

@@ -18,6 +18,29 @@ export interface ResumoExecucao {
   evolucaoMensal: EvolucaoMensalItem[];
 }
 
+export interface ItemAcaoResumo {
+  codigoAcao: string;
+  nomeAcao: string;
+  totalEmpenhado: number;
+  totalLiquidado: number;
+  totalPago: number;
+  porcentagemDoTotal: number;
+}
+
+export interface EvolucaoAssistenciaItem {
+  mesAno: string;
+  valorEmpenhado: number;
+  valorLiquidado: number;
+  valorPago: number;
+}
+
+export interface ResumoProgramaAcao {
+  totalGeralEmpenhado: number;
+  totalGeralPago: number;
+  acoes: ItemAcaoResumo[];
+  evolucaoAssistenciaMensal: EvolucaoAssistenciaItem[];
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,5 +50,9 @@ export class DespesasService {
 
   getResumoExecucao(): Observable<ResumoExecucao> {
     return this.http.get<ResumoExecucao>(`${this.apiUrl}/resumo-execucao`);
+  }
+
+  getResumoProgramaAcao(): Observable<ResumoProgramaAcao> {
+    return this.http.get<ResumoProgramaAcao>(`${this.apiUrl}/programa-acao`);
   }
 }

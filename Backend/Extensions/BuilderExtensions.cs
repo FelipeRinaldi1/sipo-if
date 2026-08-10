@@ -17,6 +17,7 @@ public static class BuilderExtensions
         builder.Services.AddHealthChecks();
         builder.Services.AddAuthorization();
         builder.Services.AddScoped<Template.Features.Despesas.DespesasDashboardService>();
+        builder.Services.AddScoped<Template.Features.Despesas.DespesasProgramaService>();
         builder.Services.AddScoped<Template.Features.Despesas.DespesasImportService>();
         
         // Configure JSON options to serialize enums as strings in HTTP responses
