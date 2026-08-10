@@ -17,9 +17,6 @@ public static class BuilderExtensions
         builder.Services.AddHealthChecks();
         builder.Services.AddAuthentication();
         builder.Services.AddAuthorization();
-        builder.Services.AddHttpClient<Template.Features.Transparencia.TransparenciaApiClient>();
-        builder.Services.AddHttpClient<Template.Features.Transparencia.DadosAbertosIfspClient>();
-        // builder.Services.AddHostedService<Template.Features.Transparencia.SincronizacaoJob>();
         
         // Configure JSON options to serialize enums as strings in HTTP responses
         builder.Services.ConfigureHttpJsonOptions(options =>

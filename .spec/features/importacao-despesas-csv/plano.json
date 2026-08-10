@@ -1,0 +1,72 @@
+{
+  "runId": "sipo-if-importacao-despesas-csv-msnod66q",
+  "feature": "importacao-despesas-csv",
+  "agent": "antigravity",
+  "modo": "paralelo",
+  "paralelizar": null,
+  "modeloForcado": null,
+  "esforcoForcado": null,
+  "geradoEm": "2026-08-10 20:19",
+  "branchTrabalho": "spec/importacao-despesas-csv",
+  "baseDir": ".spec/features/importacao-despesas-csv",
+  "specDir": ".spec",
+  "repoName": "sipo-if",
+  "logsDir": "../onp-worktrees/sipo-if-importacao-despesas-csv-logs",
+  "ondas": [
+    [
+      "faixa-1",
+      "faixa-2"
+    ]
+  ],
+  "faixas": [
+    {
+      "id": "faixa-1",
+      "branch": "spec/importacao-despesas-csv-faixa-1",
+      "worktree": "../onp-worktrees/sipo-if-importacao-despesas-csv-faixa-1",
+      "tarefas": [
+        {
+          "id": "T-002",
+          "titulo": "Criar Serviço de Ingestão e Parser CSV no Backend",
+          "modelo": "claude-sonnet-5",
+          "esforco": "medium",
+          "arquivos": [
+            "Backend/Features/Despesas/DespesasImportService.cs"
+          ],
+          "refs": [
+            "US-001",
+            "AC-001",
+            "AC-002",
+            "AC-003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faixa-2",
+      "branch": "spec/importacao-despesas-csv-faixa-2",
+      "worktree": "../onp-worktrees/sipo-if-importacao-despesas-csv-faixa-2",
+      "tarefas": [
+        {
+          "id": "T-003",
+          "titulo": "Testes Unitários de Importação dos CSVs",
+          "modelo": "claude-sonnet-5",
+          "esforco": "medium",
+          "arquivos": [
+            "Backend.Tests/ImportacaoDespesasTests.cs"
+          ],
+          "refs": [
+            "US-001",
+            "AC-001",
+            "AC-002",
+            "AC-003"
+          ]
+        }
+      ]
+    }
+  ],
+  "sequenciais": [],
+  "concluidas": [
+    "T-001"
+  ],
+  "avisos": []
+}

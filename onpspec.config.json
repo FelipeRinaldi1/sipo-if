@@ -1,6 +1,6 @@
 {
   "testCommand": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
-  "reporter": "tap",
+  "reporter": "exitcode",
   "testGlobs": [
     "test/**/*.test.js",
     "Backend.Tests/**/*.cs",

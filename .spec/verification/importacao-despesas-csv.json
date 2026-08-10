@@ -1,0 +1,27 @@
+{
+  "feature": "importacao-despesas-csv",
+  "timestamp": "2026-08-10T20:21:00.243Z",
+  "gitRev": "373d4f7",
+  "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
+  "reporter": "exitcode",
+  "exitCode": 0,
+  "testsParsed": 0,
+  "results": {
+    "AC-001": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-002": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-003": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    }
+  },
+  "principles": {}
+}

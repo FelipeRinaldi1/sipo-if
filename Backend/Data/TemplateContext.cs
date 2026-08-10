@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Template.Features.Despesas;
 using Template.Features.Items;
 using Template.Features.Users;
-using Template.Features.Transparencia;
 
 namespace Template.Data;
 
@@ -11,8 +11,9 @@ public class TemplateContext(DbContextOptions<TemplateContext> options)
     : IdentityDbContext<User, IdentityRole<Guid>, Guid>(options)
 {
     public DbSet<Item> Items { get; set; }
-    public DbSet<DespesaOrcamentaria> DespesasOrcamentarias { get; set; }
-    public DbSet<SincronizacaoLog> SincronizacaoLogs { get; set; }
+    public DbSet<DespesaPorOrgao> DespesasPorOrgao { get; set; }
+    public DbSet<DespesaPorProgramaAcao> DespesasPorProgramaAcao { get; set; }
+    public DbSet<DespesaDocumento> DespesasDocumento { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
