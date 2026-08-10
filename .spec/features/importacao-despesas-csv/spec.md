@@ -1,7 +1,7 @@
 # Spec: Importacao despesas csv
 
 > feature: importacao-despesas-csv
-> status: em-andamento
+> status: implementada
 
 ## Contexto
 

@@ -15,8 +15,9 @@ public static class BuilderExtensions
         builder.AddCors();
         builder.Services.AddOpenApi();
         builder.Services.AddHealthChecks();
-        builder.Services.AddAuthentication();
         builder.Services.AddAuthorization();
+        builder.Services.AddScoped<Template.Features.Despesas.DespesasDashboardService>();
+        builder.Services.AddScoped<Template.Features.Despesas.DespesasImportService>();
         
         // Configure JSON options to serialize enums as strings in HTTP responses
         builder.Services.ConfigureHttpJsonOptions(options =>

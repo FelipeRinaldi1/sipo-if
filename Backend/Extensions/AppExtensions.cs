@@ -1,3 +1,4 @@
+using Template.Features.Despesas;
 using Template.Features.Items;
 using Template.Features.Users;
 using Scalar.AspNetCore;
@@ -19,5 +20,6 @@ public static class AppExtensions
         app.MapIdentityApi<User>();
         app.MapItemsEndpoints();
         app.MapUsersEndpoints();
+        app.MapDespesasDashboardEndpoints();
     }
 }

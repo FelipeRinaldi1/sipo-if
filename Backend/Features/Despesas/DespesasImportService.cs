@@ -163,8 +163,8 @@ public class DespesasImportService(TemplateContext context)
     {
         if (DateTime.TryParseExact(rawVal, "dd/MM/yyyy", PtBrCulture, DateTimeStyles.None, out var dt))
         {
-            return dt;
+            return DateTime.SpecifyKind(dt, DateTimeKind.Utc);
         }
-        return DateTime.MinValue;
+        return DateTime.SpecifyKind(DateTime.MinValue, DateTimeKind.Utc);
     }
 }

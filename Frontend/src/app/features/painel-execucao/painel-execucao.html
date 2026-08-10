@@ -1,0 +1,136 @@
+<div class="flex flex-col gap-6">
+
+  <!-- Spinner de Carregamento Material -->
+  <div *ngIf="loading()" class="flex justify-center items-center p-12">
+    <mat-progress-spinner mode="indeterminate" diameter="48" color="primary"></mat-progress-spinner>
+  </div>
+
+  <!-- Alerta de Erro Material -->
+  <mat-card *ngIf="error()" class="p-4 bg-red-50 text-red-700 border border-red-200">
+    <mat-card-content class="flex items-center gap-2">
+      <mat-icon color="warn">error</mat-icon>
+      <span>{{ error() }}</span>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Conteúdo Principal do Painel -->
+  <div *ngIf="!loading() && resumo()" class="flex flex-col gap-6">
+
+    <!-- Grid de Cards de KPI com Angular Material -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <!-- Card: Total Empenhado -->
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">account_balance_wallet</mat-icon>
+          <mat-card-title class="text-sm font-medium text-slate-600">Total Empenhado</mat-card-title>
+          <mat-card-subtitle>Compromissos assumidos</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-4">
+          <div class="text-2xl font-bold text-slate-900">
+            {{ resumo()?.totalEmpenhado | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Card: Total Liquidado -->
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="accent">assignment_turned_in</mat-icon>
+          <mat-card-title class="text-sm font-medium text-slate-600">Total Liquidado</mat-card-title>
+          <mat-card-subtitle>Serviços e bens entregues</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-4">
+          <div class="text-2xl font-bold text-slate-900">
+            {{ resumo()?.totalLiquidado | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Card: Total Pago -->
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">payments</mat-icon>
+          <mat-card-title class="text-sm font-medium text-slate-600">Total Pago</mat-card-title>
+          <mat-card-subtitle>Execução financeira total</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-4 flex flex-col gap-2">
+          <div class="text-2xl font-bold text-slate-900">
+            {{ resumo()?.totalPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+          <div class="flex items-center gap-2">
+            <mat-progress-bar mode="determinate" color="primary" [value]="getExecucaoPorcentagem(resumo()?.totalPago || 0, resumo()?.totalEmpenhado || 1)" class="rounded"></mat-progress-bar>
+            <span class="text-xs font-bold text-slate-700">
+              {{ getExecucaoPorcentagem(resumo()?.totalPago || 0, resumo()?.totalEmpenhado || 1) }}%
+            </span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Card: Restos a Pagar -->
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="warn">history</mat-icon>
+          <mat-card-title class="text-sm font-medium text-slate-600">Restos a Pagar Pagos</mat-card-title>
+          <mat-card-subtitle>Exercícios anteriores</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-4">
+          <div class="text-2xl font-bold text-slate-900">
+            {{ resumo()?.totalRestosAPagarPagos | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
+    <!-- Tabela Material: Evolução Mensal da Despesa -->
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Evolução Mensal da Execução Orçamentária</mat-card-title>
+        <mat-card-subtitle>Valores mensalizados de Empenho, Liquidação e Pagamento</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content class="pt-4">
+        <mat-table [dataSource]="resumo()?.evolucaoMensal || []" class="w-full">
+          
+          <!-- Mês/Ano Column -->
+          <ng-container matColumnDef="mesAno">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Mês / Ano </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-semibold text-slate-800"> {{ element.mesAno }} </mat-cell>
+          </ng-container>
+
+          <!-- Empenhado Column -->
+          <ng-container matColumnDef="empenhado">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Empenhado </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{ element.empenhado | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <!-- Liquidado Column -->
+          <ng-container matColumnDef="liquidado">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Liquidado </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{ element.liquidado | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <!-- Pago Column -->
+          <ng-container matColumnDef="pago">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Pago </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-bold text-slate-900"> {{ element.pago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <!-- Progresso Column -->
+          <ng-container matColumnDef="progresso">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Execução (%) </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="flex items-center gap-2">
+              <mat-progress-bar mode="determinate" color="primary" [value]="getExecucaoPorcentagem(element.pago, element.empenhado)" class="w-24 rounded"></mat-progress-bar>
+              <span class="text-xs font-semibold text-slate-600">{{ getExecucaoPorcentagem(element.pago, element.empenhado) }}%</span>
+            </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

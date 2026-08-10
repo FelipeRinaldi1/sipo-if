@@ -16,9 +16,25 @@ public static class DataExtensions
         {
             try
             {
-                logger.LogInformation("Tentando aplicar as migrations no banco de dados...");
-                dbContext.Database.Migrate();
-                logger.LogInformation("Migrations aplicadas com sucesso!");
+                logger.LogInformation("Garantindo estrutura do banco de dados...");
+                dbContext.Database.EnsureCreated();
+                logger.LogInformation("Estrutura do banco de dados pronta!");
+
+                if (!dbContext.DespesasPorOrgao.Any())
+                {
+                    logger.LogInformation("Importando dados dos CSVs em uploads/2025/...");
+                    var importService = scope.ServiceProvider.GetRequiredService<Template.Features.Despesas.DespesasImportService>();
+                    var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "..", "uploads", "2025");
+                    if (!Directory.Exists(uploadsDir))
+                    {
+                        uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "uploads", "2025");
+                    }
+                    if (Directory.Exists(uploadsDir))
+                    {
+                        var total = importService.ImportAllFromDirectoryAsync(uploadsDir).GetAwaiter().GetResult();
+                        logger.LogInformation($"Importados {total} registros de despesas com sucesso!");
+                    }
+                }
                 break;
             }
             catch (Exception ex)
@@ -40,6 +56,7 @@ public static class DataExtensions
         var connString = builder.Configuration.GetConnectionString("Template");
         builder.Services.AddDbContext<TemplateContext>(options =>
             options.UseNpgsql(connString)
+                   .ConfigureWarnings(w => w.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.PendingModelChangesWarning))
                    .UseSeeding((context, _) =>
                    {
                        if (!context.Set<Item>().Any())

@@ -1,7 +1,7 @@
 # Spec: Painel execucao orcamentaria
 
 > feature: painel-execucao-orcamentaria
-> status: rascunho
+> status: implementada
 
 ## Contexto
 

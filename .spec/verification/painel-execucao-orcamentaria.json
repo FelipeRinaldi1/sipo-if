@@ -1,0 +1,22 @@
+{
+  "feature": "painel-execucao-orcamentaria",
+  "timestamp": "2026-08-10T20:33:48.154Z",
+  "gitRev": "5c126c0",
+  "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
+  "reporter": "exitcode",
+  "exitCode": 0,
+  "testsParsed": 0,
+  "results": {
+    "AC-004": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-005": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    }
+  },
+  "principles": {}
+}

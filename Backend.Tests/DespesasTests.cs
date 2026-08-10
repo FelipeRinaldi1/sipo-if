@@ -72,7 +72,7 @@ public class DespesasTests
         using var context = GetInMemoryContext();
         var entity = new DespesaDocumento
         {
-            Data = new DateTime(2025, 1, 16),
+            Data = new DateTime(2025, 1, 16, 0, 0, 0, DateTimeKind.Utc),
             Documento = "158716264392025DF800002",
             LocalizadorGasto = "0035 - FUNCIONAMENTO DAS INSTITUICOES",
             Fase = "Pagamento",
