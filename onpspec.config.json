@@ -12,5 +12,15 @@
     "Frontend/src/**/*.ts",
     "Frontend/src/**/*.html",
     "Frontend/src/**/*.scss"
+  ],
+  "ignoreGlobs": [
+    "node_modules/**",
+    ".git/**",
+    "dist/**",
+    "build/**",
+    "coverage/**",
+    ".spec/**",
+    "Backend/obj/**",
+    "Frontend/.angular/**"
   ]
 }
