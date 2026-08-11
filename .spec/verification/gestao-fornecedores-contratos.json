@@ -1,18 +1,18 @@
 {
-  "feature": "destinacao-orcamento-estudantil",
-  "timestamp": "2026-08-10T21:20:33.960Z",
+  "feature": "gestao-fornecedores-contratos",
+  "timestamp": "2026-08-10T21:20:44.244Z",
   "gitRev": "4670b9e",
   "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "exitcode",
   "exitCode": 0,
   "testsParsed": 0,
   "results": {
-    "AC-006": {
+    "AC-008": {
       "status": "pass",
       "testName": null,
       "method": "exitcode"
     },
-    "AC-007": {
+    "AC-009": {
       "status": "pass",
       "testName": null,
       "method": "exitcode"

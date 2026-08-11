@@ -8,6 +8,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 import { PainelExecucaoComponent } from './features/painel-execucao/painel-execucao';
 import { DestinacaoEstudantilComponent } from './features/destinacao-estudantil/destinacao-estudantil';
+import { GestaoFornecedoresComponent } from './features/gestao-fornecedores/gestao-fornecedores';
+import { ExtratoDocumentosComponent } from './features/extrato-documentos/extrato-documentos';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +23,9 @@ import { DestinacaoEstudantilComponent } from './features/destinacao-estudantil/
     MatChipsModule,
     MatTabsModule,
     PainelExecucaoComponent,
-    DestinacaoEstudantilComponent
+    DestinacaoEstudantilComponent,
+    GestaoFornecedoresComponent,
+    ExtratoDocumentosComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

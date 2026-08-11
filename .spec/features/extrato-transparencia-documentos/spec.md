@@ -1,7 +1,7 @@
 # Spec: Extrato transparencia documentos
 
 > feature: extrato-transparencia-documentos
-> status: rascunho
+> status: implementada
 
 ## Contexto
 

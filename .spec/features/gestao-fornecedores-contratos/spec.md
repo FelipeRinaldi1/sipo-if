@@ -1,7 +1,7 @@
 # Spec: Gestao fornecedores contratos
 
 > feature: gestao-fornecedores-contratos
-> status: rascunho
+> status: implementada
 
 ## Contexto
 

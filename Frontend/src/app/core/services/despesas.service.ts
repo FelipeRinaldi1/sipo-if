@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface EvolucaoMensalItem {
@@ -41,6 +41,47 @@ export interface ResumoProgramaAcao {
   evolucaoAssistenciaMensal: EvolucaoAssistenciaItem[];
 }
 
+export interface TopFornecedorItem {
+  favorecido: string;
+  totalPago: number;
+  quantidadeLancamentos: number;
+  porcentagemDoTotal: number;
+}
+
+export interface ElementoDespesaItem {
+  elemento: string;
+  totalPago: number;
+  quantidadeLancamentos: number;
+  porcentagemDoTotal: number;
+}
+
+export interface ResumoFornecedores {
+  totalGeral: number;
+  topFornecedores: TopFornecedorItem[];
+  elementosDespesa: ElementoDespesaItem[];
+}
+
+export interface DespesaDocumentoItem {
+  id: string;
+  data: string;
+  documento: string;
+  localizadorGasto: string;
+  fase: string;
+  especie: string;
+  favorecido: string;
+  valor: number;
+  grupoDespesa: string;
+  elementoDespesa: string;
+}
+
+export interface ResultadoPaginadoDocumentos {
+  pagina: number;
+  tamanhoPagina: number;
+  totalRegistros: number;
+  totalPaginas: number;
+  itens: DespesaDocumentoItem[];
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -54,5 +95,21 @@ export class DespesasService {
 
   getResumoProgramaAcao(): Observable<ResumoProgramaAcao> {
     return this.http.get<ResumoProgramaAcao>(`${this.apiUrl}/programa-acao`);
+  }
+
+  getResumoFornecedores(): Observable<ResumoFornecedores> {
+    return this.http.get<ResumoFornecedores>(`${this.apiUrl}/fornecedores`);
+  }
+
+  getDocumentosPaginado(busca?: string, pagina: number = 1, tamanhoPagina: number = 10): Observable<ResultadoPaginadoDocumentos> {
+    let params = new HttpParams()
+      .set('pagina', pagina.toString())
+      .set('tamanhoPagina', tamanhoPagina.toString());
+    
+    if (busca && busca.trim().length > 0) {
+      params = params.set('busca', busca.trim());
+    }
+
+    return this.http.get<ResultadoPaginadoDocumentos>(`${this.apiUrl}/documentos`, { params });
   }
 }

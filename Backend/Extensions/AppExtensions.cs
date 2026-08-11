@@ -22,5 +22,7 @@ public static class AppExtensions
         app.MapUsersEndpoints();
         app.MapDespesasDashboardEndpoints();
         app.MapDespesasProgramaEndpoints();
+        app.MapDespesasFornecedoresEndpoints();
+        app.MapDespesasDocumentosEndpoints();
     }
 }

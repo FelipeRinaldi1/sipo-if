@@ -1,0 +1,130 @@
+<div class="flex flex-col gap-6">
+
+  <!-- Spinner de Carregamento Material -->
+  <div *ngIf="loading()" class="flex justify-center items-center p-12">
+    <mat-progress-spinner mode="indeterminate" diameter="48" color="primary"></mat-progress-spinner>
+  </div>
+
+  <!-- Alerta de Erro Material -->
+  <mat-card *ngIf="error()" class="p-4 bg-red-50 text-red-700 border border-red-200">
+    <mat-card-content class="flex items-center gap-2">
+      <mat-icon color="warn">error</mat-icon>
+      <span>{{ error() }}</span>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Conteúdo Principal de Gestão de Fornecedores -->
+  <div *ngIf="!loading() && resumo()" class="flex flex-col gap-6">
+
+    <!-- KPI Card do Volume Geral de Fornecedores -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-purple-600">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">store</mat-icon>
+          <mat-card-title class="text-base font-bold text-slate-900">Total em Fornecedores & Credores</mat-card-title>
+          <mat-card-subtitle>Volume financeiro destinado a contratados</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-4">
+          <div class="text-3xl font-extrabold text-slate-900">
+            {{ resumo()?.totalGeral | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Tabela Material 1: Top 10 Maiores Fornecedores (AC-008) -->
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Ranking — Top 10 Maiores Fornecedores e Credores</mat-card-title>
+        <mat-card-subtitle>Maiores empresas e recebedores de recursos por volume de ordens bancárias</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content class="pt-4">
+        <mat-table [dataSource]="resumo()?.topFornecedores || []" class="w-full">
+
+          <!-- Posição Column -->
+          <ng-container matColumnDef="posicao">
+            <mat-header-cell *matHeaderCellDef class="font-bold w-16"> # </mat-header-cell>
+            <mat-cell *matCellDef="let element; let i = index" class="w-16">
+              <mat-chip borderless color="accent" class="font-bold">#{{ i + 1 }}</mat-chip>
+            </mat-cell>
+          </ng-container>
+
+          <!-- Favorecido Column -->
+          <ng-container matColumnDef="favorecido">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Favorecido / Credor </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-semibold text-slate-900"> {{ element.favorecido }} </mat-cell>
+          </ng-container>
+
+          <!-- Quantidade Column -->
+          <ng-container matColumnDef="quantidade">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Lançamentos </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="text-slate-700"> {{ element.quantidadeLancamentos }} docs </mat-cell>
+          </ng-container>
+
+          <!-- Total Pago Column -->
+          <ng-container matColumnDef="totalPago">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Total Pago </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-bold text-slate-900"> {{ element.totalPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <!-- Porcentagem Column -->
+          <ng-container matColumnDef="porcentagem">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Proporção (%) </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="flex items-center gap-2">
+              <mat-progress-bar mode="determinate" color="primary" [value]="element.porcentagemDoTotal" class="w-24 rounded"></mat-progress-bar>
+              <span class="text-xs font-semibold text-slate-600">{{ element.porcentagemDoTotal }}%</span>
+            </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumnsTop"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumnsTop;"></mat-row>
+        </mat-table>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Tabela Material 2: Agrupamento por Elemento de Despesa (AC-009) -->
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Agrupamento por Elemento de Despesa</mat-card-title>
+        <mat-card-subtitle>Detalhamento por natureza da despesa (Locação de Mão-de-Obra, Serviços PJ, Equipamentos)</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content class="pt-4">
+        <mat-table [dataSource]="resumo()?.elementosDespesa || []" class="w-full">
+
+          <!-- Elemento Column -->
+          <ng-container matColumnDef="elemento">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Elemento de Despesa </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-semibold text-slate-800"> {{ element.elemento }} </mat-cell>
+          </ng-container>
+
+          <!-- Quantidade Column -->
+          <ng-container matColumnDef="quantidade">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Lançamentos </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="text-slate-700"> {{ element.quantidadeLancamentos }} docs </mat-cell>
+          </ng-container>
+
+          <!-- Total Pago Column -->
+          <ng-container matColumnDef="totalPago">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Total Pago </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="font-bold text-slate-900"> {{ element.totalPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </mat-cell>
+          </ng-container>
+
+          <!-- Porcentagem Column -->
+          <ng-container matColumnDef="porcentagem">
+            <mat-header-cell *matHeaderCellDef class="font-bold"> Proporção (%) </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="flex items-center gap-2">
+              <mat-progress-bar mode="determinate" color="accent" [value]="element.porcentagemDoTotal" class="w-24 rounded"></mat-progress-bar>
+              <span class="text-xs font-semibold text-slate-600">{{ element.porcentagemDoTotal }}%</span>
+            </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumnsElementos"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumnsElementos;"></mat-row>
+        </mat-table>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

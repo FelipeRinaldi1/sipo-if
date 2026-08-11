@@ -1,7 +1,7 @@
 {
   "feature": "painel-execucao-orcamentaria",
-  "timestamp": "2026-08-10T20:33:48.154Z",
-  "gitRev": "5c126c0",
+  "timestamp": "2026-08-10T21:20:23.391Z",
+  "gitRev": "4670b9e",
   "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "exitcode",
   "exitCode": 0,

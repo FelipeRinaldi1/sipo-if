@@ -1,7 +1,7 @@
 {
   "feature": "importacao-despesas-csv",
-  "timestamp": "2026-08-10T20:21:00.243Z",
-  "gitRev": "373d4f7",
+  "timestamp": "2026-08-10T21:20:13.316Z",
+  "gitRev": "4670b9e",
   "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "exitcode",
   "exitCode": 0,

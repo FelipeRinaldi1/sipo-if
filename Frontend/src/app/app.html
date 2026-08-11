@@ -22,7 +22,7 @@
   <main class="max-w-7xl mx-auto w-full p-6 flex flex-col gap-6">
     <mat-tab-group animationDuration="200ms" class="bg-white rounded-lg shadow-sm border border-slate-200 p-2">
       
-      <!-- Aba 1: Painel de Execução (Ativo) -->
+      <!-- Aba 1: Painel de Execução -->
       <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="mr-2">analytics</mat-icon>
@@ -33,7 +33,7 @@
         </div>
       </mat-tab>
 
-      <!-- Aba 2: Assistência Estudantil (Ativo) -->
+      <!-- Aba 2: Assistência Estudantil -->
       <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="mr-2">school</mat-icon>
@@ -44,20 +44,26 @@
         </div>
       </mat-tab>
 
-      <!-- Aba 3: Gestão de Fornecedores (Pendente) -->
-      <mat-tab disabled>
+      <!-- Aba 3: Gestão de Fornecedores -->
+      <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="mr-2">store</mat-icon>
           Gestão de Fornecedores
         </ng-template>
+        <div class="pt-6">
+          <app-gestao-fornecedores></app-gestao-fornecedores>
+        </div>
       </mat-tab>
 
-      <!-- Aba 4: Extrato de Documentos (Pendente) -->
-      <mat-tab disabled>
+      <!-- Aba 4: Extrato de Documentos (Ativo) -->
+      <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="mr-2">receipt_long</mat-icon>
           Extrato de Documentos
         </ng-template>
+        <div class="pt-6">
+          <app-extrato-documentos></app-extrato-documentos>
+        </div>
       </mat-tab>
 
     </mat-tab-group>
