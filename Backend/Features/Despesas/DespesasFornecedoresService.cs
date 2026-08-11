@@ -51,7 +51,7 @@ public class DespesasFornecedoresService(TemplateContext context)
                 );
             })
             .OrderByDescending(f => f.TotalPago)
-            .Take(10)
+            .Take(5)
             .ToList();
 
         var elementosDespesa = documentos

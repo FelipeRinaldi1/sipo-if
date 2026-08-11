@@ -126,5 +126,28 @@
       </mat-card-content>
     </mat-card>
 
+    <!-- Gráfico Top 5 Fornecedores — Barras Horizontais (AC-015) -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-base font-semibold text-slate-700">
+          <mat-icon class="text-indigo-500">leaderboard</mat-icon>
+          Top 5 Fornecedores por Valor Recebido
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Fase Pagamento — valores em R$ mil</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="top5Series()"
+          [chart]="top5Chart"
+          [xaxis]="{ categories: top5Categories() }"
+          [plotOptions]="top5PlotOptions"
+          [dataLabels]="top5DataLabels"
+          [colors]="top5Colors"
+          [grid]="top5Grid"
+          [tooltip]="top5Tooltip"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
   </div>
 </div>

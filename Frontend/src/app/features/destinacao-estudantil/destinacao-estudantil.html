@@ -136,5 +136,29 @@
       </mat-card-content>
     </mat-card>
 
+    <!-- Gráfico Comparativo: Assistência Estudantil vs. Funcionamento (AC-013) -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-base font-semibold text-slate-700">
+          <mat-icon class="text-indigo-500">compare_arrows</mat-icon>
+          Assistência Estudantil vs. Funcionamento do Campus
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Valores em R$ mil — Empenhado e Pago por ação orçamentária</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="compChartSeries()"
+          [chart]="compChart"
+          [xaxis]="{ categories: compChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [dataLabels]="compDataLabels"
+          [colors]="compColors"
+          [grid]="compGrid"
+          [tooltip]="compTooltip"
+          [legend]="compLegend"
+          [plotOptions]="compPlotOptions"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
   </div>
 </div>

@@ -1,0 +1,95 @@
+<div class="flex flex-col gap-6">
+
+  <!-- Spinner de Carregamento -->
+  <div *ngIf="loading()" class="flex justify-center items-center p-12">
+    <mat-progress-spinner mode="indeterminate" diameter="48" color="primary"></mat-progress-spinner>
+  </div>
+
+  <!-- Alerta de Erro -->
+  <mat-card *ngIf="error()" class="p-4">
+    <mat-card-content class="flex items-center gap-2 text-red-700">
+      <mat-icon color="warn">error</mat-icon>
+      <span>{{ error() }}</span>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Conteúdo Principal -->
+  <div *ngIf="!loading() && resumo()" class="flex flex-col gap-6">
+
+    <!-- Card de Título -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-content class="flex items-center justify-between p-4">
+        <div class="flex items-center gap-3">
+          <mat-icon class="text-indigo-500 text-3xl" style="font-size: 36px;">donut_large</mat-icon>
+          <div>
+            <h2 class="text-lg font-bold text-slate-800 m-0">Despesas por Categoria</h2>
+            <p class="text-slate-500 text-sm m-0">Distribuição dos pagamentos por elemento de despesa em 2025</p>
+          </div>
+        </div>
+        <div class="text-right">
+          <span class="text-xs text-slate-500 uppercase tracking-wide">Total pago</span>
+          <p class="text-2xl font-bold text-indigo-600 m-0">
+            {{ totalGeral | currency:'BRL':'symbol':'1.0-0':'pt-BR' }}
+          </p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Gráfico Donut — Elemento de Despesa (AC-014) -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-base font-semibold text-slate-700">
+          <mat-icon class="text-indigo-500">pie_chart</mat-icon>
+          Para onde vai cada real? — Por Categoria de Despesa
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">
+          Proporção de cada categoria sobre o total pago em fase de Pagamento
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="donutSeries()"
+          [chart]="donutChart"
+          [labels]="donutLabels()"
+          [dataLabels]="donutDataLabels"
+          [tooltip]="donutTooltip"
+          [legend]="donutLegend"
+          [colors]="donutColors"
+          [responsive]="donutResponsive"
+          [plotOptions]="{ pie: { donut: { size: '65%', labels: { show: true, total: { show: true, label: 'Total', formatter: () => totalGeral.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }) } } } } }"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Tabela de detalhamento por categoria -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-base font-semibold text-slate-700">
+          <mat-icon class="text-cyan-500">table_chart</mat-icon>
+          Detalhamento por Categoria
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="flex flex-col gap-3">
+          @for (elem of resumo()!.elementosDespesa; track elem.elemento; let i = $index) {
+            <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 border border-slate-100">
+              <div class="w-3 h-3 rounded-full flex-shrink-0"
+                   [style.background-color]="donutColors[i % donutColors.length]"></div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-slate-800 m-0 truncate">{{ elem.elemento }}</p>
+                <p class="text-xs text-slate-500 m-0">{{ elem.quantidadeLancamentos }} lançamentos</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="text-sm font-bold text-slate-900 m-0">
+                  {{ elem.totalPago | currency:'BRL':'symbol':'1.0-0':'pt-BR' }}
+                </p>
+                <p class="text-xs text-indigo-500 font-semibold m-0">{{ elem.porcentagemDoTotal }}%</p>
+              </div>
+            </div>
+          }
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

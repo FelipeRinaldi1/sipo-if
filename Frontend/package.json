@@ -23,6 +23,8 @@
     "@angular/platform-browser": "^22.0.0",
     "@angular/router": "^22.0.0",
     "@tailwindcss/postcss": "^4.3.3",
+    "apexcharts": "^6.8.0",
+    "ng-apexcharts": "^3.0.0",
     "postcss": "^8.5.20",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.3.3",

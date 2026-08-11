@@ -132,5 +132,54 @@
       </mat-card-content>
     </mat-card>
 
+    <!-- Gráfico de Área — Evolução Mensal (AC-011) -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-base font-semibold text-slate-700">
+          <mat-icon class="text-indigo-500">show_chart</mat-icon>
+          Evolução Mensal — Empenhado, Liquidado e Pago
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Valores em R$ mil</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="areaChartSeries()"
+          [chart]="areaChart"
+          [xaxis]="{ categories: areaChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [stroke]="areaStroke"
+          [fill]="areaFill"
+          [dataLabels]="areaDataLabels"
+          [colors]="areaColors"
+          [grid]="areaGrid"
+          [tooltip]="areaTooltip"
+          [legend]="areaLegend"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Gráfico de Barras Agrupadas — Comparativo Mensal (AC-012) -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-base font-semibold text-slate-700">
+          <mat-icon class="text-cyan-500">bar_chart</mat-icon>
+          Comparativo Mensal — Fases de Execução
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Valores em R$ mil</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="barChartSeries()"
+          [chart]="barChart"
+          [xaxis]="{ categories: areaChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [dataLabels]="barDataLabels"
+          [colors]="barColors"
+          [grid]="barGrid"
+          [tooltip]="barTooltip"
+          [legend]="barLegend"
+          [plotOptions]="{ bar: { columnWidth: '60%', borderRadius: 4 } }"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
   </div>
 </div>
