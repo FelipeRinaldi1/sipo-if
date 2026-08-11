@@ -25,6 +25,7 @@ public class GestaoFornecedoresTests
             {
                 Favorecido = "FORNECEDOR A",
                 Valor = 50000m,
+                Fase = "Pagamento",
                 GrupoDespesa = "3",
                 ElementoDespesa = "37 - Locação de Mão-de-Obra"
             },
@@ -32,6 +33,7 @@ public class GestaoFornecedoresTests
             {
                 Favorecido = "FORNECEDOR B",
                 Valor = 150000m,
+                Fase = "Pagamento",
                 GrupoDespesa = "3",
                 ElementoDespesa = "39 - Outros Serviços"
             },
@@ -39,6 +41,7 @@ public class GestaoFornecedoresTests
             {
                 Favorecido = "FORNECEDOR A",
                 Valor = 30000m,
+                Fase = "Pagamento",
                 GrupoDespesa = "3",
                 ElementoDespesa = "37 - Locação de Mão-de-Obra"
             }

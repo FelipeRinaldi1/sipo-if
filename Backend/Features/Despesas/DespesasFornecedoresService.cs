@@ -27,7 +27,12 @@ public class DespesasFornecedoresService(TemplateContext context)
 {
     public async Task<ResumoFornecedoresDto> GetResumoFornecedoresAsync()
     {
-        var documentos = await context.DespesasDocumento.ToListAsync();
+        var todosDocumentos = await context.DespesasDocumento.ToListAsync();
+
+        // Filtra por Fase Pagamento quando preenchida para evitar duplicar Empenhos e Liquidações
+        var documentos = todosDocumentos.Any(d => !string.IsNullOrEmpty(d.Fase))
+            ? todosDocumentos.Where(d => d.Fase != null && d.Fase.Equals("Pagamento", StringComparison.OrdinalIgnoreCase)).ToList()
+            : todosDocumentos;
 
         var totalGeral = documentos.Sum(d => d.Valor);
 
