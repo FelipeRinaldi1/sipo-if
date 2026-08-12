@@ -92,7 +92,7 @@ Toda nova funcionalidade de backend [DEVE] ser criada como uma fatia vertical em
 3. Endpoints em `<Modulo>Endpoints.cs`
 4. Migration criada via `dotnet ef migrations add <Nome> -p Backend/`
 
-- verificação(obrigatório): `MapGroup\(` em `Backend/Features/**/*Endpoints.cs`
+- verificação(obrigatório): `MapGroup\(` em `Backend/Api/Features/**/*Endpoints.cs`
 
 ---
 
@@ -102,7 +102,7 @@ Toda entidade de domínio [DEVE] ter:
 - `Id` do tipo `Guid` inicializado com `Guid.NewGuid()`
 - Timestamps usando `DateTime.UtcNow`
 
-- verificação(obrigatório): `Guid Id \{ get; set; \} = Guid\.NewGuid\(\)` em `Backend/Features/**/*.cs`
+- verificação(obrigatório): `Guid Id \{ get; set; \} = Guid\.NewGuid\(\)` em `Backend/Api/Features/**/*.cs`
 
 ---
 
@@ -111,7 +111,7 @@ Toda entidade de domínio [DEVE] ter:
 Contratos de entrada e saída [DEVEM] ser definidos como `record` (imutáveis por padrão),
 não como `class`.
 
-- verificação(proibido): `^public class (Create|Update|Get|List|Delete)[A-Z][a-zA-Z]*Dto` em `Backend/Features/**/*Contracts.cs`
+- verificação(proibido): `^public class (Create|Update|Get|List|Delete)[A-Z][a-zA-Z]*Dto` em `Backend/Api/Features/**/*Contracts.cs`
 
 ---
 
@@ -120,7 +120,7 @@ não como `class`.
 Respostas de endpoints Minimal API [DEVEM] usar `TypedResults` (e não `Results.Ok`, `Results.NotFound` avulso)
 para garantir que o OpenAPI reflita os tipos de retorno corretamente.
 
-- verificação(obrigatório): `TypedResults\.` em `Backend/Features/**/*Endpoints.cs`
+- verificação(obrigatório): `TypedResults\.` em `Backend/Api/Features/**/*Endpoints.cs`
 
 ---
 
@@ -129,7 +129,7 @@ para garantir que o OpenAPI reflita os tipos de retorno corretamente.
 Consultas que apenas retornam dados (GET) [DEVEM] encadear `.AsNoTracking()` para
 evitar overhead desnecessário de rastreamento do EF Core.
 
-- verificação(obrigatório): `AsNoTracking\(\)` em `Backend/Features/**/*Endpoints.cs`
+- verificação(obrigatório): `AsNoTracking\(\)` em `Backend/Api/Features/**/*Endpoints.cs`
 
 ---
 
@@ -153,10 +153,10 @@ Todo arquivo `.ts` e `.html` do frontend [DEVE] ser formatado com Prettier
 
 ## P-010 [DEVE] Migrations nunca editadas manualmente
 
-Arquivos em `Backend/Data/Migrations/` são gerados exclusivamente pelo EF Core
+Arquivos em `Backend/Api/Data/Migrations/` são gerados exclusivamente pelo EF Core
 (`dotnet ef migrations add`). Edição manual é proibida.
 
-- verificação(proibido): `\/\/ MANUAL` em `Backend/Data/Migrations/**/*.cs`
+- verificação(proibido): `\/\/ MANUAL` em `Backend/Api/Data/Migrations/**/*.cs`
 
 ---
 
@@ -247,7 +247,7 @@ No Frontend Angular:
 
 Todo comportamento de negócio do backend [DEVE] ser desenvolvido usando a prática de TDD (Test-Driven Development) com o framework **xUnit**, onde os testes nascem antes do código e são anotados com `@spec:AC-xxx`.
 
-- verificação(obrigatório): `\[Fact\]|\[Theory\]` em `Backend.Tests/**/*.cs`
+- verificação(obrigatório): `\[Fact\]|\[Theory\]` em `Backend/Api.Tests/**/*.cs`
 
 ---
 

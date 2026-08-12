@@ -3,7 +3,7 @@
 ## T-011 — Ajustar backend: top 5 fornecedores e endpoint de categorias [concluida]
 
 - Refs: US-008, AC-014, AC-015
-- Arquivos: Backend/Features/Despesas/DespesasFornecedoresService.cs, Backend.Tests/GraficosTests.cs
+- Arquivos: Backend/Api/Features/Despesas/DespesasFornecedoresService.cs, Backend/Api.Tests/GraficosTests.cs
 - Notas: Alterar Take(10) para Take(5). Testes anotados com @spec:AC-014 e @spec:AC-015.
 ## T-012 — Instalar ng-apexcharts e configurar no Angular [concluida]
 

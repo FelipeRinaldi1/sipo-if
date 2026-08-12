@@ -365,10 +365,10 @@
       "codigo": "ARQUIVO_INEXISTENTE",
       "feature": "destinacao-orcamento-estudantil",
       "ref": "T-006",
-      "ocorrencias": 3,
+      "ocorrencias": 7,
       "primeiraVez": "2026-08-10T20:22:42.403Z",
-      "ultimaVez": "2026-08-10T20:33:50.685Z",
-      "gitRev": "5c126c0"
+      "ultimaVez": "2026-08-12T20:41:26.452Z",
+      "gitRev": "adac77b"
     },
     "ARQUIVO_INEXISTENTE::destinacao-orcamento-estudantil::T-007": {
       "codigo": "ARQUIVO_INEXISTENTE",
@@ -437,10 +437,10 @@
       "codigo": "ARQUIVO_INEXISTENTE",
       "feature": "gestao-fornecedores-contratos",
       "ref": "T-008",
-      "ocorrencias": 3,
+      "ocorrencias": 7,
       "primeiraVez": "2026-08-10T20:22:42.404Z",
-      "ultimaVez": "2026-08-10T20:33:50.685Z",
-      "gitRev": "5c126c0"
+      "ultimaVez": "2026-08-12T20:41:26.452Z",
+      "gitRev": "adac77b"
     },
     "ARQUIVO_INEXISTENTE::gestao-fornecedores-contratos::T-009": {
       "codigo": "ARQUIVO_INEXISTENTE",
@@ -482,37 +482,37 @@
       "codigo": "PROVA_FRACA",
       "feature": "importacao-despesas-csv",
       "ref": "AC-001",
-      "ocorrencias": 20,
+      "ocorrencias": 24,
       "primeiraVez": "2026-08-10T20:22:42.405Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::importacao-despesas-csv::AC-002": {
       "codigo": "PROVA_FRACA",
       "feature": "importacao-despesas-csv",
       "ref": "AC-002",
-      "ocorrencias": 20,
+      "ocorrencias": 24,
       "primeiraVez": "2026-08-10T20:22:42.405Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::importacao-despesas-csv::AC-003": {
       "codigo": "PROVA_FRACA",
       "feature": "importacao-despesas-csv",
       "ref": "AC-003",
-      "ocorrencias": 20,
+      "ocorrencias": 24,
       "primeiraVez": "2026-08-10T20:22:42.405Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "ARQUIVO_INEXISTENTE::painel-execucao-orcamentaria::T-004": {
       "codigo": "ARQUIVO_INEXISTENTE",
       "feature": "painel-execucao-orcamentaria",
       "ref": "T-004",
-      "ocorrencias": 1,
+      "ocorrencias": 5,
       "primeiraVez": "2026-08-10T20:22:42.405Z",
-      "ultimaVez": "2026-08-10T20:22:42.405Z",
-      "gitRev": "5c126c0"
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
     },
     "ARQUIVO_INEXISTENTE::painel-execucao-orcamentaria::T-005": {
       "codigo": "ARQUIVO_INEXISTENTE",
@@ -554,37 +554,37 @@
       "codigo": "PROVA_FRACA",
       "feature": "painel-execucao-orcamentaria",
       "ref": "AC-004",
-      "ocorrencias": 9,
+      "ocorrencias": 13,
       "primeiraVez": "2026-08-10T20:26:26.406Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::painel-execucao-orcamentaria::AC-005": {
       "codigo": "PROVA_FRACA",
       "feature": "painel-execucao-orcamentaria",
       "ref": "AC-005",
-      "ocorrencias": 9,
+      "ocorrencias": 13,
       "primeiraVez": "2026-08-10T20:26:26.406Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::destinacao-orcamento-estudantil::AC-006": {
       "codigo": "PROVA_FRACA",
       "feature": "destinacao-orcamento-estudantil",
       "ref": "AC-006",
-      "ocorrencias": 17,
+      "ocorrencias": 21,
       "primeiraVez": "2026-08-10T21:19:56.883Z",
-      "ultimaVez": "2026-08-12T20:32:17.571Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.200Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::destinacao-orcamento-estudantil::AC-007": {
       "codigo": "PROVA_FRACA",
       "feature": "destinacao-orcamento-estudantil",
       "ref": "AC-007",
-      "ocorrencias": 17,
+      "ocorrencias": 21,
       "primeiraVez": "2026-08-10T21:19:56.884Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "VERIFY_OBSOLETO::destinacao-orcamento-estudantil::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -617,19 +617,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "gestao-fornecedores-contratos",
       "ref": "AC-008",
-      "ocorrencias": 17,
+      "ocorrencias": 21,
       "primeiraVez": "2026-08-10T21:19:56.884Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::gestao-fornecedores-contratos::AC-009": {
       "codigo": "PROVA_FRACA",
       "feature": "gestao-fornecedores-contratos",
       "ref": "AC-009",
-      "ocorrencias": 17,
+      "ocorrencias": 21,
       "primeiraVez": "2026-08-10T21:19:56.884Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "VERIFY_OBSOLETO::gestao-fornecedores-contratos::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -842,46 +842,46 @@
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-011",
-      "ocorrencias": 15,
+      "ocorrencias": 19,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-012": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-012",
-      "ocorrencias": 15,
+      "ocorrencias": 19,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-013": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-013",
-      "ocorrencias": 15,
+      "ocorrencias": 19,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-014": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-014",
-      "ocorrencias": 15,
+      "ocorrencias": 19,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-015": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-015",
-      "ocorrencias": 15,
+      "ocorrencias": 19,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "ARQUIVO_ORFAO::—::Frontend/src/app/features/categorias/categorias.html": {
       "codigo": "ARQUIVO_ORFAO",
@@ -905,19 +905,19 @@
       "codigo": "ARQUIVO_INEXISTENTE",
       "feature": "importacao-despesas-csv",
       "ref": "T-000",
-      "ocorrencias": 2,
+      "ocorrencias": 43,
       "primeiraVez": "2026-08-11T01:36:40.266Z",
-      "ultimaVez": "2026-08-11T01:36:40.266Z",
-      "gitRev": "4641fcd"
+      "ultimaVez": "2026-08-12T20:41:40.317Z",
+      "gitRev": "adac77b"
     },
     "VERIFY_OBSOLETO::visualizacao-graficos-orcamento::—": {
       "codigo": "VERIFY_OBSOLETO",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "—",
-      "ocorrencias": 8,
+      "ocorrencias": 9,
       "primeiraVez": "2026-08-11T01:36:40.267Z",
-      "ultimaVez": "2026-08-12T19:56:57.291Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:39:06.609Z",
+      "gitRev": "adac77b"
     },
     "STATUS_INVALIDO::identidade-visual-ifsp::.spec/features/identidade-visual-ifsp/spec.md": {
       "codigo": "STATUS_INVALIDO",
@@ -941,19 +941,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "identidade-visual-ifsp",
       "ref": "AC-016",
-      "ocorrencias": 9,
+      "ocorrencias": 13,
       "primeiraVez": "2026-08-12T18:36:04.706Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::filtro-acoes-assistencia::AC-018": {
       "codigo": "PROVA_FRACA",
       "feature": "filtro-acoes-assistencia",
       "ref": "AC-018",
-      "ocorrencias": 8,
+      "ocorrencias": 12,
       "primeiraVez": "2026-08-12T19:17:40.941Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "VERIFY_OBSOLETO::filtro-acoes-assistencia::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -968,10 +968,10 @@
       "codigo": "PROVA_FRACA",
       "feature": "grafico-acumulado-execucao",
       "ref": "AC-017",
-      "ocorrencias": 8,
+      "ocorrencias": 12,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "VERIFY_OBSOLETO::grafico-acumulado-execucao::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -986,19 +986,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "graficos-mensal-acumulado-assistencia",
       "ref": "AC-019",
-      "ocorrencias": 8,
+      "ocorrencias": 12,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::graficos-mensal-acumulado-assistencia::AC-020": {
       "codigo": "PROVA_FRACA",
       "feature": "graficos-mensal-acumulado-assistencia",
       "ref": "AC-020",
-      "ocorrencias": 8,
+      "ocorrencias": 12,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "VERIFY_OBSOLETO::graficos-mensal-acumulado-assistencia::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -1022,19 +1022,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "seletor-acoes-graficos-assistencia",
       "ref": "AC-021",
-      "ocorrencias": 8,
+      "ocorrencias": 12,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "PROVA_FRACA::seletor-acoes-graficos-assistencia::AC-022": {
       "codigo": "PROVA_FRACA",
       "feature": "seletor-acoes-graficos-assistencia",
       "ref": "AC-022",
-      "ocorrencias": 8,
+      "ocorrencias": 12,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T20:32:17.572Z",
-      "gitRev": "2688de0"
+      "ultimaVez": "2026-08-12T20:41:56.201Z",
+      "gitRev": "adac77b"
     },
     "VERIFY_OBSOLETO::seletor-acoes-graficos-assistencia::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -1044,6 +1044,411 @@
       "primeiraVez": "2026-08-12T19:17:40.942Z",
       "ultimaVez": "2026-08-12T19:56:57.291Z",
       "gitRev": "eb981c3"
+    },
+    "ARQUIVO_INEXISTENTE::importacao-despesas-csv::T-001": {
+      "codigo": "ARQUIVO_INEXISTENTE",
+      "feature": "importacao-despesas-csv",
+      "ref": "T-001",
+      "ocorrencias": 8,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_INEXISTENTE::importacao-despesas-csv::T-002": {
+      "codigo": "ARQUIVO_INEXISTENTE",
+      "feature": "importacao-despesas-csv",
+      "ref": "T-002",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_INEXISTENTE::importacao-despesas-csv::T-003": {
+      "codigo": "ARQUIVO_INEXISTENTE",
+      "feature": "importacao-despesas-csv",
+      "ref": "T-003",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_INEXISTENTE::visualizacao-graficos-orcamento::T-011": {
+      "codigo": "ARQUIVO_INEXISTENTE",
+      "feature": "visualizacao-graficos-orcamento",
+      "ref": "T-011",
+      "ocorrencias": 4,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Data/ApiContext.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Data/ApiContext.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Data/DataExtensions.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Data/DataExtensions.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Data/Migrations/20260808011704_InitialCreate.Designer.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Data/Migrations/20260808011704_InitialCreate.Designer.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Data/Migrations/20260808011704_InitialCreate.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Data/Migrations/20260808011704_InitialCreate.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Data/Migrations/ApiContextModelSnapshot.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Data/Migrations/ApiContextModelSnapshot.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Extensions/AppExtensions.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Extensions/AppExtensions.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Extensions/BuilderExtensions.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Extensions/BuilderExtensions.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Extensions/ValidationExtensions.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Extensions/ValidationExtensions.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesaDocumento.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesaDocumento.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesaPorOrgao.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesaPorOrgao.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.609Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesaPorProgramaAcao.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesaPorProgramaAcao.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesasDashboardEndpoints.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesasDashboardEndpoints.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesasDashboardService.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesasDashboardService.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesasFornecedoresEndpoints.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesasFornecedoresEndpoints.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesasFornecedoresService.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesasFornecedoresService.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesasImportService.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesasImportService.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesasProgramaEndpoints.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesasProgramaEndpoints.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Despesas/DespesasProgramaService.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Despesas/DespesasProgramaService.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Items/Item.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Items/Item.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Items/ItemContracts.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Items/ItemContracts.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Items/ItemEndpoints.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Items/ItemEndpoints.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Users/CustomClaimsPrincipalFactory.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Users/CustomClaimsPrincipalFactory.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Users/User.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Users/User.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Users/UserContracts.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Users/UserContracts.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Users/UserEndpoints.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Users/UserEndpoints.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Features/Users/UserMapper.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Features/Users/UserMapper.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/Program.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/Program.cs",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:41:26.453Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:39:06.610Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/obj/Debug/net10.0/Api.AssemblyInfo.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/obj/Debug/net10.0/Api.AssemblyInfo.cs",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.610Z",
+      "ultimaVez": "2026-08-12T20:39:06.610Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/obj/Debug/net10.0/Api.GlobalUsings.g.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/obj/Debug/net10.0/Api.GlobalUsings.g.cs",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.611Z",
+      "ultimaVez": "2026-08-12T20:39:06.611Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/obj/Debug/net10.0/Api.MvcApplicationPartsAssemblyInfo.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/obj/Debug/net10.0/Api.MvcApplicationPartsAssemblyInfo.cs",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.611Z",
+      "ultimaVez": "2026-08-12T20:39:06.611Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/obj/Debug/net10.0/Template.AssemblyInfo.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/obj/Debug/net10.0/Template.AssemblyInfo.cs",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.611Z",
+      "ultimaVez": "2026-08-12T20:39:06.611Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/obj/Debug/net10.0/Template.GlobalUsings.g.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/obj/Debug/net10.0/Template.GlobalUsings.g.cs",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.611Z",
+      "ultimaVez": "2026-08-12T20:39:06.611Z",
+      "gitRev": "adac77b"
+    },
+    "ARQUIVO_ORFAO::—::Backend/Api/obj/Debug/net10.0/Template.MvcApplicationPartsAssemblyInfo.cs": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "Backend/Api/obj/Debug/net10.0/Template.MvcApplicationPartsAssemblyInfo.cs",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.611Z",
+      "ultimaVez": "2026-08-12T20:39:06.611Z",
+      "gitRev": "adac77b"
+    },
+    "GLOB_SEM_ARQUIVOS::—::P-003": {
+      "codigo": "GLOB_SEM_ARQUIVOS",
+      "feature": "—",
+      "ref": "P-003",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.611Z",
+      "ultimaVez": "2026-08-12T20:39:06.611Z",
+      "gitRev": "adac77b"
+    },
+    "GLOB_SEM_ARQUIVOS::—::P-004": {
+      "codigo": "GLOB_SEM_ARQUIVOS",
+      "feature": "—",
+      "ref": "P-004",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.611Z",
+      "ultimaVez": "2026-08-12T20:39:06.611Z",
+      "gitRev": "adac77b"
+    },
+    "GLOB_SEM_ARQUIVOS::—::P-005": {
+      "codigo": "GLOB_SEM_ARQUIVOS",
+      "feature": "—",
+      "ref": "P-005",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.612Z",
+      "ultimaVez": "2026-08-12T20:39:06.612Z",
+      "gitRev": "adac77b"
+    },
+    "GLOB_SEM_ARQUIVOS::—::P-006": {
+      "codigo": "GLOB_SEM_ARQUIVOS",
+      "feature": "—",
+      "ref": "P-006",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.612Z",
+      "ultimaVez": "2026-08-12T20:39:06.612Z",
+      "gitRev": "adac77b"
+    },
+    "GLOB_SEM_ARQUIVOS::—::P-007": {
+      "codigo": "GLOB_SEM_ARQUIVOS",
+      "feature": "—",
+      "ref": "P-007",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.612Z",
+      "ultimaVez": "2026-08-12T20:39:06.612Z",
+      "gitRev": "adac77b"
+    },
+    "GLOB_SEM_ARQUIVOS::—::P-010": {
+      "codigo": "GLOB_SEM_ARQUIVOS",
+      "feature": "—",
+      "ref": "P-010",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.612Z",
+      "ultimaVez": "2026-08-12T20:39:06.612Z",
+      "gitRev": "adac77b"
+    },
+    "PRINCIPIO_VIOLADO::—::P-019": {
+      "codigo": "PRINCIPIO_VIOLADO",
+      "feature": "—",
+      "ref": "P-019",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-08-12T20:39:06.612Z",
+      "ultimaVez": "2026-08-12T20:39:06.612Z",
+      "gitRev": "adac77b"
     }
   }
 }

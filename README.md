@@ -50,7 +50,7 @@ O projeto é estruturado em monorepo com duas aplicações principais:
 - Testes de Backend:
 
   ```bash
-  dotnet test Backend.Tests
+  dotnet test Backend/Api.Tests
   ```
 
 - Testes de Especificação e Frontend:

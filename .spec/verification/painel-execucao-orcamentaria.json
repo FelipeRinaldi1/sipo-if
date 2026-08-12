@@ -1,8 +1,8 @@
 {
   "feature": "painel-execucao-orcamentaria",
-  "timestamp": "2026-08-12T20:31:51.560Z",
-  "gitRev": "2688de0",
-  "command": "dotnet test Backend.Tests --logger:trx && node --experimental-strip-types --test --test-reporter=tap Frontend/test/**/*.spec.test.ts",
+  "timestamp": "2026-08-12T20:41:07.366Z",
+  "gitRev": "adac77b",
+  "command": "dotnet test Backend/Api.Tests --logger:trx && node --experimental-strip-types --test --test-reporter=tap Frontend/test/**/*.spec.test.ts",
   "reporter": "exitcode",
   "exitCode": 0,
   "testsParsed": 0,

@@ -18,13 +18,13 @@
 
 | tarefa | título | modelo | esforço | arquivos |
 |---|---|---|---|---|
-| T-002 | Criar Serviço de Ingestão e Parser CSV no Backend | `claude-sonnet-5` | medium | `Backend/Features/Despesas/DespesasImportService.cs` |
+| T-002 | Criar Serviço de Ingestão e Parser CSV no Backend | `claude-sonnet-5` | medium | `Backend/Api/Features/Despesas/DespesasImportService.cs` |
 
 #### faixa-2 — branch `spec/importacao-despesas-csv-faixa-2` — worktree `../onp-worktrees/sipo-if-importacao-despesas-csv-faixa-2`
 
 | tarefa | título | modelo | esforço | arquivos |
 |---|---|---|---|---|
-| T-003 | Testes Unitários de Importação dos CSVs | `claude-sonnet-5` | medium | `Backend.Tests/ImportacaoDespesasTests.cs` |
+| T-003 | Testes Unitários de Importação dos CSVs | `claude-sonnet-5` | medium | `Backend/Api.Tests/ImportacaoDespesasTests.cs` |
 
 ## Gestão de branches e commits
 
@@ -58,7 +58,7 @@ Leia primeiro: .spec/features/importacao-despesas-csv/spec.md, .spec/features/im
 Execute NESTA ORDEM (1 tarefa = 1 commit):
 T-002 — "Criar Serviço de Ingestão e Parser CSV no Backend"
   critérios/refs: AC-001 (Importação de Despesas por Órgão), AC-002 (Importação de Despesas por Programa e Ação), AC-003 (Importação de Extrato de Documentos)
-  arquivos permitidos (e seus testes): Backend/Features/Despesas/DespesasImportService.cs
+  arquivos permitidos (e seus testes): Backend/Api/Features/Despesas/DespesasImportService.cs
   mensagem de commit: "T-002 importacao-despesas-csv: Criar Serviço de Ingestão e Parser CSV no Backend"
 
 Regras inegociáveis:
@@ -80,7 +80,7 @@ Leia primeiro: .spec/features/importacao-despesas-csv/spec.md, .spec/features/im
 Execute NESTA ORDEM (1 tarefa = 1 commit):
 T-003 — "Testes Unitários de Importação dos CSVs"
   critérios/refs: AC-001 (Importação de Despesas por Órgão), AC-002 (Importação de Despesas por Programa e Ação), AC-003 (Importação de Extrato de Documentos)
-  arquivos permitidos (e seus testes): Backend.Tests/ImportacaoDespesasTests.cs
+  arquivos permitidos (e seus testes): Backend/Api.Tests/ImportacaoDespesasTests.cs
   mensagem de commit: "T-003 importacao-despesas-csv: Testes Unitários de Importação dos CSVs"
 
 Regras inegociáveis:

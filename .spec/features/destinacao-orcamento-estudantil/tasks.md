@@ -5,7 +5,7 @@
 ## T-006 — Endpoint de Despesas por Programa e Ação no Backend [concluida]
 
 - Refs: US-003, AC-006, AC-007
-- Arquivos: Backend/Features/Despesas/DespesasProgramaService.cs, Backend/Features/Despesas/DespesasProgramaEndpoints.cs
+- Arquivos: Backend/Api/Features/Despesas/DespesasProgramaService.cs, Backend/Api/Features/Despesas/DespesasProgramaEndpoints.cs
 - Notas: Endpoint GET /api/despesas/programa-acao criado e verificado via TDD.
 
 ## T-007 — Componente Angular de Destinação Orçamentária [concluida]

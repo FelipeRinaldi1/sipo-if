@@ -1,8 +1,8 @@
 {
   "feature": "importacao-despesas-csv",
-  "timestamp": "2026-08-12T20:31:39.624Z",
-  "gitRev": "2688de0",
-  "command": "dotnet test Backend.Tests --logger:trx && node --experimental-strip-types --test --test-reporter=tap Frontend/test/**/*.spec.test.ts",
+  "timestamp": "2026-08-12T20:40:56.728Z",
+  "gitRev": "adac77b",
+  "command": "dotnet test Backend/Api.Tests --logger:trx && node --experimental-strip-types --test --test-reporter=tap Frontend/test/**/*.spec.test.ts",
   "reporter": "exitcode",
   "exitCode": 0,
   "testsParsed": 0,
