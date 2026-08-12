@@ -1,7 +1,7 @@
 {
   "feature": "graficos-mensal-acumulado-assistencia",
-  "timestamp": "2026-08-12T18:53:52.391Z",
-  "gitRev": "14d09a5",
+  "timestamp": "2026-08-12T19:57:52.024Z",
+  "gitRev": "eb981c3",
   "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "exitcode",
   "exitCode": 0,

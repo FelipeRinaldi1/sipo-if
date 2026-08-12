@@ -1,7 +1,7 @@
 {
   "feature": "identidade-visual-ifsp",
-  "timestamp": "2026-08-12T18:35:59.025Z",
-  "gitRev": "14d09a5",
+  "timestamp": "2026-08-12T19:58:04.011Z",
+  "gitRev": "eb981c3",
   "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "exitcode",
   "exitCode": 0,

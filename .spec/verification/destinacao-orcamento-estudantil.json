@@ -1,7 +1,7 @@
 {
   "feature": "destinacao-orcamento-estudantil",
-  "timestamp": "2026-08-10T21:20:33.960Z",
-  "gitRev": "4670b9e",
+  "timestamp": "2026-08-12T19:57:12.205Z",
+  "gitRev": "eb981c3",
   "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "exitcode",
   "exitCode": 0,

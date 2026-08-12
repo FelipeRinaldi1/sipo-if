@@ -1,7 +1,7 @@
 {
   "feature": "gestao-fornecedores-contratos",
-  "timestamp": "2026-08-11T00:41:42.805Z",
-  "gitRev": "278a69c",
+  "timestamp": "2026-08-12T19:57:30.716Z",
+  "gitRev": "eb981c3",
   "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
   "reporter": "exitcode",
   "exitCode": 0,
