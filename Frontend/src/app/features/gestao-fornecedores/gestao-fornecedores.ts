@@ -60,7 +60,7 @@ export class GestaoFornecedoresComponent implements OnInit {
     formatter: (v: number) => `R$ ${(v * 1000).toLocaleString('pt-BR', { maximumFractionDigits: 0 })} mil`,
     offsetX: 6, style: { fontSize: '11px', colors: ['#64748b'] }
   };
-  top5Colors = ['#6366f1'];
+  top5Colors = ['#006633'];
   top5Grid: ApexGrid = { borderColor: '#f1f5f9', xaxis: { lines: { show: true } }, yaxis: { lines: { show: false } } };
   top5Tooltip: ApexTooltip = { y: { formatter: (v: number) => `R$ ${(v * 1000).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}` } };
   top5Xaxis: ApexXAxis = { labels: { formatter: (v: string) => `R$ ${(+v).toLocaleString('pt-BR', { maximumFractionDigits: 0 })} mil` } };

@@ -157,6 +157,29 @@
       </mat-card-content>
     </mat-card>
 
+    <!-- Gráfico de Linhas — Curva Acumulada ao Longo dos Meses (AC-017) -->
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-base font-semibold text-slate-700">
+          <mat-icon class="text-emerald-600">stacked_line_chart</mat-icon>
+          Evolução Acumulada — Empenhado, Liquidado e Pago no Ano
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Total progressivo acumulado mês a mês (valores em R$ mil)</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="acumuladoChartSeries()"
+          [chart]="acumuladoChart"
+          [xaxis]="{ categories: areaChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [stroke]="acumuladoStroke"
+          [colors]="acumuladoColors"
+          [grid]="acumuladoGrid"
+          [tooltip]="acumuladoTooltip"
+          [legend]="acumuladoLegend"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
     <!-- Gráfico de Barras Agrupadas — Comparativo Mensal (AC-012) -->
     <mat-card class="shadow-sm border border-slate-100">
       <mat-card-header class="pb-2">

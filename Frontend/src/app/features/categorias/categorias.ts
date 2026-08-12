@@ -58,8 +58,8 @@ export class CategoriasComponent implements OnInit {
     itemMargin: { horizontal: 8, vertical: 4 }
   };
   donutColors = [
-    '#6366f1', '#22d3ee', '#10b981', '#f59e0b', '#ef4444',
-    '#8b5cf6', '#06b6d4', '#84cc16', '#f97316', '#ec4899'
+    '#006633', '#cc0000', '#10b981', '#f59e0b', '#004d26',
+    '#990000', '#06b6d4', '#84cc16', '#f97316', '#ec4899'
   ];
   donutResponsive: ApexResponsive[] = [
     { breakpoint: 768, options: { chart: { height: 320 }, legend: { position: 'bottom' } } }

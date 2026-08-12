@@ -28,6 +28,7 @@ export interface ItemAcaoResumo {
 }
 
 export interface EvolucaoAssistenciaItem {
+  codigoAcao: string;
   mesAno: string;
   valorEmpenhado: number;
   valorLiquidado: number;

@@ -1,0 +1,17 @@
+{
+  "feature": "filtro-acoes-assistencia",
+  "timestamp": "2026-08-12T18:51:25.628Z",
+  "gitRev": "14d09a5",
+  "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
+  "reporter": "exitcode",
+  "exitCode": 0,
+  "testsParsed": 0,
+  "results": {
+    "AC-018": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    }
+  },
+  "principles": {}
+}

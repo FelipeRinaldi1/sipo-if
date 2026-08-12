@@ -55,7 +55,7 @@ export class PainelExecucaoComponent implements OnInit {
   areaStroke: ApexStroke = { curve: 'smooth', width: 2 };
   areaFill: ApexFill = { type: 'gradient', gradient: { shadeIntensity: 1, opacityFrom: 0.45, opacityTo: 0.05, stops: [0, 100] } };
   areaDataLabels: ApexDataLabels = { enabled: false };
-  areaColors = ['#6366f1', '#22d3ee', '#10b981'];
+  areaColors = ['#006633', '#10b981', '#cc0000'];
   areaGrid: ApexGrid = { borderColor: '#f1f5f9', strokeDashArray: 4 };
   areaTooltip: ApexTooltip = { y: { formatter: (v: number) => `R$ ${(v * 1000).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}` } };
   areaLegend: ApexLegend = { position: 'top', horizontalAlign: 'right' };
@@ -75,10 +75,47 @@ export class PainelExecucaoComponent implements OnInit {
     animations: { enabled: true, speed: 600 }
   };
   barDataLabels: ApexDataLabels = { enabled: false };
-  barColors = ['#6366f1', '#22d3ee', '#10b981'];
+  barColors = ['#006633', '#10b981', '#cc0000'];
   barGrid: ApexGrid = { borderColor: '#f1f5f9', strokeDashArray: 4 };
   barTooltip: ApexTooltip = { y: { formatter: (v: number) => `R$ ${(v * 1000).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}` } };
   barLegend: ApexLegend = { position: 'top', horizontalAlign: 'right' };
+  // --- Dados para gráfico de curva acumulada (AC-017) ---
+  acumuladoChartSeries = computed<ApexAxisChartSeries>(() => {
+    const meses = this.resumo()?.evolucaoMensal ?? [];
+    let accEmpenhado = 0;
+    let accLiquidado = 0;
+    let accPago = 0;
+
+    const empenhadoAcc: number[] = [];
+    const liquidadoAcc: number[] = [];
+    const pagoAcc: number[] = [];
+
+    for (const m of meses) {
+      accEmpenhado += m.empenhado;
+      accLiquidado += m.liquidado;
+      accPago += m.pago;
+
+      empenhadoAcc.push(+(accEmpenhado / 1000).toFixed(2));
+      liquidadoAcc.push(+(accLiquidado / 1000).toFixed(2));
+      pagoAcc.push(+(accPago / 1000).toFixed(2));
+    }
+
+    return [
+      { name: 'Empenhado Acumulado', data: empenhadoAcc },
+      { name: 'Liquidado Acumulado', data: liquidadoAcc },
+      { name: 'Pago Acumulado',      data: pagoAcc },
+    ];
+  });
+
+  acumuladoChart: ApexChart = {
+    type: 'line', height: 320, toolbar: { show: false }, fontFamily: 'inherit',
+    animations: { enabled: true, speed: 600 }
+  };
+  acumuladoStroke: ApexStroke = { curve: 'smooth', width: 3 };
+  acumuladoColors = ['#006633', '#10b981', '#cc0000'];
+  acumuladoGrid: ApexGrid = { borderColor: '#f1f5f9', strokeDashArray: 4 };
+  acumuladoTooltip: ApexTooltip = { y: { formatter: (v: number) => `R$ ${(v * 1000).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}` } };
+  acumuladoLegend: ApexLegend = { position: 'top', horizontalAlign: 'right' };
 
   ngOnInit(): void {
     this.loadData();

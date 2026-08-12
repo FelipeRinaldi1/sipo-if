@@ -1,0 +1,49 @@
+{
+  "runId": "sipo-if-identidade-visual-ifsp-msqfhpo0",
+  "feature": "identidade-visual-ifsp",
+  "agent": "antigravity",
+  "modo": "paralelo",
+  "paralelizar": null,
+  "modeloForcado": null,
+  "esforcoForcado": null,
+  "geradoEm": "2026-08-12 18:34",
+  "branchTrabalho": "spec/identidade-visual-ifsp",
+  "baseDir": ".spec/features/identidade-visual-ifsp",
+  "specDir": ".spec",
+  "repoName": "sipo-if",
+  "logsDir": "../onp-worktrees/sipo-if-identidade-visual-ifsp-logs",
+  "ondas": [
+    [
+      "faixa-1"
+    ]
+  ],
+  "faixas": [
+    {
+      "id": "faixa-1",
+      "branch": "spec/identidade-visual-ifsp-faixa-1",
+      "worktree": "../onp-worktrees/sipo-if-identidade-visual-ifsp-faixa-1",
+      "tarefas": [
+        {
+          "id": "T-016",
+          "titulo": "Implementar Tema de Cores do IFSP no Frontend",
+          "modelo": "claude-sonnet-5",
+          "esforco": "medium",
+          "arquivos": [
+            "Frontend/src/styles.scss",
+            "Frontend/src/tailwind.css",
+            "Frontend/src/app/app.html",
+            "Frontend/src/app/features/**/*.ts",
+            "Frontend/src/app/features/**/*.html"
+          ],
+          "refs": [
+            "US-009",
+            "AC-016"
+          ]
+        }
+      ]
+    }
+  ],
+  "sequenciais": [],
+  "concluidas": [],
+  "avisos": []
+}

@@ -10,13 +10,25 @@ html {
   @include mat.theme(
     (
       color: (
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
+        primary: mat.$green-palette,
+        tertiary: mat.$red-palette,
       ),
       typography: Roboto,
       density: 0,
     )
   );
+}
+
+:root {
+  --ifsp-verde: #006633;
+  --ifsp-verde-escuro: #004d26;
+  --ifsp-vermelho: #cc0000;
+  --ifsp-vermelho-escuro: #990000;
+}
+
+.mdc-button--unelevated, .mat-mdc-unelevated-button.mat-primary, .mat-toolbar.mat-primary {
+  background-color: var(--ifsp-verde) !important;
+  color: #ffffff !important;
 }
 
 body {

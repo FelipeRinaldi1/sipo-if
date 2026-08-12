@@ -7,7 +7,7 @@ public record ResumoProgramaAcaoDto(
     decimal TotalGeralEmpenhado,
     decimal TotalGeralPago,
     List<ItemAcaoResumoDto> Acoes,
-    List<EvolucaoAssistenciaItemDto> EvolucaoAssistenciaMensal
+    List<EvolucaoAcaoItemDto> EvolucaoAssistenciaMensal
 );
 
 public record ItemAcaoResumoDto(
@@ -19,7 +19,8 @@ public record ItemAcaoResumoDto(
     double PorcentagemDoTotal
 );
 
-public record EvolucaoAssistenciaItemDto(
+public record EvolucaoAcaoItemDto(
+    string CodigoAcao,
     string MesAno,
     decimal ValorEmpenhado,
     decimal ValorLiquidado,
@@ -58,11 +59,12 @@ public class DespesasProgramaService(TemplateContext context)
             .OrderByDescending(a => a.TotalPago)
             .ToList();
 
-        var evolucaoAssistencia = registros
-            .Where(r => r.AcaoOrcamentaria.Contains("2994"))
-            .GroupBy(r => r.MesAno)
-            .Select(g => new EvolucaoAssistenciaItemDto(
-                MesAno: g.Key,
+        var evolucaoAcoes = registros
+            .Select(r => new { CodigoAcao = ExtrairCodigoAcao(r.AcaoOrcamentaria), r.MesAno, r.ValorEmpenhado, r.ValorLiquidado, r.ValorPago })
+            .GroupBy(r => new { r.CodigoAcao, r.MesAno })
+            .Select(g => new EvolucaoAcaoItemDto(
+                CodigoAcao: g.Key.CodigoAcao,
+                MesAno: g.Key.MesAno,
                 ValorEmpenhado: g.Sum(x => x.ValorEmpenhado),
                 ValorLiquidado: g.Sum(x => x.ValorLiquidado),
                 ValorPago: g.Sum(x => x.ValorPago)
@@ -74,7 +76,7 @@ public class DespesasProgramaService(TemplateContext context)
             totalEmpenhado,
             totalPago,
             acoesAgrupadas,
-            evolucaoAssistencia
+            evolucaoAcoes
         );
     }
 

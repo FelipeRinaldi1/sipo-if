@@ -1,0 +1,22 @@
+{
+  "feature": "graficos-mensal-acumulado-assistencia",
+  "timestamp": "2026-08-12T18:53:52.391Z",
+  "gitRev": "14d09a5",
+  "command": "dotnet test Backend.Tests --logger:trx && node --test --test-reporter=tap test/**/*.test.js",
+  "reporter": "exitcode",
+  "exitCode": 0,
+  "testsParsed": 0,
+  "results": {
+    "AC-019": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-020": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    }
+  },
+  "principles": {}
+}
