@@ -2,15 +2,26 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-function buildAssistenciaMensalSeries(evolucaoMensal) {
+interface EvolucaoMensalItem {
+  mesAno: string;
+  valorEmpenhado: number;
+  valorPago: number;
+}
+
+interface SeriesItem {
+  name: string;
+  data: number[];
+}
+
+function buildAssistenciaMensalSeries(evolucaoMensal: EvolucaoMensalItem[]): SeriesItem[] {
   return [
     { name: 'Ação 2994 — Assistência Estudantil', data: evolucaoMensal.map(m => +(m.valorPago / 1000).toFixed(2)) }
   ];
 }
 
-function buildAssistenciaAcumuladoSeries(evolucaoMensal) {
+function buildAssistenciaAcumuladoSeries(evolucaoMensal: EvolucaoMensalItem[]): SeriesItem[] {
   let acc = 0;
-  const data = [];
+  const data: number[] = [];
   for (const m of evolucaoMensal) {
     acc += m.valorPago;
     data.push(+(acc / 1000).toFixed(2));
@@ -22,7 +33,7 @@ function buildAssistenciaAcumuladoSeries(evolucaoMensal) {
 
 // US-012 — Visualização Temporal Mensal e Acumulada das Ações 20RL e 2994
 test('AC-019: Gráfico de Evolução Mensal 20RL vs 2994 @spec:AC-019', () => {
-  const evolucaoMensal = [
+  const evolucaoMensal: EvolucaoMensalItem[] = [
     { mesAno: '01/2025', valorEmpenhado: 50000, valorPago: 40000 },
     { mesAno: '02/2025', valorEmpenhado: 60000, valorPago: 45000 },
   ];
@@ -35,7 +46,7 @@ test('AC-019: Gráfico de Evolução Mensal 20RL vs 2994 @spec:AC-019', () => {
 });
 
 test('AC-020: Gráfico de Curva Acumulada 20RL vs 2994 @spec:AC-020', () => {
-  const evolucaoMensal = [
+  const evolucaoMensal: EvolucaoMensalItem[] = [
     { mesAno: '01/2025', valorEmpenhado: 50000, valorPago: 40000 },
     { mesAno: '02/2025', valorEmpenhado: 60000, valorPago: 45000 },
   ];

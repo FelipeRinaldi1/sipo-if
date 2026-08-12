@@ -482,28 +482,28 @@
       "codigo": "PROVA_FRACA",
       "feature": "importacao-despesas-csv",
       "ref": "AC-001",
-      "ocorrencias": 18,
+      "ocorrencias": 20,
       "primeiraVez": "2026-08-10T20:22:42.405Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::importacao-despesas-csv::AC-002": {
       "codigo": "PROVA_FRACA",
       "feature": "importacao-despesas-csv",
       "ref": "AC-002",
-      "ocorrencias": 18,
+      "ocorrencias": 20,
       "primeiraVez": "2026-08-10T20:22:42.405Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::importacao-despesas-csv::AC-003": {
       "codigo": "PROVA_FRACA",
       "feature": "importacao-despesas-csv",
       "ref": "AC-003",
-      "ocorrencias": 18,
+      "ocorrencias": 20,
       "primeiraVez": "2026-08-10T20:22:42.405Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "ARQUIVO_INEXISTENTE::painel-execucao-orcamentaria::T-004": {
       "codigo": "ARQUIVO_INEXISTENTE",
@@ -554,37 +554,37 @@
       "codigo": "PROVA_FRACA",
       "feature": "painel-execucao-orcamentaria",
       "ref": "AC-004",
-      "ocorrencias": 7,
+      "ocorrencias": 9,
       "primeiraVez": "2026-08-10T20:26:26.406Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::painel-execucao-orcamentaria::AC-005": {
       "codigo": "PROVA_FRACA",
       "feature": "painel-execucao-orcamentaria",
       "ref": "AC-005",
-      "ocorrencias": 7,
+      "ocorrencias": 9,
       "primeiraVez": "2026-08-10T20:26:26.406Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::destinacao-orcamento-estudantil::AC-006": {
       "codigo": "PROVA_FRACA",
       "feature": "destinacao-orcamento-estudantil",
       "ref": "AC-006",
-      "ocorrencias": 15,
+      "ocorrencias": 17,
       "primeiraVez": "2026-08-10T21:19:56.883Z",
-      "ultimaVez": "2026-08-12T19:59:36.572Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.571Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::destinacao-orcamento-estudantil::AC-007": {
       "codigo": "PROVA_FRACA",
       "feature": "destinacao-orcamento-estudantil",
       "ref": "AC-007",
-      "ocorrencias": 15,
+      "ocorrencias": 17,
       "primeiraVez": "2026-08-10T21:19:56.884Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "VERIFY_OBSOLETO::destinacao-orcamento-estudantil::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -617,19 +617,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "gestao-fornecedores-contratos",
       "ref": "AC-008",
-      "ocorrencias": 15,
+      "ocorrencias": 17,
       "primeiraVez": "2026-08-10T21:19:56.884Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::gestao-fornecedores-contratos::AC-009": {
       "codigo": "PROVA_FRACA",
       "feature": "gestao-fornecedores-contratos",
       "ref": "AC-009",
-      "ocorrencias": 15,
+      "ocorrencias": 17,
       "primeiraVez": "2026-08-10T21:19:56.884Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "VERIFY_OBSOLETO::gestao-fornecedores-contratos::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -842,46 +842,46 @@
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-011",
-      "ocorrencias": 13,
+      "ocorrencias": 15,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-012": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-012",
-      "ocorrencias": 13,
+      "ocorrencias": 15,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-013": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-013",
-      "ocorrencias": 13,
+      "ocorrencias": 15,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-014": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-014",
-      "ocorrencias": 13,
+      "ocorrencias": 15,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::visualizacao-graficos-orcamento::AC-015": {
       "codigo": "PROVA_FRACA",
       "feature": "visualizacao-graficos-orcamento",
       "ref": "AC-015",
-      "ocorrencias": 13,
+      "ocorrencias": 15,
       "primeiraVez": "2026-08-11T01:31:40.177Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "ARQUIVO_ORFAO::—::Frontend/src/app/features/categorias/categorias.html": {
       "codigo": "ARQUIVO_ORFAO",
@@ -941,19 +941,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "identidade-visual-ifsp",
       "ref": "AC-016",
-      "ocorrencias": 7,
+      "ocorrencias": 9,
       "primeiraVez": "2026-08-12T18:36:04.706Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::filtro-acoes-assistencia::AC-018": {
       "codigo": "PROVA_FRACA",
       "feature": "filtro-acoes-assistencia",
       "ref": "AC-018",
-      "ocorrencias": 6,
+      "ocorrencias": 8,
       "primeiraVez": "2026-08-12T19:17:40.941Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "VERIFY_OBSOLETO::filtro-acoes-assistencia::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -968,10 +968,10 @@
       "codigo": "PROVA_FRACA",
       "feature": "grafico-acumulado-execucao",
       "ref": "AC-017",
-      "ocorrencias": 6,
+      "ocorrencias": 8,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "VERIFY_OBSOLETO::grafico-acumulado-execucao::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -986,19 +986,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "graficos-mensal-acumulado-assistencia",
       "ref": "AC-019",
-      "ocorrencias": 6,
+      "ocorrencias": 8,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::graficos-mensal-acumulado-assistencia::AC-020": {
       "codigo": "PROVA_FRACA",
       "feature": "graficos-mensal-acumulado-assistencia",
       "ref": "AC-020",
-      "ocorrencias": 6,
+      "ocorrencias": 8,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "VERIFY_OBSOLETO::graficos-mensal-acumulado-assistencia::—": {
       "codigo": "VERIFY_OBSOLETO",
@@ -1022,19 +1022,19 @@
       "codigo": "PROVA_FRACA",
       "feature": "seletor-acoes-graficos-assistencia",
       "ref": "AC-021",
-      "ocorrencias": 6,
+      "ocorrencias": 8,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "PROVA_FRACA::seletor-acoes-graficos-assistencia::AC-022": {
       "codigo": "PROVA_FRACA",
       "feature": "seletor-acoes-graficos-assistencia",
       "ref": "AC-022",
-      "ocorrencias": 6,
+      "ocorrencias": 8,
       "primeiraVez": "2026-08-12T19:17:40.942Z",
-      "ultimaVez": "2026-08-12T19:59:36.573Z",
-      "gitRev": "eb981c3"
+      "ultimaVez": "2026-08-12T20:32:17.572Z",
+      "gitRev": "2688de0"
     },
     "VERIFY_OBSOLETO::seletor-acoes-graficos-assistencia::—": {
       "codigo": "VERIFY_OBSOLETO",

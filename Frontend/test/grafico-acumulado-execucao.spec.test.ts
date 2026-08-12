@@ -2,14 +2,26 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-function buildCumulativeSeries(meses) {
+interface MesExecucao {
+  mesAno: string;
+  empenhado: number;
+  liquidado: number;
+  pago: number;
+}
+
+interface SeriesItem {
+  name: string;
+  data: number[];
+}
+
+function buildCumulativeSeries(meses: MesExecucao[]): SeriesItem[] {
   let accEmpenhado = 0;
   let accLiquidado = 0;
   let accPago = 0;
 
-  const empenhadoData = [];
-  const liquidadoData = [];
-  const pagoData = [];
+  const empenhadoData: number[] = [];
+  const liquidadoData: number[] = [];
+  const pagoData: number[] = [];
 
   for (const m of meses) {
     accEmpenhado += m.empenhado;
@@ -30,7 +42,7 @@ function buildCumulativeSeries(meses) {
 
 // US-010 — Gráfico Acumulativo de Execução Orçamentária ao Longo dos Meses
 test('AC-017: Exibição do Gráfico de Linhas/Área Acumulado @spec:AC-017', () => {
-  const meses = [
+  const meses: MesExecucao[] = [
     { mesAno: '01/2025', empenhado: 100000, liquidado: 80000, pago: 70000 },
     { mesAno: '02/2025', empenhado: 50000,  liquidado: 40000, pago: 30000 },
     { mesAno: '03/2025', empenhado: 150000, liquidado: 100000, pago: 90000 },
