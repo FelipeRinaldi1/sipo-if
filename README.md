@@ -1,52 +1,49 @@
-# Template
+# SIPO-IF: Sistema Transparente de Gestão Orçamentária
 
-Bem-vindo ao repositório do **Template**. Este projeto é uma solução fullstack organizada em monorepo, composta por uma API de alto desempenho no backend, uma interface moderna no frontend e documentação técnica unificada.
+Sistema de transparência financeira e gestão orçamentária do IFSP Campus Jacareí.
 
----
+## Arquitetura
 
-## 🛠️ Arquitetura do Projeto
+O projeto é estruturado em monorepo com duas aplicações principais:
 
-O repositório é dividido em três diretórios principais:
-
-*   **[Backend](./Backend/README.md)**: API REST desenvolvida com C# (.NET 10), utilizando Minimal APIs, Entity Framework Core e banco de dados PostgreSQL.
-*   **[Frontend](./Frontend/README.md)**: Aplicativo web desenvolvido com Angular 22, utilizando Angular Material para os componentes e Tailwind CSS v4 para o design do layout.
-*   **[Docs](./Docs)**: Documentações complementares, diagramas de banco de dados, regras de negócio e guias.
+- `Backend`: API REST em .NET 10 (Minimal APIs, EF Core, PostgreSQL).
+- `Frontend`: Single Page Application em Angular (Angular Material, ApexCharts, Tailwind CSS).
 
 ---
 
-## 🚀 Como Rodar o Projeto Completo
+## Como Rodar com Docker
 
-A forma mais rápida de subir toda a aplicação e o banco de dados localmente é através do **Docker Compose**.
-
-### Pré-requisitos
-- [Docker](https://www.docker.com/) instalado.
-- [Docker Compose](https://docs.docker.com/compose/) instalado.
-
-### Passo a Passo
-
-1. **Configurar as Variáveis de Ambiente**:
-   Copie o arquivo `.env.example` na raiz do projeto para criar o seu arquivo `.env`:
+1. Copiar variáveis de ambiente:
    ```bash
    cp .env.example .env
    ```
-   *Abra o arquivo `.env` e configure as credenciais do banco PostgreSQL conforme sua preferência.*
 
-2. **Iniciar todos os Serviços**:
-   Suba os containers do backend, frontend e banco de dados rodando o comando na raiz do projeto:
+2. Subir os containers (Backend, Frontend e PostgreSQL):
    ```bash
    docker compose up --build -d
    ```
 
-3. **Acessar as Aplicações**:
-   - **Frontend**: Disponível em [http://localhost:4200](http://localhost:4200).
-   - **Backend (API)**: Disponível em [http://localhost:5000](http://localhost:5000).
-   - **Documentação da API (Scalar)**: Disponível em [http://localhost:5000/scalar/v1](http://localhost:5000/scalar/v1).
+3. URLs de acesso:
+   - Frontend: http://localhost:4200
+   - Backend API: http://localhost:5000
+   - Documentação da API: http://localhost:5000/scalar/v1
 
 ---
 
-## 📖 Instruções Detalhadas de Desenvolvimento
+## Testes Automatizados
 
-Se você deseja desenvolver localmente rodando os serviços fora do Docker ou quer ver comandos de testes, consulte os guias específicos:
+- Backend:
+  ```bash
+  dotnet test Backend.Tests
+  ```
+- Especificações / Frontend:
+  ```bash
+  node --test test/*.spec.test.js
+  ```
 
-*   👉 **[Guia do Desenvolvedor Backend (C# / .NET)](./Backend/README.md)**
-*   👉 **[Guia do Desenvolvedor Frontend (Angular)](./Frontend/README.md)**
+---
+
+## Documentação Específica
+
+- [Documentação Backend](./Backend/README.md)
+- [Documentação Frontend](./Frontend/README.md)
