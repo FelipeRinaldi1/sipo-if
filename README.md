@@ -1,24 +1,39 @@
 # SIPO-IF: Sistema Transparente de Gestão Orçamentária
 
-Sistema de transparência financeira e gestão orçamentária do IFSP Campus Jacareí.
+O SIPO-IF é uma plataforma de transparência pública voltada para a consulta e acompanhamento da execução orçamentária do IFSP Campus Jacareí. O sistema transforma dados financeiros públicos em visualizações gráficas e tabelas analíticas para facilitar o controle social por cidadãos, alunos e gestores.
+
+---
+
+## Funcionalidades Principais
+
+- **Painel de Execução Orçamentária**: Exibe indicadores chaves de desempenho financeiro, gráficos de evolução mensal dos gastos e curvas de valores acumulados.
+- **Assistência Estudantil**: Apresenta a comparação entre recursos aplicados no apoio aos estudantes e no custeio operacional do campus, com seletor interativo e gráficos de linha mensais e acumulados.
+- **Gestão de Fornecedores e Contratos**: Exibe o ranking dos maiores credores com base nos pagamentos efetuados.
+- **Despesas por Categoria**: Exibe o gráfico de distribuição proporcional dos gastos agrupados por elemento de despesa.
+
+---
 
 ## Arquitetura
 
 O projeto é estruturado em monorepo com duas aplicações principais:
 
-- `Backend`: API REST em .NET 10 (Minimal APIs, EF Core, PostgreSQL).
-- `Frontend`: Single Page Application em Angular (Angular Material, ApexCharts, Tailwind CSS).
+- **Backend**: API REST desenvolvida em .NET 10.
+- **Frontend**: Aplicação web desenvolvida em Angular com a biblioteca de gráficos ApexCharts e componentes Angular Material.
 
 ---
 
-## Como Rodar com Docker
+## Execução e Desenvolvimento
 
-1. Copiar variáveis de ambiente:
+### Como Rodar com Docker
+
+1. Configurar o arquivo de variáveis de ambiente:
+
    ```bash
    cp .env.example .env
    ```
 
-2. Subir os containers (Backend, Frontend e PostgreSQL):
+2. Inicializar a aplicação:
+
    ```bash
    docker compose up --build -d
    ```
@@ -30,20 +45,22 @@ O projeto é estruturado em monorepo com duas aplicações principais:
 
 ---
 
-## Testes Automatizados
+### Execução de Testes Automatizados
 
-- Backend:
+- Testes de Backend:
+
   ```bash
   dotnet test Backend.Tests
   ```
-- Especificações / Frontend:
+
+- Testes de Especificação e Frontend:
   ```bash
   node --test test/*.spec.test.js
   ```
 
 ---
 
-## Documentação Específica
+### Guias de Desenvolvimento
 
-- [Documentação Backend](./Backend/README.md)
-- [Documentação Frontend](./Frontend/README.md)
+- [Guia do Backend](./Backend/README.md)
+- [Guia do Frontend](./Frontend/README.md)
