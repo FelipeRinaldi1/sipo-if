@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Api.Features.Items;
 
 namespace Api.Data;
 
@@ -61,17 +60,6 @@ public static class DataExtensions
         builder.Services.AddDbContext<ApiContext>(options =>
             options.UseNpgsql(connString)
                    .ConfigureWarnings(w => w.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.PendingModelChangesWarning))
-                   .UseSeeding((context, _) =>
-                   {
-                       if (!context.Set<Item>().Any())
-                       {
-                           context.Set<Item>().AddRange(
-                               new Item { Name = "Item Exemplo A", Description = "Descrição do Item Exemplo A", Price = 9.99m, CreatedAt = DateTime.UtcNow },
-                               new Item { Name = "Item Exemplo B", Description = "Descrição do Item Exemplo B", Price = 19.99m, CreatedAt = DateTime.UtcNow }
-                           );
-                           context.SaveChanges();
-                       }
-                   })
         );
     }
 }

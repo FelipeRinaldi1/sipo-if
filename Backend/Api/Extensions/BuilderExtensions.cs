@@ -1,7 +1,6 @@
 namespace Api.Extensions;
 
 using Api.Data;
-using Api.Features.Users;
 
 public static class BuilderExtensions
 {
@@ -26,10 +25,6 @@ public static class BuilderExtensions
         {
             options.SerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
         });
-
-        builder.Services.AddIdentityApiEndpoints<User>()
-            .AddEntityFrameworkStores<ApiContext>()
-            .AddClaimsPrincipalFactory<CustomClaimsPrincipalFactory>();
     }
 
     private static WebApplicationBuilder AddCors(this WebApplicationBuilder builder)
