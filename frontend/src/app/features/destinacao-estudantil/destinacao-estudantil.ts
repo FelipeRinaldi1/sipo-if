@@ -20,7 +20,7 @@ import {
   ResumoProgramaAcao,
   ItemAcaoResumo,
   EvolucaoAssistenciaItem,
-} from '../../core/despesas.service';
+} from '../../core/services/despesas.service';
 
 @Component({
   selector: 'app-destinacao-estudantil',

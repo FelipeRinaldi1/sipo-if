@@ -20,7 +20,7 @@ import {
   DespesasService,
   ResumoFornecedores,
   ElementoDespesaItem,
-} from '../../core/despesas.service';
+} from '../../core/services/despesas.service';
 
 @Component({
   selector: 'app-categorias',

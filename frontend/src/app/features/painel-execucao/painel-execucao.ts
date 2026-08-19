@@ -16,7 +16,7 @@ import {
   ApexLegend,
   ApexGrid,
 } from 'ng-apexcharts';
-import { DespesasService, ResumoExecucao, EvolucaoMensalItem } from '../../core/despesas.service';
+import { DespesasService, ResumoExecucao, EvolucaoMensalItem } from '../../core/services/despesas.service';
 
 @Component({
   selector: 'app-painel-execucao',

@@ -33,7 +33,7 @@ import {
   DespesasService,
   ResumoFornecedores,
   TopFornecedorItem,
-} from '../../core/despesas.service';
+} from '../../core/services/despesas.service';
 
 @Component({
   selector: 'app-gestao-fornecedores',

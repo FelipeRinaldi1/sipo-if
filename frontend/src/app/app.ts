@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSelectModule } from '@angular/material/select';
 
-import { DespesasService } from './core/despesas.service';
+import { DespesasService } from './core/services/despesas.service';
 import { PainelExecucaoComponent } from './features/painel-execucao/painel-execucao';
 import { DestinacaoEstudantilComponent } from './features/destinacao-estudantil/destinacao-estudantil';
 import { GestaoFornecedoresComponent } from './features/gestao-fornecedores/gestao-fornecedores';
