@@ -1,8 +1,10 @@
 name: Atualizar Dados e Publicar no GitHub Pages
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    # Executa todo dia 1 do mês às 08:00 UTC (05:00 Brasília)
     - cron: '0 8 1 * *'
   workflow_dispatch:
 
@@ -36,9 +38,9 @@ jobs:
         run: cd frontend && npm ci
 
       - name: Gerar JSONs a partir dos CSVs
-        run: node --experimental-strip-types scripts/gerar-dados.ts --ano 2025
+        run: node --experimental-strip-types scripts/gerar-dados.ts
 
-      - name: Commit e Push dos Novos JSONs (se houver alterações)
+      - name: Commit dos JSONs (se houver alterações)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -56,6 +58,8 @@ jobs:
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload do Artefato do GitHub Pages
         uses: actions/upload-pages-artifact@v3

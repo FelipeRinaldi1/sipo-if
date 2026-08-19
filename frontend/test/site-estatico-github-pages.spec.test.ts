@@ -7,8 +7,13 @@ import { aggregateDashboard } from '../../scripts/aggregators/dashboard.ts';
 import { aggregateProgramaAcao } from '../../scripts/aggregators/programa-acao.ts';
 import { aggregateFornecedores } from '../../scripts/aggregators/fornecedores.ts';
 
+function getRootPath(...segments: string[]): string {
+  const root = process.cwd().endsWith('frontend') ? path.resolve(process.cwd(), '..') : process.cwd();
+  return path.resolve(root, ...segments);
+}
+
 test('AC-023: resumo-execucao.json gerado com estrutura correta @spec:AC-023', () => {
-  const filePath = path.resolve(process.cwd(), 'frontend/src/assets/data/resumo-execucao.json');
+  const filePath = getRootPath('frontend/src/assets/data/resumo-execucao.json');
   assert.ok(fs.existsSync(filePath), 'resumo-execucao.json deve existir');
 
   const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -21,7 +26,7 @@ test('AC-023: resumo-execucao.json gerado com estrutura correta @spec:AC-023', (
 });
 
 test('AC-024: programa-acao.json gerado com estrutura correta @spec:AC-024', () => {
-  const filePath = path.resolve(process.cwd(), 'frontend/src/assets/data/programa-acao.json');
+  const filePath = getRootPath('frontend/src/assets/data/programa-acao.json');
   assert.ok(fs.existsSync(filePath), 'programa-acao.json deve existir');
 
   const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -32,7 +37,7 @@ test('AC-024: programa-acao.json gerado com estrutura correta @spec:AC-024', () 
 });
 
 test('AC-025: fornecedores.json gerado com estrutura correta @spec:AC-025', () => {
-  const filePath = path.resolve(process.cwd(), 'frontend/src/assets/data/fornecedores.json');
+  const filePath = getRootPath('frontend/src/assets/data/fornecedores.json');
   assert.ok(fs.existsSync(filePath), 'fornecedores.json deve existir');
 
   const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -49,7 +54,7 @@ test('AC-026: CLI retorna erro claro quando CSV não existe @spec:AC-026', () =>
 });
 
 test('AC-027: DespesasService aponta para assets locais (resumo-execucao) @spec:AC-027', () => {
-  const servicePath = path.resolve(process.cwd(), 'frontend/src/app/core/services/despesas.service.ts');
+  const servicePath = getRootPath('frontend/src/app/core/services/despesas.service.ts');
   const content = fs.readFileSync(servicePath, 'utf8');
 
   assert.ok(content.includes('assets/data') || content.includes('resumo-execucao.json'), 'deve apontar para assets/data');
@@ -57,7 +62,7 @@ test('AC-027: DespesasService aponta para assets locais (resumo-execucao) @spec:
 });
 
 test('AC-028: DespesasService aponta para assets locais (programa-acao e fornecedores) @spec:AC-028', () => {
-  const servicePath = path.resolve(process.cwd(), 'frontend/src/app/core/services/despesas.service.ts');
+  const servicePath = getRootPath('frontend/src/app/core/services/despesas.service.ts');
   const content = fs.readFileSync(servicePath, 'utf8');
 
   assert.ok(content.includes('programa-acao.json'), 'deve referenciar programa-acao.json');
@@ -65,8 +70,8 @@ test('AC-028: DespesasService aponta para assets locais (programa-acao e fornece
 });
 
 test('AC-029: Documentos paginados servidos por JSON local com paginação no cliente @spec:AC-029', () => {
-  const servicePath = path.resolve(process.cwd(), 'frontend/src/app/core/services/despesas.service.ts');
-  const docsJsonPath = path.resolve(process.cwd(), 'frontend/src/assets/data/documentos.json');
+  const servicePath = getRootPath('frontend/src/app/core/services/despesas.service.ts');
+  const docsJsonPath = getRootPath('frontend/src/assets/data/documentos.json');
   const content = fs.readFileSync(servicePath, 'utf8');
 
   assert.ok(fs.existsSync(docsJsonPath), 'documentos.json deve existir em assets/data');
@@ -75,7 +80,7 @@ test('AC-029: Documentos paginados servidos por JSON local com paginação no cl
 });
 
 test('AC-030: Workflow existe com trigger mensal e manual @spec:AC-030', () => {
-  const wfPath = path.resolve(process.cwd(), '.github/workflows/atualizar-dados.yml');
+  const wfPath = getRootPath('.github/workflows/atualizar-dados.yml');
   assert.ok(fs.existsSync(wfPath), 'Workflow atualizar-dados.yml deve existir');
 
   const content = fs.readFileSync(wfPath, 'utf8');
