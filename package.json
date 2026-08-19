@@ -1,0 +1,12 @@
+{
+  "name": "sipo-if",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npm run gerar-dados && cd frontend && npm start -- --open",
+    "dev": "npm run start",
+    "gerar-dados": "node --experimental-strip-types scripts/gerar-dados.ts",
+    "test:spec": "node --experimental-strip-types --test --test-reporter=tap frontend/test/**/*.spec.test.ts"
+  }
+}

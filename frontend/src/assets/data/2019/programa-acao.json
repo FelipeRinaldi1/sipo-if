@@ -1,0 +1,306 @@
+{
+  "totalGeralEmpenhado": 1998706.21,
+  "totalGeralPago": 1326744.76,
+  "acoes": [
+    {
+      "codigoAcao": "20RL",
+      "nomeAcao": "20RL - FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+      "totalEmpenhado": 1258646.35,
+      "totalLiquidado": 881321.7,
+      "totalPago": 880327.85,
+      "porcentagemDoTotal": 66.35
+    },
+    {
+      "codigoAcao": "2994",
+      "nomeAcao": "2994 - ASSISTENCIA AOS ESTUDANTES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+      "totalEmpenhado": 461834.28,
+      "totalLiquidado": 444903,
+      "totalPago": 444064,
+      "porcentagemDoTotal": 33.47
+    },
+    {
+      "codigoAcao": "20RG",
+      "nomeAcao": "20RG - REESTRUTURACAO E MODERNIZACAO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+      "totalEmpenhado": 230214.37,
+      "totalLiquidado": 2352.91,
+      "totalPago": 2352.91,
+      "porcentagemDoTotal": 0.18
+    },
+    {
+      "codigoAcao": "00PI",
+      "nomeAcao": "00PI - APOIO AO PROGRAMA NACIONAL DE ALIMENTACAO ESCOLAR (PNAE)",
+      "totalEmpenhado": 48011.21,
+      "totalLiquidado": 0,
+      "totalPago": 0,
+      "porcentagemDoTotal": 0
+    }
+  ],
+  "evolucaoAssistenciaMensal": [
+    {
+      "codigoAcao": "2994",
+      "mesAno": "01/2019",
+      "valorEmpenhado": 33979.48,
+      "valorLiquidado": 5700,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "01/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "01/2019",
+      "valorEmpenhado": 81104.23,
+      "valorLiquidado": 3745.75,
+      "valorPago": 224.33
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "02/2019",
+      "valorEmpenhado": 79018.47,
+      "valorLiquidado": 23395.59,
+      "valorPago": 13607.43
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "02/2019",
+      "valorEmpenhado": 33979.49,
+      "valorLiquidado": 39848,
+      "valorPago": 5700
+    },
+    {
+      "codigoAcao": "00PI",
+      "mesAno": "02/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "03/2019",
+      "valorEmpenhado": 15823.03,
+      "valorLiquidado": 37787,
+      "valorPago": 39848
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "03/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "03/2019",
+      "valorEmpenhado": 8185.46,
+      "valorLiquidado": 24092.93,
+      "valorPago": 27431.43
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "04/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "04/2019",
+      "valorEmpenhado": 79319.51,
+      "valorLiquidado": 0,
+      "valorPago": 37787
+    },
+    {
+      "codigoAcao": "00PI",
+      "mesAno": "04/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "04/2019",
+      "valorEmpenhado": 280194.1,
+      "valorLiquidado": 53712.54,
+      "valorPago": 45681.85
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "05/2019",
+      "valorEmpenhado": 54080.5,
+      "valorLiquidado": 129940.5,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "05/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 58901.17,
+      "valorPago": 39961.29
+    },
+    {
+      "codigoAcao": "00PI",
+      "mesAno": "05/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "06/2019",
+      "valorEmpenhado": 135793.39,
+      "valorLiquidado": 154028.75,
+      "valorPago": 52813.18
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "06/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 127105.5
+    },
+    {
+      "codigoAcao": "00PI",
+      "mesAno": "06/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "07/2019",
+      "valorEmpenhado": 54798.51,
+      "valorLiquidado": 45983.42,
+      "valorPago": 140197.38
+    },
+    {
+      "codigoAcao": "00PI",
+      "mesAno": "07/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "07/2019",
+      "valorEmpenhado": 7082.57,
+      "valorLiquidado": 9308.75,
+      "valorPago": 4381
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "07/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "08/2019",
+      "valorEmpenhado": 50078.42,
+      "valorLiquidado": 52897.75,
+      "valorPago": 6923.75
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "08/2019",
+      "valorEmpenhado": 55255.45,
+      "valorLiquidado": 153320.66,
+      "valorPago": 81387.19
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "09/2019",
+      "valorEmpenhado": 42653.95,
+      "valorLiquidado": 79302.16,
+      "valorPago": 100923.72
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "09/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "09/2019",
+      "valorEmpenhado": 11084.65,
+      "valorLiquidado": 6397.5,
+      "valorPago": 53057.75
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "10/2019",
+      "valorEmpenhado": 2352.91,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "10/2019",
+      "valorEmpenhado": 305692.59,
+      "valorLiquidado": 115468.91,
+      "valorPago": 89828.76
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "10/2019",
+      "valorEmpenhado": 176406.63,
+      "valorLiquidado": 89988,
+      "valorPago": 34367.5
+    },
+    {
+      "codigoAcao": "00PI",
+      "mesAno": "11/2019",
+      "valorEmpenhado": 48011.21,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "11/2019",
+      "valorEmpenhado": 81395.23,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "11/2019",
+      "valorEmpenhado": 80951.6,
+      "valorLiquidado": 87418.07,
+      "valorPago": 81016.63
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "11/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 72425.5,
+      "valorPago": 61858
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "12/2019",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 610,
+      "valorPago": 73035.5
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "12/2019",
+      "valorEmpenhado": 134998.6,
+      "valorLiquidado": 81951.75,
+      "valorPago": 207254.66
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "12/2019",
+      "valorEmpenhado": 146466.23,
+      "valorLiquidado": 2352.91,
+      "valorPago": 2352.91
+    }
+  ]
+}

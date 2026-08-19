@@ -1,0 +1,92 @@
+{
+  "totalEmpenhado": 1421320.48,
+  "totalLiquidado": 1046751.7,
+  "totalPago": 1046751.7,
+  "totalRestosAPagarPagos": 175610.86,
+  "evolucaoMensal": [
+    {
+      "mesAno": "01/2017",
+      "empenhado": 74746.54,
+      "liquidado": 9055.38,
+      "pago": 2666.23,
+      "restosAPagarPagos": 97595.51
+    },
+    {
+      "mesAno": "02/2017",
+      "empenhado": 66592.3,
+      "liquidado": 93123.35,
+      "pago": 90922.5,
+      "restosAPagarPagos": 32041.85
+    },
+    {
+      "mesAno": "03/2017",
+      "empenhado": 85634.65,
+      "liquidado": 91527.94,
+      "pago": 92414.07,
+      "restosAPagarPagos": 2537.78
+    },
+    {
+      "mesAno": "04/2017",
+      "empenhado": 124647.25,
+      "liquidado": 153361.59,
+      "pago": 110905.6,
+      "restosAPagarPagos": 2782.47
+    },
+    {
+      "mesAno": "05/2017",
+      "empenhado": 342562.49,
+      "liquidado": 131842.72,
+      "pago": 135334.57,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "06/2017",
+      "empenhado": 83944.93,
+      "liquidado": 76043.89,
+      "pago": 90701.03,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "07/2017",
+      "empenhado": 122108.66,
+      "liquidado": 77057.1,
+      "pago": 56414.63,
+      "restosAPagarPagos": 40653.25
+    },
+    {
+      "mesAno": "08/2017",
+      "empenhado": 66120.59,
+      "liquidado": 90259.6,
+      "pago": 90985.37,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "09/2017",
+      "empenhado": 63397.61,
+      "liquidado": 81045.92,
+      "pago": 52860.2,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "10/2017",
+      "empenhado": 91247.98,
+      "liquidado": 85403.1,
+      "pago": 65658.77,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "11/2017",
+      "empenhado": 94151.2,
+      "liquidado": 85754.14,
+      "pago": 101099.63,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "12/2017",
+      "empenhado": 206166.28,
+      "liquidado": 72276.97,
+      "pago": 156789.1,
+      "restosAPagarPagos": 0
+    }
+  ]
+}

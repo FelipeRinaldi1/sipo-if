@@ -1,0 +1,16 @@
+{
+  "name": "sipo-if-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "baixar": "node --experimental-strip-types baixar-csvs.ts",
+    "gerar": "node --experimental-strip-types gerar-dados.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0"
+  }
+}

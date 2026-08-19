@@ -1,0 +1,996 @@
+{
+  "totalGeral": 1266887.21,
+  "topFornecedores": [
+    {
+      "favorecido": "10.928.126/0001-84 - REAK SEGURANCA E VIGILANCIA PATRIMONIAL LTDA",
+      "totalPago": 436277.6,
+      "quantidadeLancamentos": 8,
+      "porcentagemDoTotal": 34.44,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 39664.46,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 39664.46,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 128355.56,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 187482.96,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2016",
+          "valorPago": 40193.14,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 917.02,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "07.147.016/0001-70 - TJ TERCEIRIZACAO DE MAO DE OBRA LTDA",
+      "totalPago": 383314.52,
+      "quantidadeLancamentos": 9,
+      "porcentagemDoTotal": 30.26,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 36629.11,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 36629.11,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 75320.5,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 1253.36,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "05/2016",
+          "valorPago": 47819.66,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2016",
+          "valorPago": 92250.83,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "10/2016",
+          "valorPago": 91569.57,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 1842.38,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 103958.99,
+      "quantidadeLancamentos": 6,
+      "porcentagemDoTotal": 8.21,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 8400,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 8400,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 25200,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 60116.61,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 1842.38,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "48.962.625/0001-60 - SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+      "totalPago": 62908.5,
+      "quantidadeLancamentos": 10,
+      "porcentagemDoTotal": 4.97,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 3960,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 3960,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 11880,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 27720,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2016",
+          "valorPago": 336,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2016",
+          "valorPago": 504.17,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 14548.33,
+          "quantidadeLancamentos": 4
+        }
+      ]
+    },
+    {
+      "favorecido": "11.093.505/0001-64 - LIVRARIA GP LTDA",
+      "totalPago": 46644.8,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 3.68,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 46644.8,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    }
+  ],
+  "todosFornecedores": [
+    {
+      "favorecido": "10.928.126/0001-84 - REAK SEGURANCA E VIGILANCIA PATRIMONIAL LTDA",
+      "totalPago": 436277.6,
+      "quantidadeLancamentos": 8,
+      "porcentagemDoTotal": 34.44,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 39664.46,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 39664.46,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 128355.56,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 187482.96,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2016",
+          "valorPago": 40193.14,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 917.02,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "07.147.016/0001-70 - TJ TERCEIRIZACAO DE MAO DE OBRA LTDA",
+      "totalPago": 383314.52,
+      "quantidadeLancamentos": 9,
+      "porcentagemDoTotal": 30.26,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 36629.11,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 36629.11,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 75320.5,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 1253.36,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "05/2016",
+          "valorPago": 47819.66,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2016",
+          "valorPago": 92250.83,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "10/2016",
+          "valorPago": 91569.57,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 1842.38,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 103958.99,
+      "quantidadeLancamentos": 6,
+      "porcentagemDoTotal": 8.21,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 8400,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 8400,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 25200,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 60116.61,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 1842.38,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "48.962.625/0001-60 - SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+      "totalPago": 62908.5,
+      "quantidadeLancamentos": 10,
+      "porcentagemDoTotal": 4.97,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 3960,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 3960,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 11880,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 27720,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2016",
+          "valorPago": 336,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2016",
+          "valorPago": 504.17,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 14548.33,
+          "quantidadeLancamentos": 4
+        }
+      ]
+    },
+    {
+      "favorecido": "11.093.505/0001-64 - LIVRARIA GP LTDA",
+      "totalPago": 46644.8,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 3.68,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 46644.8,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "11.311.279/0001-40 - EUNICE MARIA GONCALVES DE OLIVEIRA",
+      "totalPago": 42490.36,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 3.35,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 42490.36,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "09.405.866/0001-57 - PEDRAZUL SERVICOS LTDA",
+      "totalPago": 39751.57,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 3.14,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2016",
+          "valorPago": 39751.57,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "11.693.175/0001-48 - SOUZA PRADO EMPREENDIMENTOS E PROJETOS LTDA",
+      "totalPago": 26144.17,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 2.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 5725,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 5725,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 14694.17,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "15.675.029/0001-40 - J.A.F. DORNELLES FILHO COMERCIO DE INFORMATICA",
+      "totalPago": 17658,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.39,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2016",
+          "valorPago": 17658,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "04.834.104/0001-52 - MINAS FLEX COMERCIO E INDUSTRIA DE MOVEIS LTDA",
+      "totalPago": 16080,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.27,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 16080,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "40.432.544/0001-47 - CLARO S.A.",
+      "totalPago": 13657.19,
+      "quantidadeLancamentos": 8,
+      "porcentagemDoTotal": 1.08,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2016",
+          "valorPago": 1074.03,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2016",
+          "valorPago": 1074.03,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2016",
+          "valorPago": 3222.09,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 6663.07,
+          "quantidadeLancamentos": 3
+        },
+        {
+          "mesAno": "11/2016",
+          "valorPago": 954.83,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 669.14,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "11.297.973/0001-50 - ESPER & FLORENCIO ASSISTENCIA E SERVICO LTDA",
+      "totalPago": 12449.95,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.98,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2016",
+          "valorPago": 12449.95,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "13.159.833/0001-41 - ROMAGAZINE EIRELI",
+      "totalPago": 10973.08,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.87,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 10099.82,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 873.26,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.205.116/0001-10 - COMERCIO SILVEIRA ATACADISTA DE MOVEIS MOGI MIRIM LTDA",
+      "totalPago": 6491.7,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 0.51,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 1760,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2016",
+          "valorPago": 2443.65,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2016",
+          "valorPago": 920,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 1368.05,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "04.627.625/0001-39 - MIRANTI INDUSTRIA DE MOVEIS PARA ESCRITORIO LTDA",
+      "totalPago": 5450,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.43,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 5450,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "82.330.937/0001-90 - TREZE COMERCIAL LTDA",
+      "totalPago": 4993.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.39,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 4993.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "09.664.482/0001-59 - BSL COMERCIO, IMPORTACAO E EXPORTACAO LTDA",
+      "totalPago": 4980,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.39,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 4980,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "05.933.053/0001-89 - EDITORA GRAFICA RIO CIDADE LTDA",
+      "totalPago": 4726.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.37,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 4726.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "00.761.025/0001-08 - VENDAS ONLINE COMERCIAL LTDA",
+      "totalPago": 4650.6,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.37,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2016",
+          "valorPago": 2325.3,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 2325.3,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "11.094.173/0001-32 - OFFICE DO BRASIL IMPORTACAO E EXPORTACAO LTDA",
+      "totalPago": 3400,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.27,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 3400,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "04.996.048/0001-52 - NAVIZO MATERIAIS ELETRONICOS E SERVICOS EM EQUIPAMENTOS DE INFORMATICA LTDA",
+      "totalPago": 2898.5,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.23,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2016",
+          "valorPago": 2898.5,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "09.025.333/0001-40 - TERRAGIGA INFORMATICA LTDA",
+      "totalPago": 1999.98,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.16,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2016",
+          "valorPago": 1999.98,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "19.351.920/0001-82 - C V MALFATTI COMPONENTES ELETRONICOS",
+      "totalPago": 1373.65,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.11,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2016",
+          "valorPago": 811.65,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 562,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "04.869.711/0001-58 - FLEXIBASE INDUSTRIA E COMERCIO DE MOVEIS, IMPORTACAO E EXPORTACAO LTDA",
+      "totalPago": 1280,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.1,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2016",
+          "valorPago": 1280,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "19.165.561/0001-79 - B.R.B. DE RAMOS",
+      "totalPago": 1139.01,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.09,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 1138.98,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2016",
+          "valorPago": 0.03,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.526.349/0001-15 - ALVES & MOURA APOIO ADMINISTRATIVO LTDA",
+      "totalPago": 1095,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.09,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2016",
+          "valorPago": 1095,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "44.597.052/0079-22 - ABRIL COMUNICACOES S/A",
+      "totalPago": 1035.72,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.08,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2016",
+          "valorPago": 1035.72,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "06.910.908/0001-19 - J BRILHANTE COMERCIAL LTDA",
+      "totalPago": 935.25,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.07,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 935.25,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "39.818.737/0001-51 - HORTO CENTRAL MARATAIZES LTDA",
+      "totalPago": 826.5,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.07,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2016",
+          "valorPago": 826.5,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.687.592/0001-50 - VALOR ECONOMICO S.A.",
+      "totalPago": 797.5,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2016",
+          "valorPago": 797.5,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "16.500.873/0001-01 - TROVO COMERCIAL ELETRICA LTDA",
+      "totalPago": 781,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2016",
+          "valorPago": 781,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "18.641.075/0001-17 - LICITARE PRODUTOS, MATERIAIS E SERVICOS LTDA",
+      "totalPago": 704.4,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2016",
+          "valorPago": 418.2,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2016",
+          "valorPago": 286.2,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.602.747/0001-45 - DIGISERVI TRADING LTDA",
+      "totalPago": 700,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2016",
+          "valorPago": 700,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "17.200.802/0001-48 - TIGRA COMERCIO E SERVICOS DE INFORMATICA LTDA",
+      "totalPago": 674.7,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.05,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2016",
+          "valorPago": 674.7,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "67.795.682/0001-47 - AMAD - COMERCIO E TRANSPORTE DE GAS LTDA",
+      "totalPago": 644.4,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.05,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2016",
+          "valorPago": 644.4,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "01.166.738/0001-96 - ITALIA OFFICE COMERCIO E SERVICOS DE MOVEIS LTDA",
+      "totalPago": 580,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.05,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2016",
+          "valorPago": 580,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "18.824.869/0001-16 - ELEKTROFUSE INDUSTRIA E COMERCIO LTDA",
+      "totalPago": 460.98,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.04,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 460.98,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "18.704.019/0001-84 - CORUJET EDITORA, IMPORTACAO, EXPORTACAO E REPRESENTANTE COMERCIAL LTDA",
+      "totalPago": 436.39,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.03,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2016",
+          "valorPago": 436.39,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.278.886/0001-93 - DAMASO COMERCIO E SERVICOS LTDA",
+      "totalPago": 386,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.03,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2016",
+          "valorPago": 386,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "12.207.927/0001-86 - DCSA SUPRIMENTOS DE INFORMATICA LTDA",
+      "totalPago": 350,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.03,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2016",
+          "valorPago": 350,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.596.399/0001-79 - ATLANTIS COMERCIO DE MAQUINAS E EQUIPAMENTOS EIRELI",
+      "totalPago": 295.98,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2016",
+          "valorPago": 295.98,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "06.241.041/0001-56 - ALVES & CABRAL LTDA",
+      "totalPago": 195.7,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2016",
+          "valorPago": 195.7,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "56.324.114/0001-41 - PERFIL EDUCACIONAL LTDA",
+      "totalPago": 151.2,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2016",
+          "valorPago": 151.2,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.890.611/0001-40 - LINHA BRASIL SERVICOS ADMINISTRATIVOS LTDA",
+      "totalPago": 143.3,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 143.3,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "94.062.288/0001-72 - LETRAL COMERCIO DE PAPEIS MATERIAL ESCOLAR LTDA",
+      "totalPago": 0.42,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2016",
+          "valorPago": 0.42,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "elementosDespesa": [
+    {
+      "elemento": "37 - Locação de Mão-de-Obra",
+      "totalPago": 885487.86,
+      "quantidadeLancamentos": 22,
+      "porcentagemDoTotal": 63.78
+    },
+    {
+      "elemento": "39 - Outros Serviços de Terceiros - Pessoa Jurídica",
+      "totalPago": 194959.05,
+      "quantidadeLancamentos": 28,
+      "porcentagemDoTotal": 14.04
+    },
+    {
+      "elemento": "52 - Equipamentos e Material Permanente",
+      "totalPago": 163714.64,
+      "quantidadeLancamentos": 24,
+      "porcentagemDoTotal": 11.79
+    },
+    {
+      "elemento": "36 - Outros Serviços de Terceiros - Pessoa Física",
+      "totalPago": 101480,
+      "quantidadeLancamentos": 14,
+      "porcentagemDoTotal": 7.31
+    },
+    {
+      "elemento": "30 - Material de Consumo",
+      "totalPago": 22725.66,
+      "quantidadeLancamentos": 21,
+      "porcentagemDoTotal": 1.64
+    },
+    {
+      "elemento": "14 - Diárias - Civil",
+      "totalPago": 18228.19,
+      "quantidadeLancamentos": 6,
+      "porcentagemDoTotal": 1.31
+    },
+    {
+      "elemento": "93 - Indenizações e Restituições",
+      "totalPago": 1804.17,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.13
+    }
+  ]
+}

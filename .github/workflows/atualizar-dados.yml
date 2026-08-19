@@ -1,0 +1,67 @@
+name: Atualizar Dados e Publicar no GitHub Pages
+
+on:
+  schedule:
+    # Executa todo dia 1 do mês às 08:00 UTC (05:00 Brasília)
+    - cron: '0 8 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'frontend/package-lock.json'
+
+      - name: Instalar Dependências do Frontend
+        run: cd frontend && npm ci
+
+      - name: Gerar JSONs a partir dos CSVs
+        run: node --experimental-strip-types scripts/gerar-dados.ts --ano 2025
+
+      - name: Commit e Push dos Novos JSONs (se houver alterações)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/src/assets/data/
+          if git diff --staged --quiet; then
+            echo "Nenhuma alteração nos dados para commitar."
+          else
+            DATA_ATUAL=$(date +'%m/%Y')
+            git commit -m "dados: atualização $DATA_ATUAL"
+            git push
+          fi
+
+      - name: Build do Angular para GitHub Pages
+        run: cd frontend && npm run build -- --base-href /sipo-if/
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload do Artefato do GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'frontend/dist/template-web/browser'
+
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

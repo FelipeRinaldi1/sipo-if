@@ -1,0 +1,712 @@
+{
+  "totalGeral": 1359719.67,
+  "topFornecedores": [
+    {
+      "favorecido": "02.983.749/0001-21 - FORCA E APOIO SEGURANCA PRIVADA LTDA",
+      "totalPago": 587146.44,
+      "quantidadeLancamentos": 6,
+      "porcentagemDoTotal": 43.18,
+      "evolucaoMensal": [
+        {
+          "mesAno": "02/2020",
+          "valorPago": 39312.95,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 117938.85,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2020",
+          "valorPago": 227948.88,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2020",
+          "valorPago": 68196.58,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2020",
+          "valorPago": 105749.18,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 28000,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "20.191.043/0001-09 - CONSOLIDEZ SERVICOS DE LIMPEZA LTDA",
+      "totalPago": 186299.55,
+      "quantidadeLancamentos": 5,
+      "porcentagemDoTotal": 13.7,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2020",
+          "valorPago": 15417.74,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 30835.48,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2020",
+          "valorPago": 92506.44,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2020",
+          "valorPago": 46689.54,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 850.35,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 84421.78,
+      "quantidadeLancamentos": 11,
+      "porcentagemDoTotal": 6.21,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2020",
+          "valorPago": 8000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2020",
+          "valorPago": 8000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 32000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2020",
+          "valorPago": 3717.64,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2020",
+          "valorPago": 17800,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2020",
+          "valorPago": 6239.54,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 7314.21,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2020",
+          "valorPago": 1350.39,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "10.558.126/0001-30 - AGRO COMERCIAL PORTO LTDA",
+      "totalPago": 76975.8,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 5.66,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2020",
+          "valorPago": 52541.28,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "09/2020",
+          "valorPago": 24434.52,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "72.381.189/0010-01 - DELL COMPUTADORES DO BRASIL LTDA",
+      "totalPago": 63594,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 4.68,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 63594,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    }
+  ],
+  "todosFornecedores": [
+    {
+      "favorecido": "02.983.749/0001-21 - FORCA E APOIO SEGURANCA PRIVADA LTDA",
+      "totalPago": 587146.44,
+      "quantidadeLancamentos": 6,
+      "porcentagemDoTotal": 43.18,
+      "evolucaoMensal": [
+        {
+          "mesAno": "02/2020",
+          "valorPago": 39312.95,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 117938.85,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2020",
+          "valorPago": 227948.88,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2020",
+          "valorPago": 68196.58,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2020",
+          "valorPago": 105749.18,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 28000,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "20.191.043/0001-09 - CONSOLIDEZ SERVICOS DE LIMPEZA LTDA",
+      "totalPago": 186299.55,
+      "quantidadeLancamentos": 5,
+      "porcentagemDoTotal": 13.7,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2020",
+          "valorPago": 15417.74,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 30835.48,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2020",
+          "valorPago": 92506.44,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2020",
+          "valorPago": 46689.54,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 850.35,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 84421.78,
+      "quantidadeLancamentos": 11,
+      "porcentagemDoTotal": 6.21,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2020",
+          "valorPago": 8000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2020",
+          "valorPago": 8000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 32000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2020",
+          "valorPago": 3717.64,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2020",
+          "valorPago": 17800,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2020",
+          "valorPago": 6239.54,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 7314.21,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2020",
+          "valorPago": 1350.39,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "10.558.126/0001-30 - AGRO COMERCIAL PORTO LTDA",
+      "totalPago": 76975.8,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 5.66,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2020",
+          "valorPago": 52541.28,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "09/2020",
+          "valorPago": 24434.52,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "72.381.189/0010-01 - DELL COMPUTADORES DO BRASIL LTDA",
+      "totalPago": 63594,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 4.68,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 63594,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "48.962.625/0001-60 - SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+      "totalPago": 55598.11,
+      "quantidadeLancamentos": 7,
+      "porcentagemDoTotal": 4.09,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2020",
+          "valorPago": 6000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2020",
+          "valorPago": 6000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 24000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2020",
+          "valorPago": 16800,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 2564.7,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2020",
+          "valorPago": 233.41,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "32.026.488/0001-12 - MKS SOLUCOES COMERCIAIS E DISTRIBUIDORA DE MATERIAIS LTDA",
+      "totalPago": 54536,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 4.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 54536,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "02.179.274/0001-15 - MOVA LOG LTDA",
+      "totalPago": 54444,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 4,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 54444,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "27.423.859/0001-60 - MARISTELA DA SILVA SOUSA",
+      "totalPago": 47910.48,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 3.52,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2020",
+          "valorPago": 45884,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2020",
+          "valorPago": 2026.48,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "66.132.267/0001-40 - NIVALDO MANHANI LTDA",
+      "totalPago": 29838.33,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 2.19,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2020",
+          "valorPago": 29838.33,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "13.457.500/0001-07 - FARIA RODRIGUES INDUSTRIA DE MOVEIS LTDA",
+      "totalPago": 27085.75,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.99,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 27085.75,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.568.281/0001-37 - COOPERATIVA DOS TRABALHADORES DA REFORMA AGRARIA TERRA LIVRE LTDA",
+      "totalPago": 14915,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.1,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2020",
+          "valorPago": 14915,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "40.432.544/0001-47 - CLARO S.A.",
+      "totalPago": 14216.82,
+      "quantidadeLancamentos": 6,
+      "porcentagemDoTotal": 1.05,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2020",
+          "valorPago": 500,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2020",
+          "valorPago": 500,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2020",
+          "valorPago": 5000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2020",
+          "valorPago": 6916.82,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "11/2020",
+          "valorPago": 1300,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "34.832.381/0001-97 - ESCOLARES INDUSTRIA E COMERCIO DE MOVEIS LTDA",
+      "totalPago": 12000,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.88,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 12000,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "76.291.251/0001-34 - MODILAC INDUSTRIA E COMERCIO DE MOVEIS LTDA",
+      "totalPago": 10396,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.76,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 10396,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "27.208.405/0001-76 - AS DISTRIBUIDORA DA FAMILIA LTDA",
+      "totalPago": 9250,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.68,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2020",
+          "valorPago": 9250,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "04.602.789/0001-01 - DATEN TECNOLOGIA LTDA",
+      "totalPago": 9192,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.68,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 9192,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "08.331.877/0001-77 - ADVANCED COMERCIO DE EQUIPAMENTOS LTDA",
+      "totalPago": 7290.28,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.54,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 7290.28,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "28.207.226/0001-87 - GEINE H C CUNHA LTDA",
+      "totalPago": 5980,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 0.44,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 5980,
+          "quantidadeLancamentos": 4
+        }
+      ]
+    },
+    {
+      "favorecido": "12.118.086/0001-30 - INVICTUS FIRE EQUIPAMENTOS E SERVICOS DE SEGURANCA CONTRA INCENDIO LTDA",
+      "totalPago": 3050,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.22,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 3050,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "07.245.458/0001-50 - DAGEAL - COMERCIO DE MATERIAL DE ESCRITORIO LTDA",
+      "totalPago": 1455,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.11,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2020",
+          "valorPago": 1455,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "17.356.181/0001-96 - ADONAI COMERCIO DE MAQUINAS E EQUIPAMENTOS LTDA",
+      "totalPago": 1026.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.08,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2020",
+          "valorPago": 1026.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "07.048.323/0001-02 - RC RAMOS COMERCIO LTDA",
+      "totalPago": 920,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.07,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 920,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "16.618.429/0001-87 - M R DE M MAIA PAPELARIA EIRELI",
+      "totalPago": 911.73,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.07,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 911.73,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "05.075.962/0001-23 - MAXIM QUALITTA COMERCIO LTDA",
+      "totalPago": 575.2,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.04,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2020",
+          "valorPago": 270,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2020",
+          "valorPago": 305.2,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.696.188/0001-42 - DAROS-SUPRIMENTOS PARA INFORMATICA E ESCRITORIO LTDA",
+      "totalPago": 203.83,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 203.83,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "05.291.541/0001-30 - TY BORTHOLIN COMERCIAL LTDA",
+      "totalPago": 191.5,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 191.5,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "06.193.748/0001-34 - FAVERO E ESTEVES EQUIPAMENTOS DE SEGURANCA LTDA",
+      "totalPago": 152.22,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 152.22,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "12.591.321/0001-97 - RASEK LOGISTICA E SUPRIMENTOS LTDA",
+      "totalPago": 143.05,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2020",
+          "valorPago": 143.05,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "elementosDespesa": [
+    {
+      "elemento": "37 - Locação de Mão-de-Obra",
+      "totalPago": 773445.99,
+      "quantidadeLancamentos": 11,
+      "porcentagemDoTotal": 56.76
+    },
+    {
+      "elemento": "52 - Equipamentos e Material Permanente",
+      "totalPago": 277406.36,
+      "quantidadeLancamentos": 23,
+      "porcentagemDoTotal": 20.36
+    },
+    {
+      "elemento": "39 - Outros Serviços de Terceiros - Pessoa Jurídica",
+      "totalPago": 154388.93,
+      "quantidadeLancamentos": 25,
+      "porcentagemDoTotal": 11.33
+    },
+    {
+      "elemento": "32 - Material, Bem ou Serviço para Distribuição Gratuita",
+      "totalPago": 139801.28,
+      "quantidadeLancamentos": 8,
+      "porcentagemDoTotal": 10.26
+    },
+    {
+      "elemento": "30 - Material de Consumo",
+      "totalPago": 14677.11,
+      "quantidadeLancamentos": 10,
+      "porcentagemDoTotal": 1.08
+    },
+    {
+      "elemento": "20 - Auxílio Financeiro a Pesquisadores",
+      "totalPago": 2884.2,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.21
+    }
+  ]
+}

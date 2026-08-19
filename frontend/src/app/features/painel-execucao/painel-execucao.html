@@ -1,0 +1,148 @@
+<div class="flex flex-col gap-6">
+
+  <div *ngIf="loading()" class="flex justify-center items-center p-12">
+    <mat-progress-spinner mode="indeterminate" diameter="48" color="primary"></mat-progress-spinner>
+  </div>
+
+  <mat-card *ngIf="error()" class="p-4 bg-red-50 text-red-700 border border-red-200">
+    <mat-card-content class="flex items-center gap-2">
+      <mat-icon color="warn">error</mat-icon>
+      <span>{{ error() }}</span>
+    </mat-card-content>
+  </mat-card>
+
+  <div *ngIf="!loading() && resumo()" class="flex flex-col gap-6">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">account_balance_wallet</mat-icon>
+          <mat-card-title class="text-xs sm:text-sm font-medium text-slate-600">Total Empenhado</mat-card-title>
+          <mat-card-subtitle class="text-[11px]">Compromissos assumidos</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3 sm:pt-4">
+          <div class="text-xl sm:text-2xl font-bold text-slate-900 truncate">
+            {{ resumo()?.totalEmpenhado | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="accent">assignment_turned_in</mat-icon>
+          <mat-card-title class="text-xs sm:text-sm font-medium text-slate-600">Total Liquidado</mat-card-title>
+          <mat-card-subtitle class="text-[11px]">Serviços e bens entregues</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3 sm:pt-4">
+          <div class="text-xl sm:text-2xl font-bold text-slate-900 truncate">
+            {{ resumo()?.totalLiquidado | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">payments</mat-icon>
+          <mat-card-title class="text-xs sm:text-sm font-medium text-slate-600">Total Pago</mat-card-title>
+          <mat-card-subtitle class="text-[11px]">Execução financeira total</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3 sm:pt-4 flex flex-col gap-2">
+          <div class="text-xl sm:text-2xl font-bold text-slate-900 truncate">
+            {{ resumo()?.totalPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+          <div class="flex items-center gap-2">
+            <mat-progress-bar mode="determinate" color="primary" [value]="getExecucaoPorcentagem(resumo()?.totalPago || 0, resumo()?.totalEmpenhado || 1)" class="rounded"></mat-progress-bar>
+            <span class="text-xs font-bold text-slate-700 whitespace-nowrap">
+              {{ getExecucaoPorcentagem(resumo()?.totalPago || 0, resumo()?.totalEmpenhado || 1) }}%
+            </span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="p-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="warn">history</mat-icon>
+          <mat-card-title class="text-xs sm:text-sm font-medium text-slate-600">Restos a Pagar Pagos</mat-card-title>
+          <mat-card-subtitle class="text-[11px]">Exercícios anteriores</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3 sm:pt-4">
+          <div class="text-xl sm:text-2xl font-bold text-slate-900 truncate">
+            {{ resumo()?.totalRestosAPagarPagos | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-700">
+          <mat-icon class="text-indigo-500">show_chart</mat-icon>
+          Evolução Mensal — Empenhado, Liquidado e Pago
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Valores em R$ mil</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="areaChartSeries()"
+          [chart]="areaChart"
+          [xaxis]="{ categories: areaChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [stroke]="areaStroke"
+          [fill]="areaFill"
+          [dataLabels]="areaDataLabels"
+          [colors]="areaColors"
+          [grid]="areaGrid"
+          [tooltip]="areaTooltip"
+          [legend]="areaLegend"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-700">
+          <mat-icon class="text-emerald-600">stacked_line_chart</mat-icon>
+          Evolução Acumulada — Empenhado, Liquidado e Pago
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Total progressivo acumulado mês a mês (valores em R$ mil)</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="acumuladoChartSeries()"
+          [chart]="acumuladoChart"
+          [xaxis]="{ categories: areaChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [stroke]="acumuladoStroke"
+          [colors]="acumuladoColors"
+          [grid]="acumuladoGrid"
+          [tooltip]="acumuladoTooltip"
+          [legend]="acumuladoLegend"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-700">
+          <mat-icon class="text-cyan-500">bar_chart</mat-icon>
+          Comparativo Mensal — Fases de Execução
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Valores em R$ mil</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="barChartSeries()"
+          [chart]="barChart"
+          [xaxis]="{ categories: areaChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [dataLabels]="barDataLabels"
+          [colors]="barColors"
+          [grid]="barGrid"
+          [tooltip]="barTooltip"
+          [legend]="barLegend"
+          [plotOptions]="{ bar: { columnWidth: '60%', borderRadius: 4 } }"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

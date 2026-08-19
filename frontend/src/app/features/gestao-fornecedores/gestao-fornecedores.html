@@ -1,0 +1,368 @@
+<div class="flex flex-col gap-6">
+
+  <div *ngIf="loading()" class="flex justify-center items-center p-12">
+    <mat-progress-spinner mode="indeterminate" diameter="48" color="primary"></mat-progress-spinner>
+  </div>
+
+  <mat-card *ngIf="error()" class="p-4 bg-red-50 text-red-700 border border-red-200">
+    <mat-card-content class="flex items-center gap-2">
+      <mat-icon color="warn">error</mat-icon>
+      <span>{{ error() }}</span>
+    </mat-card-content>
+  </mat-card>
+
+  <div *ngIf="!loading() && resumo()" class="flex flex-col gap-6">
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+      
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-purple-600 shadow-sm">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">store</mat-icon>
+          <mat-card-title class="text-sm font-bold text-slate-800">Total em Fornecedores</mat-card-title>
+          <mat-card-subtitle class="text-[11px]">Volume financeiro destinado a credores</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3">
+          <div class="text-xl sm:text-2xl font-extrabold text-slate-900 truncate">
+            {{ resumo()?.totalGeral | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-emerald-600 shadow-sm">
+        <mat-card-header>
+          <mat-icon mat-card-avatar class="text-emerald-600">star</mat-icon>
+          <mat-card-title class="text-sm font-bold text-slate-800">Maior Favorecido</mat-card-title>
+          <mat-card-subtitle class="text-[11px] truncate max-w-[200px]" [title]="maiorFornecedor()?.favorecido || ''">
+            {{ extrairNomeFavorecido(maiorFornecedor()?.favorecido || 'Nenhum', 20) }}
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3">
+          <div class="text-xl sm:text-2xl font-extrabold text-slate-900 truncate">
+            {{ (maiorFornecedor()?.totalPago || 0) | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+          <span class="text-xs text-slate-500 font-medium">
+            {{ maiorFornecedor()?.porcentagemDoTotal || 0 }}% do total
+          </span>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-indigo-600 shadow-sm">
+        <mat-card-header>
+          <mat-icon mat-card-avatar class="text-indigo-600">pie_chart</mat-icon>
+          <mat-card-title class="text-sm font-bold text-slate-800">Concentração Top 5</mat-card-title>
+          <mat-card-subtitle class="text-[11px]">Soma dos 5 maiores credores</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3">
+          <div class="text-xl sm:text-2xl font-extrabold text-slate-900 truncate">
+            {{ somaTop5().valor | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </div>
+          <span class="text-xs text-slate-500 font-medium">
+            {{ somaTop5().pct | number:'1.1-1':'pt-BR' }}% do orçamento
+          </span>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
+    <mat-card class="shadow-sm border border-slate-100 w-full">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-700">
+          <mat-icon class="text-indigo-600">leaderboard</mat-icon>
+          Concentração Orçamentária dos Fornecedores
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs">Distribuição proporcional das principais empresas contratadas e demais credores</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="concentracaoSeries()"
+          [chart]="concentracaoChart"
+          [xaxis]="{ categories: concentracaoCategories() }"
+          [yaxis]="concentracaoYaxis"
+          [plotOptions]="concentracaoPlotOptions"
+          [colors]="concentracaoColors"
+          [grid]="concentracaoGrid"
+          [legend]="concentracaoLegend"
+          [dataLabels]="concentracaoDataLabels"
+          [responsive]="concentracaoResponsive"
+          [tooltip]="concentracaoTooltip"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card id="secao-grafico-fornecedor" class="shadow-sm border border-slate-100 w-full">
+      <mat-card-header class="pb-3 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-800">
+            <mat-icon class="text-emerald-700">area_chart</mat-icon>
+            Evolução do Valor Recebido por Fornecedor
+          </mat-card-title>
+          <mat-card-subtitle class="text-slate-500 text-xs">
+            Pesquise e selecione qualquer credor para analisar a série temporal de pagamentos
+          </mat-card-subtitle>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <mat-form-field appearance="outline" subscriptSizing="dynamic" class="w-full sm:min-w-[340px] text-xs">
+            <mat-label>Pesquisar fornecedor / credor</mat-label>
+            <mat-icon matPrefix class="text-slate-400 mr-2 text-base">search</mat-icon>
+            <input
+              type="text"
+              matInput
+              [formControl]="fornecedorControl"
+              [matAutocomplete]="auto"
+              placeholder="Digite o CNPJ ou Razão Social..."
+            />
+            <button
+              *ngIf="fornecedorControl.value"
+              matSuffix
+              mat-icon-button
+              aria-label="Limpar pesquisa"
+              (click)="limparBusca()"
+            >
+              <mat-icon class="text-slate-400 text-sm">close</mat-icon>
+            </button>
+            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFornecedorFn" (optionSelected)="selecionarFornecedor($event.option.value)">
+              <mat-option *ngFor="let f of fornecedoresFiltrados()" [value]="f">
+                <div class="flex flex-col py-1">
+                  <span class="text-xs font-semibold text-slate-800 truncate" [title]="f.favorecido">
+                    {{ f.favorecido }}
+                  </span>
+                  <div class="flex items-center gap-2 text-[11px] text-slate-500">
+                    <span class="font-medium text-emerald-700">{{ f.totalPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</span>
+                    <span>•</span>
+                    <span>{{ f.porcentagemDoTotal }}% do total</span>
+                  </div>
+                </div>
+              </mat-option>
+              <mat-option *ngIf="fornecedoresFiltrados().length === 0" disabled>
+                <span class="text-xs text-slate-400 italic">Nenhum fornecedor encontrado</span>
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+      </mat-card-header>
+
+      <mat-card-content class="flex flex-col gap-4">
+        
+        <div *ngIf="!fornecedorSelecionado()" class="flex flex-col items-center justify-center p-8 bg-slate-50 border border-dashed border-slate-200 rounded-lg text-center">
+          <mat-icon class="text-slate-400 text-3xl mb-2">manage_search</mat-icon>
+          <span class="text-xs sm:text-sm font-medium text-slate-600">Nenhum fornecedor selecionado</span>
+          <span class="text-[11px] text-slate-400 mt-1">Utilize a barra de pesquisa acima ou clique no ícone da tabela abaixo para carregar a curva de pagamentos de um fornecedor.</span>
+        </div>
+
+        <div *ngIf="fornecedorSelecionado()" class="bg-slate-50 border border-slate-200 rounded-lg p-3 sm:p-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <span class="text-[11px] font-medium text-slate-500 block">Favorecido Selecionado</span>
+            <span class="text-xs sm:text-sm font-bold text-slate-900 truncate block" [title]="fornecedorSelecionado()?.favorecido || ''">
+              {{ extrairNomeFavorecido(fornecedorSelecionado()?.favorecido || '', 35) }}
+            </span>
+          </div>
+          <div>
+            <span class="text-[11px] font-medium text-slate-500 block">Total Recebido no Período</span>
+            <span class="text-xs sm:text-sm font-extrabold text-emerald-700 block">
+              {{ (fornecedorSelecionado()?.totalPago || 0) | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+            </span>
+            <span class="text-[10px] text-slate-500 font-medium">
+              Representa {{ fornecedorSelecionado()?.porcentagemDoTotal || 0 }}% do orçamento em fornecedores
+            </span>
+          </div>
+          <div>
+            <span class="text-[11px] font-medium text-slate-500 block">Mês de Maior Recebimento (Pico)</span>
+            <span class="text-xs sm:text-sm font-bold text-slate-800 block">
+              {{ maiorMesPagamento() ? maiorMesPagamento()?.mesAno + ' — ' + (maiorMesPagamento()?.valorPago | currency:'BRL':'symbol':'1.2-2':'pt-BR') : 'Sem dados mensais' }}
+            </span>
+          </div>
+        </div>
+
+        <div *ngIf="fornecedorSelecionado()" class="w-full">
+          <apx-chart
+            [series]="evolucaoSeries()"
+            [chart]="evolucaoChart"
+            [xaxis]="{ categories: evolucaoCategories() }"
+            [yaxis]="evolucaoYaxis"
+            [stroke]="evolucaoStroke"
+            [fill]="evolucaoFill"
+            [markers]="evolucaoMarkers"
+            [colors]="evolucaoColors"
+            [grid]="evolucaoGrid"
+            [dataLabels]="evolucaoDataLabels"
+            [responsive]="evolucaoResponsive"
+            [tooltip]="evolucaoTooltip"
+          ></apx-chart>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="shadow-sm border border-slate-100 w-full">
+      <mat-card-header class="pb-3 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-800">
+            <mat-icon class="text-indigo-600">table_chart</mat-icon>
+            Tabela Analítica de Todos os Fornecedores e Credores
+          </mat-card-title>
+          <mat-card-subtitle class="text-slate-500 text-xs">
+            Exibindo {{ fornecedoresTabelaFiltrados().length }} credores no exercício • Total: {{ totalFiltradoTabela() | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+          </mat-card-subtitle>
+        </div>
+
+        <div class="flex items-center gap-2 w-full md:w-auto">
+          <mat-form-field appearance="outline" subscriptSizing="dynamic" class="w-full sm:min-w-[280px] text-xs">
+            <mat-label>Filtrar na tabela</mat-label>
+            <mat-icon matPrefix class="text-slate-400 mr-2 text-base">filter_list</mat-icon>
+            <input
+              type="text"
+              matInput
+              [value]="tabelaFiltro()"
+              (input)="atualizarFiltroTabela($event)"
+              placeholder="Buscar por razão social, CNPJ ou segmento..."
+            />
+            <button
+              *ngIf="tabelaFiltro()"
+              matSuffix
+              mat-icon-button
+              aria-label="Limpar filtro"
+              (click)="limparFiltroTabela()"
+            >
+              <mat-icon class="text-slate-400 text-sm">close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+      </mat-card-header>
+
+      <mat-card-content class="p-0">
+        <div class="block sm:hidden px-3 py-1.5 bg-slate-50 border-b border-slate-100 text-[11px] text-slate-500 flex items-center justify-between">
+          <span class="flex items-center gap-1">
+            <mat-icon class="text-xs" style="font-size: 14px; width: 14px; height: 14px;">swipe</mat-icon>
+            Deslize para ver todas as colunas
+          </span>
+          <mat-icon class="text-slate-400 text-xs" style="font-size: 14px; width: 14px; height: 14px;">arrow_forward</mat-icon>
+        </div>
+
+        <div class="overflow-x-auto w-full max-w-full">
+          <table mat-table [dataSource]="fornecedoresTabelaPaginados()" class="w-full min-w-[680px] text-xs">
+          
+          <ng-container matColumnDef="posicao">
+            <th mat-header-cell *matHeaderCellDef (click)="alternarOrdenacao('posicao')" class="cursor-pointer hover:bg-slate-100 select-none font-bold text-slate-700 w-16 text-center">
+              <div class="flex items-center justify-center gap-1">
+                <span>#</span>
+                <mat-icon *ngIf="tabelaColunaOrdenacao() === 'posicao'" class="text-xs text-indigo-600">
+                  {{ tabelaDirecaoOrdenacao() === 'asc' ? 'arrow_upward' : 'arrow_downward' }}
+                </mat-icon>
+              </div>
+            </th>
+            <td mat-cell *matCellDef="let f" class="text-center font-bold text-slate-500">
+              <span class="inline-flex items-center justify-center w-6 h-6 rounded-full text-[11px]" [ngClass]="f.posicaoOriginal <= 3 ? 'bg-amber-100 text-amber-800 font-extrabold' : 'bg-slate-100 text-slate-600'">
+                {{ f.posicaoOriginal }}
+              </span>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="favorecido">
+            <th mat-header-cell *matHeaderCellDef (click)="alternarOrdenacao('favorecido')" class="cursor-pointer hover:bg-slate-100 select-none font-bold text-slate-700 min-w-[200px]">
+              <div class="flex items-center gap-1">
+                <span>Fornecedor / Credor</span>
+                <mat-icon *ngIf="tabelaColunaOrdenacao() === 'favorecido'" class="text-xs text-indigo-600">
+                  {{ tabelaDirecaoOrdenacao() === 'asc' ? 'arrow_upward' : 'arrow_downward' }}
+                </mat-icon>
+              </div>
+            </th>
+            <td mat-cell *matCellDef="let f" class="font-medium text-slate-900 py-3 pr-4">
+              <div class="font-semibold text-slate-800">{{ f.favorecido }}</div>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="segmento">
+            <th mat-header-cell *matHeaderCellDef (click)="alternarOrdenacao('segmento')" class="cursor-pointer hover:bg-slate-100 select-none font-bold text-slate-700 min-w-[140px]">
+              <div class="flex items-center gap-1">
+                <span>Segmento / Atuação</span>
+                <mat-icon *ngIf="tabelaColunaOrdenacao() === 'segmento'" class="text-xs text-indigo-600">
+                  {{ tabelaDirecaoOrdenacao() === 'asc' ? 'arrow_upward' : 'arrow_downward' }}
+                </mat-icon>
+              </div>
+            </th>
+            <td mat-cell *matCellDef="let f" class="text-slate-600 py-3">
+              <span class="inline-block px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">
+                {{ f.segmento }}
+              </span>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="totalPago">
+            <th mat-header-cell *matHeaderCellDef (click)="alternarOrdenacao('totalPago')" class="cursor-pointer hover:bg-slate-100 select-none font-bold text-slate-700 text-right pr-4 min-w-[120px]">
+              <div class="flex items-center justify-end gap-1">
+                <span>Total Recebido</span>
+                <mat-icon *ngIf="tabelaColunaOrdenacao() === 'totalPago'" class="text-xs text-indigo-600">
+                  {{ tabelaDirecaoOrdenacao() === 'asc' ? 'arrow_upward' : 'arrow_downward' }}
+                </mat-icon>
+              </div>
+            </th>
+            <td mat-cell *matCellDef="let f" class="text-right font-bold text-emerald-700 pr-4 py-3">
+              {{ f.totalPago | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="porcentagemDoTotal">
+            <th mat-header-cell *matHeaderCellDef (click)="alternarOrdenacao('porcentagemDoTotal')" class="cursor-pointer hover:bg-slate-100 select-none font-bold text-slate-700 text-right pr-4 min-w-[90px]">
+              <div class="flex items-center justify-end gap-1">
+                <span>% do Total</span>
+                <mat-icon *ngIf="tabelaColunaOrdenacao() === 'porcentagemDoTotal'" class="text-xs text-indigo-600">
+                  {{ tabelaDirecaoOrdenacao() === 'asc' ? 'arrow_upward' : 'arrow_downward' }}
+                </mat-icon>
+              </div>
+            </th>
+            <td mat-cell *matCellDef="let f" class="text-right font-medium text-slate-600 pr-4 py-3">
+              {{ f.porcentagemDoTotal | number:'1.2-2':'pt-BR' }}%
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef class="font-bold text-slate-700 text-center w-16 min-w-[60px]">
+              Ação
+            </th>
+            <td mat-cell *matCellDef="let f" class="text-center py-3">
+              <button
+                mat-icon-button
+                color="primary"
+                matTooltip="Ver evolução no gráfico de área"
+                aria-label="Carregar no gráfico"
+                (click)="carregarNoGrafico(f)"
+              >
+                <mat-icon class="text-base text-emerald-700">area_chart</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns" class="bg-slate-50 border-b border-slate-200"></tr>
+          <tr
+            mat-row
+            *matRowDef="let row; columns: displayedColumns;"
+            class="hover:bg-emerald-50/50 transition-colors border-b border-slate-100"
+            [ngClass]="{ 'bg-emerald-50/70': fornecedorSelecionado()?.favorecido === row.favorecido }"
+          ></tr>
+
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell text-center p-6 text-slate-500 italic" [attr.colspan]="displayedColumns.length">
+              Nenhum fornecedor encontrado com o termo "{{ tabelaFiltro() }}".
+            </td>
+          </tr>
+
+        </table>
+        </div>
+
+        <mat-paginator
+          [length]="fornecedoresTabelaFiltrados().length"
+          [pageSize]="tabelaItensPorPagina()"
+          [pageSizeOptions]="[5, 10, 25, 50]"
+          [pageIndex]="tabelaPaginaAtual()"
+          (page)="aoMudarPagina($event)"
+          aria-label="Selecione a página de fornecedores"
+          showFirstLastButtons
+        ></mat-paginator>
+
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>
+

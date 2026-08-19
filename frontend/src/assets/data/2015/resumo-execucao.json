@@ -1,0 +1,71 @@
+{
+  "totalEmpenhado": 1030310.46,
+  "totalLiquidado": 789719.12,
+  "totalPago": 682017.18,
+  "totalRestosAPagarPagos": 0,
+  "evolucaoMensal": [
+    {
+      "mesAno": "04/2015",
+      "empenhado": 2710.5,
+      "liquidado": 0,
+      "pago": 0,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "05/2015",
+      "empenhado": 38956.4,
+      "liquidado": 15775,
+      "pago": 7700,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "06/2015",
+      "empenhado": 457152.56,
+      "liquidado": 65214.05,
+      "pago": 8075,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "07/2015",
+      "empenhado": 318576.72,
+      "liquidado": 92430.57,
+      "pago": 72289.19,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "08/2015",
+      "empenhado": 54260.6,
+      "liquidado": 104307.24,
+      "pago": 85355.43,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "09/2015",
+      "empenhado": 0,
+      "liquidado": 144251.89,
+      "pago": 133110.58,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "10/2015",
+      "empenhado": 26536.7,
+      "liquidado": 131678.76,
+      "pago": 118049.71,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "11/2015",
+      "empenhado": 125289.04,
+      "liquidado": 136827.54,
+      "pago": 87270.05,
+      "restosAPagarPagos": 0
+    },
+    {
+      "mesAno": "12/2015",
+      "empenhado": 6827.94,
+      "liquidado": 99234.07,
+      "pago": 170167.22,
+      "restosAPagarPagos": 0
+    }
+  ]
+}

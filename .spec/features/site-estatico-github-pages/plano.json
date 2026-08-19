@@ -1,0 +1,126 @@
+{
+  "runId": "sipo-if-site-estatico-github-pages-msrw66vf",
+  "feature": "site-estatico-github-pages",
+  "agent": "antigravity",
+  "modo": "paralelo",
+  "paralelizar": null,
+  "modeloForcado": null,
+  "esforcoForcado": null,
+  "geradoEm": "2026-08-13 19:08",
+  "branchTrabalho": "spec/site-estatico-github-pages",
+  "baseDir": ".spec/features/site-estatico-github-pages",
+  "specDir": ".spec",
+  "repoName": "sipo-if",
+  "logsDir": "../onp-worktrees/sipo-if-site-estatico-github-pages-logs",
+  "ondas": [
+    [
+      "faixa-1",
+      "faixa-2",
+      "faixa-3"
+    ],
+    [
+      "faixa-4"
+    ]
+  ],
+  "faixas": [
+    {
+      "id": "faixa-1",
+      "branch": "spec/site-estatico-github-pages-faixa-1",
+      "worktree": "../onp-worktrees/sipo-if-site-estatico-github-pages-faixa-1",
+      "tarefas": [
+        {
+          "id": "T-023",
+          "titulo": "Criar scripts TypeScript de agregação dos CSVs e geração de JSONs",
+          "modelo": "claude-sonnet-5",
+          "esforco": "medium",
+          "arquivos": [
+            "scripts/gerar-dados.ts",
+            "scripts/aggregators/dashboard.ts",
+            "scripts/aggregators/programa-acao.ts",
+            "scripts/aggregators/fornecedores.ts",
+            "scripts/aggregators/documentos.ts",
+            "scripts/types.ts"
+          ],
+          "refs": [
+            "US-014",
+            "AC-023",
+            "AC-024",
+            "AC-025",
+            "AC-026"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faixa-2",
+      "branch": "spec/site-estatico-github-pages-faixa-2",
+      "worktree": "../onp-worktrees/sipo-if-site-estatico-github-pages-faixa-2",
+      "tarefas": [
+        {
+          "id": "T-024",
+          "titulo": "Alterar `DespesasService` Angular para ler JSONs locais",
+          "modelo": "claude-sonnet-5",
+          "esforco": "low",
+          "arquivos": [
+            "Frontend/src/app/core/services/despesas.service.ts",
+            "Frontend/src/environments/environment.ts",
+            "Frontend/src/environments/environment.development.ts"
+          ],
+          "refs": [
+            "US-015",
+            "AC-027",
+            "AC-028",
+            "AC-029"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faixa-3",
+      "branch": "spec/site-estatico-github-pages-faixa-3",
+      "worktree": "../onp-worktrees/sipo-if-site-estatico-github-pages-faixa-3",
+      "tarefas": [
+        {
+          "id": "T-025",
+          "titulo": "Criar workflow GitHub Actions com deploy no GitHub Pages",
+          "modelo": "claude-sonnet-5",
+          "esforco": "low",
+          "arquivos": [
+            ".github/workflows/atualizar-dados.yml"
+          ],
+          "refs": [
+            "US-016",
+            "AC-030",
+            "AC-031",
+            "AC-032"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faixa-4",
+      "branch": "spec/site-estatico-github-pages-faixa-4",
+      "worktree": "../onp-worktrees/sipo-if-site-estatico-github-pages-faixa-4",
+      "tarefas": [
+        {
+          "id": "T-026",
+          "titulo": "Criar script Playwright em TypeScript de download dos CSVs",
+          "modelo": "claude-sonnet-5",
+          "esforco": "medium",
+          "arquivos": [
+            "scripts/baixar-csvs.ts",
+            "scripts/package.json"
+          ],
+          "refs": [
+            "US-017",
+            "AC-033",
+            "AC-034"
+          ]
+        }
+      ]
+    }
+  ],
+  "sequenciais": [],
+  "concluidas": [],
+  "avisos": []
+}

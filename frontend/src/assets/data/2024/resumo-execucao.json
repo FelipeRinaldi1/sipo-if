@@ -1,0 +1,92 @@
+{
+  "totalEmpenhado": 2695847.08,
+  "totalLiquidado": 2452406.14,
+  "totalPago": 2354937.9,
+  "totalRestosAPagarPagos": 507930.05,
+  "evolucaoMensal": [
+    {
+      "mesAno": "01/2024",
+      "empenhado": 105424.67,
+      "liquidado": 46798.15,
+      "pago": 427.71,
+      "restosAPagarPagos": 18829.23
+    },
+    {
+      "mesAno": "02/2024",
+      "empenhado": 177699.49,
+      "liquidado": 193308.67,
+      "pago": 125049.88,
+      "restosAPagarPagos": 39071.35
+    },
+    {
+      "mesAno": "03/2024",
+      "empenhado": 251506.89,
+      "liquidado": 167613.02,
+      "pago": 219360.57,
+      "restosAPagarPagos": 18182.19
+    },
+    {
+      "mesAno": "04/2024",
+      "empenhado": 1075173.34,
+      "liquidado": 147360.93,
+      "pago": 105664.6,
+      "restosAPagarPagos": 2395.43
+    },
+    {
+      "mesAno": "05/2024",
+      "empenhado": 9600,
+      "liquidado": 429469.06,
+      "pago": 317341.07,
+      "restosAPagarPagos": 294761.05
+    },
+    {
+      "mesAno": "06/2024",
+      "empenhado": 337602.73,
+      "liquidado": 104089.57,
+      "pago": 255399.9,
+      "restosAPagarPagos": 20730.95
+    },
+    {
+      "mesAno": "07/2024",
+      "empenhado": 184622.33,
+      "liquidado": 301481.43,
+      "pago": 261071.57,
+      "restosAPagarPagos": 104580.42
+    },
+    {
+      "mesAno": "08/2024",
+      "empenhado": 0,
+      "liquidado": 161885.01,
+      "pago": 170262.46,
+      "restosAPagarPagos": 5276.58
+    },
+    {
+      "mesAno": "09/2024",
+      "empenhado": 9474.73,
+      "liquidado": 246928.04,
+      "pago": 174219.92,
+      "restosAPagarPagos": 20.72
+    },
+    {
+      "mesAno": "10/2024",
+      "empenhado": 236702.57,
+      "liquidado": 145761.75,
+      "pago": 243782.1,
+      "restosAPagarPagos": 180.36
+    },
+    {
+      "mesAno": "11/2024",
+      "empenhado": 85534.02,
+      "liquidado": 232144.84,
+      "pago": 216603.64,
+      "restosAPagarPagos": 4
+    },
+    {
+      "mesAno": "12/2024",
+      "empenhado": 222506.31,
+      "liquidado": 275565.67,
+      "pago": 265754.48,
+      "restosAPagarPagos": 3897.77
+    }
+  ]
+}

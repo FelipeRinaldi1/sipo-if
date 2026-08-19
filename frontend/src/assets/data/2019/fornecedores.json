@@ -1,0 +1,1449 @@
+{
+  "totalGeral": 1589027.89,
+  "topFornecedores": [
+    {
+      "favorecido": "08.752.749/0001-05 - SAFEPRO SERVICOS LTDA",
+      "totalPago": 426688.02,
+      "quantidadeLancamentos": 12,
+      "porcentagemDoTotal": 26.85,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 37041.58,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 37041.58,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 148166.32,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "05/2019",
+          "valorPago": 54080.5,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 54080.5,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2019",
+          "valorPago": 30000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 64326.89,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 1950.65,
+          "quantidadeLancamentos": 4
+        }
+      ]
+    },
+    {
+      "favorecido": "20.191.043/0001-09 - CONSOLIDEZ SERVICOS DE LIMPEZA LTDA",
+      "totalPago": 181641.11,
+      "quantidadeLancamentos": 7,
+      "porcentagemDoTotal": 11.43,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 14880.3,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 14880.3,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 44640.9,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 41664.84,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2019",
+          "valorPago": 12000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 53445.61,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2019",
+          "valorPago": 129.16,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.983.749/0001-21 - FORCA E APOIO SEGURANCA PRIVADA LTDA",
+      "totalPago": 166303.43,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 10.47,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2019",
+          "valorPago": 611.77,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2019",
+          "valorPago": 21691.66,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 144000,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 119094.16,
+      "quantidadeLancamentos": 9,
+      "porcentagemDoTotal": 7.49,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 8333.33,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 8333.33,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 33333.84,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 17773.61,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2019",
+          "valorPago": 32225.84,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 13435.48,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 5658.73,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "17.653.082/0001-76 - CMMS CONSTRUCOES LTDA",
+      "totalPago": 108918,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 6.85,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 108918,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "todosFornecedores": [
+    {
+      "favorecido": "08.752.749/0001-05 - SAFEPRO SERVICOS LTDA",
+      "totalPago": 426688.02,
+      "quantidadeLancamentos": 12,
+      "porcentagemDoTotal": 26.85,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 37041.58,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 37041.58,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 148166.32,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "05/2019",
+          "valorPago": 54080.5,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 54080.5,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2019",
+          "valorPago": 30000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 64326.89,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 1950.65,
+          "quantidadeLancamentos": 4
+        }
+      ]
+    },
+    {
+      "favorecido": "20.191.043/0001-09 - CONSOLIDEZ SERVICOS DE LIMPEZA LTDA",
+      "totalPago": 181641.11,
+      "quantidadeLancamentos": 7,
+      "porcentagemDoTotal": 11.43,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 14880.3,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 14880.3,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 44640.9,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 41664.84,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2019",
+          "valorPago": 12000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 53445.61,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2019",
+          "valorPago": 129.16,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.983.749/0001-21 - FORCA E APOIO SEGURANCA PRIVADA LTDA",
+      "totalPago": 166303.43,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 10.47,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2019",
+          "valorPago": 611.77,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2019",
+          "valorPago": 21691.66,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 144000,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 119094.16,
+      "quantidadeLancamentos": 9,
+      "porcentagemDoTotal": 7.49,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 8333.33,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 8333.33,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 33333.84,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 17773.61,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2019",
+          "valorPago": 32225.84,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 13435.48,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 5658.73,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "17.653.082/0001-76 - CMMS CONSTRUCOES LTDA",
+      "totalPago": 108918,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 6.85,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 108918,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "04.602.789/0001-01 - DATEN TECNOLOGIA LTDA",
+      "totalPago": 89882,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 5.66,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 89882,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "48.962.625/0001-60 - SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+      "totalPago": 68066.41,
+      "quantidadeLancamentos": 13,
+      "porcentagemDoTotal": 4.28,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 5000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 5000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2019",
+          "valorPago": 3385.46,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 20000,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "05/2019",
+          "valorPago": 4000,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 5113.96,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2019",
+          "valorPago": 17500.58,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 7374.87,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 691.54,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "82.330.937/0001-90 - TREZE COMERCIAL LTDA",
+      "totalPago": 53917.5,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 3.39,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 12930,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 40987.5,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "13.569.390/0001-67 - CDEL CIA DISTRIBUIDORA E EDITORA DE LIVROS LTDA",
+      "totalPago": 45166,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 2.84,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 45166,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.568.281/0001-37 - COOPERATIVA DOS TRABALHADORES DA REFORMA AGRARIA TERRA LIVRE LTDA",
+      "totalPago": 36747.42,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 2.31,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 36747.42,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "09.405.866/0001-57 - PEDRAZUL SERVICOS LTDA",
+      "totalPago": 35216.2,
+      "quantidadeLancamentos": 9,
+      "porcentagemDoTotal": 2.22,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 3663.26,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 3663.26,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 14653.04,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 6563.48,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "07/2019",
+          "valorPago": 5589.68,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 1083.48,
+          "quantidadeLancamentos": 4
+        }
+      ]
+    },
+    {
+      "favorecido": "08.068.098/0001-20 - 3D CRIAR CONSULTORIA E COMERCIO DE SOLUCOES DIGITAIS LTDA",
+      "totalPago": 26950,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.7,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 26950,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.119.775/0001-06 - ONIX-BRASIL COMERCIAL LTDA.",
+      "totalPago": 24619.9,
+      "quantidadeLancamentos": 5,
+      "porcentagemDoTotal": 1.55,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 19520,
+          "quantidadeLancamentos": 4
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 5099.9,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "54.826.367/0004-30 - MAQMOVEIS INDUSTRIA E COMERCIO DE MOVEIS LTDA.",
+      "totalPago": 18872,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 1.19,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 6780,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 12092,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "27.679.382/0001-88 - AM MOREIRA GONCALVES E CIA LTDA",
+      "totalPago": 15300,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.96,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 15300,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "07.779.095/0001-32 - MARKA SERVICOS E COMERCIO EIRELI",
+      "totalPago": 14814.36,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.93,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 14814.36,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "01.707.536/0001-04 - ISH TECNOLOGIA S/A",
+      "totalPago": 14716.53,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.93,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 14716.53,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "39.818.737/0001-51 - HORTO CENTRAL MARATAIZES LTDA",
+      "totalPago": 9416.36,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.59,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 9416.36,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "***.496.708-** - JACKS BARBOSA GOVEIA RODRIGUES",
+      "totalPago": 9327.56,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.59,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 9327.56,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "21.306.287/0001-52 - TECNO2000 INDUSTRIA E COMERCIO LTDA",
+      "totalPago": 8214.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.52,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 8214.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "31.305.424/0001-98 - GENIUS INFORMATICA E COMERCIO EM GERAL LTDA",
+      "totalPago": 8130.57,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.51,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 8130.57,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "22.910.732/0001-51 - ZANCO COMERCIO DE PAPEIS LTDA",
+      "totalPago": 8105,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.51,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 2269.4,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2019",
+          "valorPago": 5835.6,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "15.135.210/0001-64 - TECPARTS IMPORTACAO E DISTRIBUICAO DE PECAS LTDA",
+      "totalPago": 7095,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.45,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 7095,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "29.568.801/0001-30 - M3 INTERMEDIACAO DE SERVICOS E NEGOCIOS LTDA",
+      "totalPago": 6400,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.4,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 6400,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.917.124/0001-24 - RCE COMERCIO DE EQUIPAMENTOS DE TELEMATICA LTDA",
+      "totalPago": 6299.97,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.4,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 6299.97,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "28.820.155/0001-93 - A V SUPRIMENTOS LTDA",
+      "totalPago": 5280,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.33,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 5280,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "23.285.082/0001-63 - F.L.A. COMERCIO E SERVICOS LTDA",
+      "totalPago": 5250,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.33,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 5250,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "31.979.529/0001-22 - SOS INFORMATICA LTDA",
+      "totalPago": 5243.7,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.33,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 5243.7,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "11.093.505/0001-64 - LIVRARIA GP LTDA",
+      "totalPago": 5147.38,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.32,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 5147.38,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "***.435.418-** - JOSE NICACIO PEREIRA FILHO",
+      "totalPago": 4762.38,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.3,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 4762.38,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "05.933.053/0001-89 - EDITORA GRAFICA RIO CIDADE LTDA",
+      "totalPago": 4726.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.3,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 4726.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "08.288.901/0001-32 - L H GONCALVES COMPONENTES ELETRONICOS LTDA",
+      "totalPago": 4489,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.28,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 4489,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "61.457.941/0001-43 - GOMAQ MAQUINAS PARA ESCRITORIO LIMITADA",
+      "totalPago": 4412.85,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.28,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 4412.85,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "09.138.326/0001-54 - PABLO LUIS MARTINS",
+      "totalPago": 4253.7,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.27,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 4253.7,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "11.311.279/0001-40 - EUNICE MARIA GONCALVES DE OLIVEIRA",
+      "totalPago": 3625.16,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.23,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 3625.16,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "40.432.544/0001-47 - CLARO S.A.",
+      "totalPago": 3149.77,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 0.2,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2019",
+          "valorPago": 500,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "02/2019",
+          "valorPago": 500,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "04/2019",
+          "valorPago": 2000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 149.77,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "04.567.265/0001-27 - SCORPION INFORMATICA LTDA",
+      "totalPago": 2578.65,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.16,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 2578.65,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "62.492.798/0001-93 - HELIO E CIA LTDA",
+      "totalPago": 2524.11,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.16,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 2524.11,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "11.116.850/0001-76 - BASTOS COMERCIO DE LIVROS LTDA",
+      "totalPago": 2368.74,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.15,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 2368.74,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "24.375.213/0001-66 - B10 LICITA LTDA",
+      "totalPago": 2352.91,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.15,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 2352.91,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "06.193.748/0001-34 - FAVERO E ESTEVES EQUIPAMENTOS DE SEGURANCA LTDA",
+      "totalPago": 1787.9,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.11,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2019",
+          "valorPago": 690.9,
+          "quantidadeLancamentos": 2
+        },
+        {
+          "mesAno": "06/2019",
+          "valorPago": 1097,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "18.199.200/0001-80 - CINECON DISTRIBUIDORA LTDA",
+      "totalPago": 1720.45,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.11,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2019",
+          "valorPago": 1555.45,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2019",
+          "valorPago": 165,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "18.007.154/0001-70 - ALL WORK COMERCIAL LTDA",
+      "totalPago": 1568.73,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.1,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 1568.73,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.878.804/0001-41 - EXCELENCIA COMERCIO E SERVICOS LTDA",
+      "totalPago": 1459.4,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.09,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 1459.4,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "12.991.409/0001-04 - BALI COMERCIAL LTDA",
+      "totalPago": 1352.89,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.09,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2019",
+          "valorPago": 614.95,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 737.94,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "11.099.588/0001-07 - SOLARIS TELEINFORMATICA LTDA",
+      "totalPago": 1101.1,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.07,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 1101.1,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "12.926.152/0001-07 - YOSHIMITSU OGAWA LTDA",
+      "totalPago": 1019.1,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 509.55,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2019",
+          "valorPago": 509.55,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "22.228.425/0001-95 - E. TRIPODE INDUSTRIA E COMERCIO DE MOVEIS LTDA",
+      "totalPago": 959.02,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 959.02,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "24.005.316/0001-34 - PAPELARIA PAPEL CARTAZ LTDA",
+      "totalPago": 888.75,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 888.75,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "51.920.700/0001-35 - PROCOMP PRODUTOS E SERVICOS DE INFORMATICA LTDA.",
+      "totalPago": 790,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.05,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 790,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "30.398.587/0001-08 - 30.398.587 IGOR RAPHAEL GUIMARAES SOARES",
+      "totalPago": 704.88,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.04,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 704.88,
+          "quantidadeLancamentos": 3
+        }
+      ]
+    },
+    {
+      "favorecido": "71.511.349/0001-36 - AMILTON GUIMARAES E CIA LTDA",
+      "totalPago": 652.61,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.04,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 652.61,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "17.942.231/0001-17 - LOURDES P S MARTINS PAPELARIA LTDA",
+      "totalPago": 589,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.04,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 589,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "24.845.457/0001-65 - ITACA LTDA",
+      "totalPago": 583.94,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.04,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 583.94,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "29.778.843/0001-03 - IRMAOS OLIVEIRA COMERCIO DE FERRAMENTAS LTDA",
+      "totalPago": 539.89,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.03,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 539.89,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "26.736.425/0001-57 - NDS INFORMATICA LTDA",
+      "totalPago": 462.9,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.03,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 462.9,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "21.128.750/0001-13 - LANCONEX TECNOLOGIA COMERCIO IMPORTACAO E EXPORTACAO LTDA",
+      "totalPago": 389.9,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 389.9,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "15.724.019/0001-58 - QUALITY ATACADO LTDA",
+      "totalPago": 312.76,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2019",
+          "valorPago": 312.76,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "07.245.458/0001-50 - DAGEAL - COMERCIO DE MATERIAL DE ESCRITORIO LTDA",
+      "totalPago": 303.1,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 303.1,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.928.126/0001-84 - REAK SEGURANCA E VIGILANCIA PATRIMONIAL LTDA",
+      "totalPago": 270.01,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 270.01,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "13.761.205/0001-31 - NYDIA DISTRIBUIDORA DE PRODUTOS DE TELEINFORMATICA LTDA EM RECUPERACAO JUDICIAL",
+      "totalPago": 260,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 260,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "09.022.398/0001-31 - AGEM TECNOLOGIA DISTRIBUIDORA LTDA",
+      "totalPago": 174,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2019",
+          "valorPago": 174,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "13.970.625/0001-28 - PAPELARIA DIMENSIONAL LTDA",
+      "totalPago": 161.1,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 161.1,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "30.848.671/0001-78 - ELAINE NEVES DE MEDEIROS",
+      "totalPago": 149.25,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 149.25,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "26.469.541/0001-57 - SUL.COM ATACADO E VAREJO LTDA",
+      "totalPago": 144,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 72,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 72,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "08.725.008/0001-27 - AGROSHOW AGROPECUARIA LTDA",
+      "totalPago": 140.13,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 140.13,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.217.016/0001-49 - RPF COMERCIAL LTDA",
+      "totalPago": 129.1,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 99.22,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2019",
+          "valorPago": 29.88,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "05.150.522/0001-93 - LOJAS TEM LTDA",
+      "totalPago": 95.58,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2019",
+          "valorPago": 95.58,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "12.591.321/0001-97 - RASEK LOGISTICA E SUPRIMENTOS LTDA",
+      "totalPago": 61.2,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 61.2,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "07.940.946/0001-87 - COPY INFO - COMERCIO DE MAQUINAS E SUPRIMENTOS LTDA",
+      "totalPago": 55.4,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 55.4,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "16.618.429/0001-87 - M R DE M MAIA PAPELARIA EIRELI",
+      "totalPago": 51.5,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2019",
+          "valorPago": 51.5,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "27.342.897/0001-98 - JORGE DONIZETI ESTEVES",
+      "totalPago": 48,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 48,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "08.658.622/0001-13 - J. J. VITALLI",
+      "totalPago": 19.94,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2019",
+          "valorPago": 9.97,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2019",
+          "valorPago": 9.97,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "26.986.607/0001-86 - CARLOS NETO COMERCIO DE LIVROS EIRELI",
+      "totalPago": 13.62,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 13.62,
+          "quantidadeLancamentos": 4
+        }
+      ]
+    },
+    {
+      "favorecido": "03.754.929/0001-02 - COAGROSOL - COOPERATIVA DOS AGROPECUARISTAS SOLIDARIOS DE IT",
+      "totalPago": 1.28,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 1.28,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "16.927.639/0001-57 - A.D SERVICOS PREDIAIS LTDA",
+      "totalPago": 0.01,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2019",
+          "valorPago": 0.01,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "elementosDespesa": [
+    {
+      "elemento": "37 - Locação de Mão-de-Obra",
+      "totalPago": 810022.33,
+      "quantidadeLancamentos": 28,
+      "porcentagemDoTotal": 50.91
+    },
+    {
+      "elemento": "39 - Outros Serviços de Terceiros - Pessoa Jurídica",
+      "totalPago": 299258.24,
+      "quantidadeLancamentos": 28,
+      "porcentagemDoTotal": 18.81
+    },
+    {
+      "elemento": "52 - Equipamentos e Material Permanente",
+      "totalPago": 260228.87,
+      "quantidadeLancamentos": 30,
+      "porcentagemDoTotal": 16.36
+    },
+    {
+      "elemento": "32 - Material, Bem ou Serviço para Distribuição Gratuita",
+      "totalPago": 138792.4,
+      "quantidadeLancamentos": 16,
+      "porcentagemDoTotal": 8.72
+    },
+    {
+      "elemento": "30 - Material de Consumo",
+      "totalPago": 80629.6,
+      "quantidadeLancamentos": 56,
+      "porcentagemDoTotal": 5.07
+    },
+    {
+      "elemento": "20 - Auxílio Financeiro a Pesquisadores",
+      "totalPago": 1910,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.12
+    },
+    {
+      "elemento": "47 - Obrigações Tributárias e Contributivas",
+      "totalPago": 96.45,
+      "quantidadeLancamentos": 5,
+      "porcentagemDoTotal": 0.01
+    }
+  ]
+}

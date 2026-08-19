@@ -1,0 +1,668 @@
+{
+  "totalGeral": 1500804.58,
+  "topFornecedores": [
+    {
+      "favorecido": "30.737.359/0001-07 - RAGNAR SEGURANCA LTDA",
+      "totalPago": 578949.2,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 38.58,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2024",
+          "valorPago": 546227.83,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 32721.37,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "08.720.790/0001-91 - POLO ADMINISTRACAO LTDA",
+      "totalPago": 352947.86,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 23.52,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 352947.86,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 137397.96,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 9.15,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2024",
+          "valorPago": 26513.09,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2024",
+          "valorPago": 58600,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 52284.87,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "48.962.625/0001-60 - SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+      "totalPago": 77244.48,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 5.15,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2024",
+          "valorPago": 9710.66,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2024",
+          "valorPago": 58000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 9533.82,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "10.427.965/0001-19 - INSTITUTO INTERAMERICANO DE DESENVOLVIMENTO HUMANO - BEM BRASIL",
+      "totalPago": 54733.88,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 3.65,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2024",
+          "valorPago": 54733.88,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "todosFornecedores": [
+    {
+      "favorecido": "30.737.359/0001-07 - RAGNAR SEGURANCA LTDA",
+      "totalPago": 578949.2,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 38.58,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2024",
+          "valorPago": 546227.83,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 32721.37,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "08.720.790/0001-91 - POLO ADMINISTRACAO LTDA",
+      "totalPago": 352947.86,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 23.52,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 352947.86,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 137397.96,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 9.15,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2024",
+          "valorPago": 26513.09,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2024",
+          "valorPago": 58600,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 52284.87,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "48.962.625/0001-60 - SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+      "totalPago": 77244.48,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 5.15,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2024",
+          "valorPago": 9710.66,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "10/2024",
+          "valorPago": 58000,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 9533.82,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "10.427.965/0001-19 - INSTITUTO INTERAMERICANO DE DESENVOLVIMENTO HUMANO - BEM BRASIL",
+      "totalPago": 54733.88,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 3.65,
+      "evolucaoMensal": [
+        {
+          "mesAno": "08/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2024",
+          "valorPago": 54733.88,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "88.612.486/0001-60 - COOPERATIVA AGROINDUSTRIAL NOVA ALIANCA LTDA",
+      "totalPago": 54228.42,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 3.61,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 54228.42,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.746.938/0001-43 - BRS SUPRIMENTOS CORPORATIVOS S/A",
+      "totalPago": 45920,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 3.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2024",
+          "valorPago": 21600,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2024",
+          "valorPago": 24320,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "09.624.705/0001-54 - PAPA DOCE COMERCIO DE PRODUTOS EM GERAL LTDA",
+      "totalPago": 33124.65,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 2.21,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2024",
+          "valorPago": 29997.33,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "03/2024",
+          "valorPago": 3127.32,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.691.491/0001-52 - SABRISAN COMERCIO E DISTRIBUICAO LTDA",
+      "totalPago": 29789.34,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.98,
+      "evolucaoMensal": [
+        {
+          "mesAno": "03/2024",
+          "valorPago": 29789.34,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.528.510/0001-90 - FRAC GESTAO E SERVICOS LTDA",
+      "totalPago": 25088.84,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 1.67,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 25088.84,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "10.568.281/0001-37 - COOPERATIVA DOS TRABALHADORES DA REFORMA AGRARIA TERRA LIVRE LTDA",
+      "totalPago": 23262.12,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.55,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 23262.12,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "66.132.267/0001-40 - NIVALDO MANHANI LTDA",
+      "totalPago": 14400,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.96,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2024",
+          "valorPago": 14400,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "01.121.632/0001-76 - MAGNETICA SISTEMAS DE INFORMACAO LTDA",
+      "totalPago": 12373.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.82,
+      "evolucaoMensal": [
+        {
+          "mesAno": "02/2024",
+          "valorPago": 12373.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "11.319.557/0003-78 - DENTECK LTDA",
+      "totalPago": 10260,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.68,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2024",
+          "valorPago": 10260,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "09.381.250/0001-93 - KLEMPS MAQUINAS TEXTEIS LTDA",
+      "totalPago": 9765.75,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.65,
+      "evolucaoMensal": [
+        {
+          "mesAno": "06/2024",
+          "valorPago": 5051.25,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 4714.5,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "51.918.318/0001-97 - SANTA MONICA PROJETOS LTDA",
+      "totalPago": 8790,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.59,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2024",
+          "valorPago": 8790,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "31.508.279/0001-42 - MJR REFRIGERACAO LTDA",
+      "totalPago": 8772,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.58,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2024",
+          "valorPago": 8772,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "01.590.728/0009-30 - MICROTECNICA INFORMATICA LTDA",
+      "totalPago": 4504.04,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.3,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2024",
+          "valorPago": 4504.04,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "12.560.643/0001-79 - FL CONTROLE DE PRAGAS E SERVICO GERAIS LTDA",
+      "totalPago": 4284,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.29,
+      "evolucaoMensal": [
+        {
+          "mesAno": "01/2024",
+          "valorPago": 4284,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "42.727.372/0001-64 - FORMIGARI COMERCIO DE MOVEIS LTDA",
+      "totalPago": 3660,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.24,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2024",
+          "valorPago": 3660,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "13.104.805/0001-27 - F. F. N. FORNAZARI",
+      "totalPago": 3624,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.24,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2024",
+          "valorPago": 3624,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "45.769.285/0001-68 - REDNOV FERRAMENTAS LTDA.",
+      "totalPago": 2590.68,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.17,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2024",
+          "valorPago": 2590.68,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "49.495.719/0001-30 - RI EMPREENDIMENTO COMERCIAL LTDA",
+      "totalPago": 2399.36,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.16,
+      "evolucaoMensal": [
+        {
+          "mesAno": "09/2024",
+          "valorPago": 2399.36,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "29.188.143/0001-50 - ROMMA SISTEMAS DE SEGURANCA ELETRONICA LTDA",
+      "totalPago": 1489,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.1,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2024",
+          "valorPago": 1489,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "87.883.807/0001-06 - MBM SEGURADORA SA",
+      "totalPago": 900,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.06,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2024",
+          "valorPago": 900,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "33.065.699/0001-27 - SEGUROS SURA S.A.",
+      "totalPago": 172.8,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2024",
+          "valorPago": 172.8,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "40.432.544/0001-47 - CLARO S.A.",
+      "totalPago": 132.4,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 132.4,
+          "quantidadeLancamentos": 2
+        }
+      ]
+    },
+    {
+      "favorecido": "19.458.719/0002-80 - FLASH PRESTACAO DE SERVICOS E COMERCIO LTDA",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "10.934.762/0001-19 - M. ALCIONE DOS SANTOS GONCALVES",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "44.307.153/0001-51 - RRA COMERCIO ELETRO-FONIA LTDA",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "35.789.144/0001-53 - MARIA R. O. ALMEIDA VENDA DE ELETRONICOS LTDA",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "41.589.232/0001-04 - DOUGLAS RIBEIRO DE MORAIS LTDA",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "07.514.710/0001-89 - VARGAS COMERCIO DE FERRAMENTAS LTDA",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "39.287.973/0001-99 - ASSOCIACAO DE COMERCIALIZACAO ORGANICA AGRICOLA PAULINENSE",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2024",
+          "valorPago": 0,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "elementosDespesa": [
+    {
+      "elemento": "37 - Locação de Mão-de-Obra",
+      "totalPago": 1007990.53,
+      "quantidadeLancamentos": 7,
+      "porcentagemDoTotal": 65.77
+    },
+    {
+      "elemento": "39 - Outros Serviços de Terceiros - Pessoa Jurídica",
+      "totalPago": 238599.89,
+      "quantidadeLancamentos": 15,
+      "porcentagemDoTotal": 15.57
+    },
+    {
+      "elemento": "32 - Material, Bem ou Serviço para Distribuição Gratuita",
+      "totalPago": 140404.53,
+      "quantidadeLancamentos": 6,
+      "porcentagemDoTotal": 9.16
+    },
+    {
+      "elemento": "52 - Equipamentos e Material Permanente",
+      "totalPago": 37317.08,
+      "quantidadeLancamentos": 8,
+      "porcentagemDoTotal": 2.43
+    },
+    {
+      "elemento": "92 - Despesas de Exercícios Anteriores",
+      "totalPago": 36223.75,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 2.36
+    },
+    {
+      "elemento": "30 - Material de Consumo",
+      "totalPago": 24165.75,
+      "quantidadeLancamentos": 9,
+      "porcentagemDoTotal": 1.58
+    },
+    {
+      "elemento": "20 - Auxílio Financeiro a Pesquisadores",
+      "totalPago": 16880,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.1
+    },
+    {
+      "elemento": "40 - Serviços de Tecnologia da Informação e Comunicação",
+      "totalPago": 12373.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.81
+    },
+    {
+      "elemento": "14 - Diárias - Civil",
+      "totalPago": 9953.82,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.65
+    },
+    {
+      "elemento": "93 - Indenizações e Restituições",
+      "totalPago": 4895.39,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.32
+    },
+    {
+      "elemento": "47 - Obrigações Tributárias e Contributivas",
+      "totalPago": 3729.25,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 0.24
+    },
+    {
+      "elemento": "36 - Outros Serviços de Terceiros - Pessoa Física",
+      "totalPago": 0,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0
+    }
+  ]
+}

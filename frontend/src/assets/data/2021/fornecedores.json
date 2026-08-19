@@ -1,0 +1,498 @@
+{
+  "totalGeral": 1163445.95,
+  "topFornecedores": [
+    {
+      "favorecido": "02.983.749/0001-21 - FORCA E APOIO SEGURANCA PRIVADA LTDA",
+      "totalPago": 507012.44,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 43.58,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2021",
+          "valorPago": 436.79,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2021",
+          "valorPago": 506575.65,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "72.381.189/0010-01 - DELL COMPUTADORES DO BRASIL LTDA",
+      "totalPago": 219046,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 18.83,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2021",
+          "valorPago": 67127,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2021",
+          "valorPago": 151919,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "20.191.043/0001-09 - CONSOLIDEZ SERVICOS DE LIMPEZA LTDA",
+      "totalPago": 190646.47,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 16.39,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 190646.47,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "30.084.600/0001-46 - DZ7 COMERCIAL LTDA",
+      "totalPago": 75974.08,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 6.53,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2021",
+          "valorPago": 44874.8,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2021",
+          "valorPago": 31099.28,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "31.301.174/0001-18 - WESLEY DIONE GRANJA",
+      "totalPago": 41400,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 3.56,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 41400,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "todosFornecedores": [
+    {
+      "favorecido": "02.983.749/0001-21 - FORCA E APOIO SEGURANCA PRIVADA LTDA",
+      "totalPago": 507012.44,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 43.58,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2021",
+          "valorPago": 436.79,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "08/2021",
+          "valorPago": 506575.65,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "72.381.189/0010-01 - DELL COMPUTADORES DO BRASIL LTDA",
+      "totalPago": 219046,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 18.83,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2021",
+          "valorPago": 67127,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2021",
+          "valorPago": 151919,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "20.191.043/0001-09 - CONSOLIDEZ SERVICOS DE LIMPEZA LTDA",
+      "totalPago": 190646.47,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 16.39,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 190646.47,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "30.084.600/0001-46 - DZ7 COMERCIAL LTDA",
+      "totalPago": 75974.08,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 6.53,
+      "evolucaoMensal": [
+        {
+          "mesAno": "07/2021",
+          "valorPago": 44874.8,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "09/2021",
+          "valorPago": 31099.28,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "31.301.174/0001-18 - WESLEY DIONE GRANJA",
+      "totalPago": 41400,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 3.56,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 41400,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.302.100/0001-06 - EDP SAO PAULO DISTRIBUICAO DE ENERGIA S.A.",
+      "totalPago": 35011.53,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 3.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2021",
+          "valorPago": 11.53,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "11/2021",
+          "valorPago": 35000,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "39.287.973/0001-99 - ASSOCIACAO DE COMERCIALIZACAO ORGANICA AGRICOLA PAULINENSE",
+      "totalPago": 19241.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 1.65,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 19241.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "48.962.625/0001-60 - SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+      "totalPago": 18731.02,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 1.61,
+      "evolucaoMensal": [
+        {
+          "mesAno": "04/2021",
+          "valorPago": 3558.33,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "05/2021",
+          "valorPago": 27.91,
+          "quantidadeLancamentos": 1
+        },
+        {
+          "mesAno": "12/2021",
+          "valorPago": 15144.78,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "01.121.632/0001-76 - MAGNETICA SISTEMAS DE INFORMACAO LTDA",
+      "totalPago": 11400,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.98,
+      "evolucaoMensal": [
+        {
+          "mesAno": "06/2021",
+          "valorPago": 11400,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "32.769.825/0001-61 - PERCIVAL JUNIO MIRANDA SILVA 01783239182",
+      "totalPago": 8616,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.74,
+      "evolucaoMensal": [
+        {
+          "mesAno": "10/2021",
+          "valorPago": 8616,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "06.698.091/0005-90 - AUTOPEL AUTOMACAO COMERCIAL E INFORMATICA LTDA.",
+      "totalPago": 7379.66,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.63,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 7379.66,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "33.788.611/0001-03 - METTA DISTRIBUIDORA LTDA",
+      "totalPago": 6459.8,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.56,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 6459.8,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.488.409/0001-97 - COMERCIAL GETRIX LTDA",
+      "totalPago": 4840,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.42,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 4840,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "02.441.945/0001-74 - TRAUM ARTIGOS ESPORTIVOS LTDA",
+      "totalPago": 3778.38,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.32,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 3778.38,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "03.887.864/0001-65 - GATTI QUIMICA LTDA",
+      "totalPago": 2448,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.21,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 2448,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "37.028.350/0001-76 - DABES DISTRIBUIDORA & COMERCIO LTDA",
+      "totalPago": 2380,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.2,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 2380,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "18.673.035/0001-57 - 18.673.035 FLAVIA APARECIDA ANGRA DA SILVA",
+      "totalPago": 2085,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.18,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 2085,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "23.456.260/0001-71 - ATIVA ADM CONSULTORIA & SERVICOS LTDA",
+      "totalPago": 1937.77,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.17,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 1937.77,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "32.421.390/0001-60 - RENOVA CAMPINAS COMERCIAL LTDA",
+      "totalPago": 1346.87,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.12,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 1346.87,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "00.535.560/0001-40 - LPK LTDA",
+      "totalPago": 1215.65,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.1,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 1215.65,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "05.077.676/0001-05 - SANTA MARIA COMERCIO DE BRINQUEDOS E MATERIAIS ESCOLARES LTDA",
+      "totalPago": 900.5,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.08,
+      "evolucaoMensal": [
+        {
+          "mesAno": "12/2021",
+          "valorPago": 900.5,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "14.163.479/0001-91 - EXITUS COMERCIAL PRODUTOS E SERVICOS LTDA",
+      "totalPago": 775.4,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.07,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 775.4,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "17.653.082/0001-76 - CMMS CONSTRUCOES LTDA",
+      "totalPago": 359.69,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.03,
+      "evolucaoMensal": [
+        {
+          "mesAno": "05/2021",
+          "valorPago": 359.69,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "40.432.544/0001-47 - CLARO S.A.",
+      "totalPago": 289.89,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.02,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 289.89,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    },
+    {
+      "favorecido": "22.382.705/0001-53 - RMM SPORTS COMERCIO DE PRODUTOS ESPORTIVOS LTDA",
+      "totalPago": 170,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.01,
+      "evolucaoMensal": [
+        {
+          "mesAno": "11/2021",
+          "valorPago": 170,
+          "quantidadeLancamentos": 1
+        }
+      ]
+    }
+  ],
+  "elementosDespesa": [
+    {
+      "elemento": "37 - Locação de Mão-de-Obra",
+      "totalPago": 697222.12,
+      "quantidadeLancamentos": 2,
+      "porcentagemDoTotal": 59.77
+    },
+    {
+      "elemento": "52 - Equipamentos e Material Permanente",
+      "totalPago": 238961.8,
+      "quantidadeLancamentos": 5,
+      "porcentagemDoTotal": 20.49
+    },
+    {
+      "elemento": "32 - Material, Bem ou Serviço para Distribuição Gratuita",
+      "totalPago": 136615.88,
+      "quantidadeLancamentos": 4,
+      "porcentagemDoTotal": 11.71
+    },
+    {
+      "elemento": "39 - Outros Serviços de Terceiros - Pessoa Jurídica",
+      "totalPago": 63349.87,
+      "quantidadeLancamentos": 8,
+      "porcentagemDoTotal": 5.43
+    },
+    {
+      "elemento": "30 - Material de Consumo",
+      "totalPago": 15099.8,
+      "quantidadeLancamentos": 9,
+      "porcentagemDoTotal": 1.29
+    },
+    {
+      "elemento": "40 - Serviços de Tecnologia da Informação e Comunicação",
+      "totalPago": 11400,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.98
+    },
+    {
+      "elemento": "20 - Auxílio Financeiro a Pesquisadores",
+      "totalPago": 3016.2,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0.26
+    },
+    {
+      "elemento": "47 - Obrigações Tributárias e Contributivas",
+      "totalPago": 802.92,
+      "quantidadeLancamentos": 3,
+      "porcentagemDoTotal": 0.07
+    },
+    {
+      "elemento": "92 - Despesas de Exercícios Anteriores",
+      "totalPago": 22.38,
+      "quantidadeLancamentos": 1,
+      "porcentagemDoTotal": 0
+    }
+  ]
+}

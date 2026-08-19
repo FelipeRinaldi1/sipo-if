@@ -1,0 +1,258 @@
+{
+  "totalGeralEmpenhado": 3758938.38,
+  "totalGeralPago": 2992705.78,
+  "acoes": [
+    {
+      "codigoAcao": "20RL",
+      "nomeAcao": "20RL - FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+      "totalEmpenhado": 1961037.77,
+      "totalLiquidado": 1825841.26,
+      "totalPago": 1771024.68,
+      "porcentagemDoTotal": 59.18
+    },
+    {
+      "codigoAcao": "2994",
+      "nomeAcao": "2994 - ASSISTENCIA AOS ESTUDANTES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+      "totalEmpenhado": 976635.69,
+      "totalLiquidado": 894957.65,
+      "totalPago": 894957.65,
+      "porcentagemDoTotal": 29.9
+    },
+    {
+      "codigoAcao": "20RG",
+      "nomeAcao": "20RG - REESTRUTURACAO E MODERNIZACAO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+      "totalEmpenhado": 297710.34,
+      "totalLiquidado": 197381,
+      "totalPago": 188329.29,
+      "porcentagemDoTotal": 6.29
+    },
+    {
+      "codigoAcao": "15R4",
+      "nomeAcao": "15R4 - APOIO A EXPANSAO, CONSOLIDACAO, REESTRUTURACAO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+      "totalEmpenhado": 521754.58,
+      "totalLiquidado": 136594.16,
+      "totalPago": 136594.16,
+      "porcentagemDoTotal": 4.56
+    },
+    {
+      "codigoAcao": "21B3",
+      "nomeAcao": "21B3 - FOMENTO AS ACOES DE ENSINO, PESQUISA, EXTENSAO, INOVACAO E SUSTENTABILIDADE NA EDUCACAO PROFISSIONAL E TECNOLOGICA",
+      "totalEmpenhado": 1800,
+      "totalLiquidado": 1800,
+      "totalPago": 1800,
+      "porcentagemDoTotal": 0.06
+    }
+  ],
+  "evolucaoAssistenciaMensal": [
+    {
+      "codigoAcao": "2994",
+      "mesAno": "01/2025",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "01/2025",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "02/2025",
+      "valorEmpenhado": 312118.37,
+      "valorLiquidado": 6905.09,
+      "valorPago": 3755.44
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "02/2025",
+      "valorEmpenhado": 145734.54,
+      "valorLiquidado": 98972,
+      "valorPago": 63417
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "03/2025",
+      "valorEmpenhado": 72867.27,
+      "valorLiquidado": 44410.5,
+      "valorPago": 45990.5
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "03/2025",
+      "valorEmpenhado": 209805.95,
+      "valorLiquidado": 182059.15,
+      "valorPago": 125798.91
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "04/2025",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 33135,
+      "valorPago": 33975
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "04/2025",
+      "valorEmpenhado": 29934.79,
+      "valorLiquidado": 137254.19,
+      "valorPago": 134074.91
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "05/2025",
+      "valorEmpenhado": 19859.6,
+      "valorLiquidado": 85483.05,
+      "valorPago": 126865.29
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "05/2025",
+      "valorEmpenhado": 151080.72,
+      "valorLiquidado": 174030,
+      "valorPago": 207165
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "06/2025",
+      "valorEmpenhado": 422215,
+      "valorLiquidado": 219725,
+      "valorPago": 136470.16
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "06/2025",
+      "valorEmpenhado": 70293.31,
+      "valorLiquidado": 69000,
+      "valorPago": 5300
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "07/2025",
+      "valorEmpenhado": 70293.31,
+      "valorLiquidado": 70400,
+      "valorPago": 134100
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "07/2025",
+      "valorEmpenhado": 139305.65,
+      "valorLiquidado": 215402.73,
+      "valorPago": 222065.9
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "08/2025",
+      "valorEmpenhado": 167030.41,
+      "valorLiquidado": 162801.55,
+      "valorPago": 130075.9
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "08/2025",
+      "valorEmpenhado": 70293.31,
+      "valorLiquidado": 68000,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "09/2025",
+      "valorEmpenhado": 130891.6,
+      "valorLiquidado": 235049.69,
+      "valorPago": 197976.53
+    },
+    {
+      "codigoAcao": "15R4",
+      "mesAno": "09/2025",
+      "valorEmpenhado": 521754.58,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "09/2025",
+      "valorEmpenhado": 70293.31,
+      "valorLiquidado": 87960,
+      "valorPago": 84060
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "10/2025",
+      "valorEmpenhado": 377805.48,
+      "valorLiquidado": 136033.72,
+      "valorPago": 201208.49
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "10/2025",
+      "valorEmpenhado": 175950.94,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "10/2025",
+      "valorEmpenhado": 164874.61,
+      "valorLiquidado": 99014,
+      "valorPago": 170914
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "11/2025",
+      "valorEmpenhado": 133070.92,
+      "valorLiquidado": 185548.37,
+      "valorPago": 170425.19
+    },
+    {
+      "codigoAcao": "21B3",
+      "mesAno": "11/2025",
+      "valorEmpenhado": 1800,
+      "valorLiquidado": 1800,
+      "valorPago": 1800
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "11/2025",
+      "valorEmpenhado": 121759.4,
+      "valorLiquidado": 0,
+      "valorPago": 0
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "11/2025",
+      "valorEmpenhado": 4174.5,
+      "valorLiquidado": 32985.5,
+      "valorPago": 32265.5
+    },
+    {
+      "codigoAcao": "20RL",
+      "mesAno": "12/2025",
+      "valorEmpenhado": 19000,
+      "valorLiquidado": 259578.72,
+      "valorPago": 322307.96
+    },
+    {
+      "codigoAcao": "20RG",
+      "mesAno": "12/2025",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 197381,
+      "valorPago": 188329.29
+    },
+    {
+      "codigoAcao": "15R4",
+      "mesAno": "12/2025",
+      "valorEmpenhado": 0,
+      "valorLiquidado": 136594.16,
+      "valorPago": 136594.16
+    },
+    {
+      "codigoAcao": "2994",
+      "mesAno": "12/2025",
+      "valorEmpenhado": 156730.81,
+      "valorLiquidado": 117050.65,
+      "valorPago": 117770.65
+    }
+  ]
+}

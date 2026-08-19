@@ -1,0 +1,185 @@
+<div class="flex flex-col gap-6">
+  <div *ngIf="loading()" class="flex justify-center items-center p-12">
+    <mat-progress-spinner mode="indeterminate" diameter="48" color="primary"></mat-progress-spinner>
+  </div>
+
+  <mat-card *ngIf="error()" class="p-4 bg-red-50 text-red-700 border border-red-200">
+    <mat-card-content class="flex items-center gap-2">
+      <mat-icon color="warn">error</mat-icon>
+      <span>{{ error() }}</span>
+    </mat-card-content>
+  </mat-card>
+
+  <div *ngIf="!loading() && resumo()" class="flex flex-col gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-emerald-600">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="primary">school</mat-icon>
+          <mat-card-title class="text-sm sm:text-base font-bold text-slate-900"
+            >Ação 2994 — Assistência aos Estudantes</mat-card-title
+          >
+          <mat-card-subtitle class="text-[11px]"
+            >Recursos aplicados diretamente no apoio a estudantes</mat-card-subtitle
+          >
+        </mat-card-header>
+        <mat-card-content class="pt-3 sm:pt-4 flex flex-col gap-3">
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 truncate">
+            {{ getAssistenciaTotal() | currency: 'BRL' : 'symbol' : '1.2-2' : 'pt-BR' }}
+          </div>
+          <div class="flex items-center gap-2">
+            <mat-progress-bar
+              mode="determinate"
+              color="primary"
+              [value]="getAssistenciaPorcentagem()"
+              class="rounded"
+            ></mat-progress-bar>
+            <span class="text-xs font-bold text-slate-700 whitespace-nowrap"
+              >{{ getAssistenciaPorcentagem() }}% do orçamento</span
+            >
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="p-2 border-l-4 border-l-blue-600">
+        <mat-card-header>
+          <mat-icon mat-card-avatar color="accent">domain</mat-icon>
+          <mat-card-title class="text-sm sm:text-base font-bold text-slate-900"
+            >Ação 20RL — Funcionamento das Instituições</mat-card-title
+          >
+          <mat-card-subtitle class="text-[11px]">Manutenção operacional e custeio geral do campus</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="pt-3 sm:pt-4 flex flex-col gap-3">
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 truncate">
+            {{ getFuncionamentoTotal() | currency: 'BRL' : 'symbol' : '1.2-2' : 'pt-BR' }}
+          </div>
+          <div class="flex items-center gap-2">
+            <mat-progress-bar
+              mode="determinate"
+              color="accent"
+              [value]="100 - getAssistenciaPorcentagem()"
+              class="rounded"
+            ></mat-progress-bar>
+            <span class="text-xs font-bold text-slate-700 whitespace-nowrap"
+              >{{ 100 - getAssistenciaPorcentagem() }}% do orçamento</span
+            >
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-700">
+          <mat-icon class="text-indigo-500">compare_arrows</mat-icon>
+          Assistência Estudantil (2994) vs. Funcionamento do Campus (20RL)
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs"
+          >Valores totais em R$ mil — Empenhado e Pago por ação orçamentária</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="compChartSeries()"
+          [chart]="compChart"
+          [xaxis]="{ categories: compChartCategories(), labels: { style: { fontSize: '11px' } } }"
+          [dataLabels]="compDataLabels"
+          [colors]="compColors"
+          [grid]="compGrid"
+          [tooltip]="compTooltip"
+          [legend]="compLegend"
+          [plotOptions]="compPlotOptions"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card appearance="outlined" class="p-3 bg-slate-50">
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <mat-icon color="primary">tune</mat-icon>
+          <span class="text-xs sm:text-sm font-bold text-slate-800">Filtrar Gráficos Temporais por Ação:</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+          <button
+            type="button"
+            class="px-3 sm:px-4 py-2 text-xs font-bold rounded-lg transition-all duration-200 shadow-sm border text-center"
+            [ngClass]="{
+              'bg-emerald-700 text-white border-emerald-800': acaoSelecionada() === '2994',
+              'bg-white text-slate-700 border-slate-300 hover:bg-slate-100':
+                acaoSelecionada() !== '2994',
+            }"
+            (click)="selecionarAcao('2994')"
+          >
+            Ação 2994 — Assistência Estudantil
+          </button>
+          <button
+            type="button"
+            class="px-3 sm:px-4 py-2 text-xs font-bold rounded-lg transition-all duration-200 shadow-sm border text-center"
+            [ngClass]="{
+              'bg-emerald-700 text-white border-emerald-800': acaoSelecionada() === '20RL',
+              'bg-white text-slate-700 border-slate-300 hover:bg-slate-100':
+                acaoSelecionada() !== '20RL',
+            }"
+            (click)="selecionarAcao('20RL')"
+          >
+            Ação 20RL — Funcionamento
+          </button>
+        </div>
+      </div>
+    </mat-card>
+
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-700">
+          <mat-icon class="text-emerald-600">show_chart</mat-icon>
+          Evolução Mensal (Linha) — Ação {{ acaoSelecionada() }}
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs"
+          >Valores mensais em R$ mil — Empenhado e Pago mês a mês</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="evolucaoMensalSeries()"
+          [chart]="evolucaoMensalChart"
+          [xaxis]="{
+            categories: evolucaoMensalCategories(),
+            labels: { style: { fontSize: '11px' } },
+          }"
+          [stroke]="evolucaoMensalStroke"
+          [colors]="evolucaoMensalColors"
+          [grid]="compGrid"
+          [tooltip]="compTooltip"
+          [legend]="compLegend"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="shadow-sm border border-slate-100">
+      <mat-card-header class="pb-2">
+        <mat-card-title class="flex items-center gap-2 text-sm sm:text-base font-semibold text-slate-700">
+          <mat-icon class="text-teal-600">stacked_line_chart</mat-icon>
+          Evolução Acumulada Mensal (Linha) — Ação {{ acaoSelecionada() }}
+        </mat-card-title>
+        <mat-card-subtitle class="text-slate-500 text-xs"
+          >Total progressivo acumulado mês a mês (valores em R$ mil)</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <apx-chart
+          [series]="acumuladoSeries()"
+          [chart]="acumuladoChart"
+          [xaxis]="{
+            categories: evolucaoMensalCategories(),
+            labels: { style: { fontSize: '11px' } },
+          }"
+          [stroke]="acumuladoStroke"
+          [colors]="evolucaoMensalColors"
+          [grid]="compGrid"
+          [tooltip]="compTooltip"
+          [legend]="compLegend"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

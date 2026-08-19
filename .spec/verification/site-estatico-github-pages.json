@@ -1,0 +1,72 @@
+{
+  "feature": "site-estatico-github-pages",
+  "timestamp": "2026-08-13T19:50:54.610Z",
+  "gitRev": "960d0a8",
+  "command": "dotnet test Backend/Api.Tests --logger:trx && node --experimental-strip-types --test --test-reporter=tap Frontend/test/**/*.spec.test.ts",
+  "reporter": "exitcode",
+  "exitCode": 0,
+  "testsParsed": 0,
+  "results": {
+    "AC-023": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-024": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-025": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-026": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-027": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-028": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-029": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-030": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-031": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-032": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-033": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    },
+    "AC-034": {
+      "status": "pass",
+      "testName": null,
+      "method": "exitcode"
+    }
+  },
+  "principles": {}
+}
